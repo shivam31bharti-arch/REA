@@ -1,0 +1,64 @@
+[console warning] Electron Security Warning (Insecure Content-Security-Policy) This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged.
+[console warning] Electron Security Warning (Insecure Content-Security-Policy) This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged.
+captured home.png 1282x673
+captured desktop.png 1282x673
+template opened: {"words":"69","stamp":"Not saved","bubble":false,"slash":false,"palette":false,"find":null,"outline":"01,02,03,04","current":null,"title":"Video script — Prose","cmdbar":{"toolsClipped":0,"crumbClipped":0,"gapBeforeEnd":89,"appName":true,"insertLabel":true,"pdfLabel":true}}
+captured styles.png 1282x673
+after PDF export (clean): {"words":"69","stamp":"Exported 01:52","bubble":false,"slash":false,"palette":false,"find":null,"outline":"01,02,03,04","current":null,"title":"Video script — Prose","cmdbar":{"toolsClipped":0,"crumbClipped":0,"gapBeforeEnd":53,"appName":true,"insertLabel":true,"pdfLabel":true}}
+captured exported.png 1282x673
+pdf 54208 bytes
+after typing: {"words":"81","stamp":"Unsaved","bubble":false,"slash":false,"palette":false,"find":null,"outline":"01,02,03,04","current":"Outro","title":"• Video script — Prose","cmdbar":{"toolsClipped":0,"crumbClipped":0,"gapBeforeEnd":104,"appName":true,"insertLabel":true,"pdfLabel":true}}
+after PDF export (unsaved edits): {"words":"81","stamp":"PDF 01:52 · Unsaved","bubble":false,"slash":false,"palette":false,"find":null,"outline":"01,02,03,04","current":"Outro","title":"• Video script — Prose","cmdbar":{"toolsClipped":0,"crumbClipped":0,"gapBeforeEnd":17,"appName":true,"insertLabel":true,"pdfLabel":true}}
+captured exported-unsaved.png 1282x673
+captured bubble.png 1282x673
+selection: {"words":"81","stamp":"PDF 01:52 · Unsaved","bubble":true,"slash":false,"palette":false,"find":null,"outline":"01,02,03,04","current":"Hook","title":"• Video script — Prose","cmdbar":{"toolsClipped":0,"crumbClipped":0,"gapBeforeEnd":17,"appName":true,"insertLabel":true,"pdfLabel":true}}
+after Ctrl+B: {"words":"81","stamp":"Unsaved","bubble":true,"slash":false,"palette":false,"find":null,"outline":"01,02,03,04","current":"Hook","title":"• Video script — Prose","cmdbar":{"toolsClipped":0,"crumbClipped":0,"gapBeforeEnd":104,"appName":true,"insertLabel":true,"pdfLabel":true}}
+selection scrolled away: {"words":"81","stamp":"Unsaved","bubble":false,"slash":false,"palette":false,"find":null,"outline":"01,02,03,04","current":"Hook","title":"• Video script — Prose","cmdbar":{"toolsClipped":0,"crumbClipped":0,"gapBeforeEnd":104,"appName":true,"insertLabel":true,"pdfLabel":true}}
+captured bubble-scrolled.png 1282x673
+captured slash.png 1282x673
+slash filtered: {"words":"82","stamp":"Unsaved","bubble":false,"slash":true,"palette":false,"find":null,"outline":"01,02,03,04","current":"Outro","title":"• Video script — Prose","cmdbar":{"toolsClipped":0,"crumbClipped":0,"gapBeforeEnd":104,"appName":true,"insertLabel":true,"pdfLabel":true}}
+after inserting table: {"words":"81","stamp":"Unsaved","bubble":false,"slash":false,"palette":false,"find":null,"outline":"01,02,03,04","current":"Outro","title":"• Video script — Prose","cmdbar":{"toolsClipped":0,"crumbClipped":0,"gapBeforeEnd":104,"appName":true,"insertLabel":true,"pdfLabel":true}}
+captured table.png 1282x673
+captured palette.png 1282x673
+palette filtered: {"words":"81","stamp":"Unsaved","bubble":false,"slash":false,"palette":true,"find":null,"outline":"01,02,03,04","current":"Outro","title":"• Video script — Prose","cmdbar":{"toolsClipped":0,"crumbClipped":0,"gapBeforeEnd":104,"appName":true,"insertLabel":true,"pdfLabel":true}}
+captured palette-filter.png 1282x673
+find "the": {"words":"81","stamp":"Unsaved","bubble":false,"slash":false,"palette":false,"find":"1 of 7","outline":"01,02,03,04","current":null,"title":"• Video script — Prose","cmdbar":{"toolsClipped":0,"crumbClipped":0,"gapBeforeEnd":104,"appName":true,"insertLabel":true,"pdfLabel":true}}
+captured find.png 1282x673
+focus mode: {"words":"81","stamp":"Unsaved","bubble":false,"slash":false,"palette":false,"find":null,"outline":"01,02,03,04","current":"Setup","title":"• Video script — Prose","cmdbar":{"toolsClipped":0,"crumbClipped":0,"gapBeforeEnd":104,"appName":true,"insertLabel":true,"pdfLabel":true}}
+captured focus.png 1282x673
+[console warning] Electron Security Warning (Insecure Content-Security-Policy) This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged.
+captured home-dark.png 1282x673
+captured prose-dark.png 1282x673
+dark-theme pdf 74328 bytes
+[console warning] Electron Security Warning (Insecure Content-Security-Policy) This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged.
+captured home-1100.png 1102x761
+captured prose-1100.png 1102x761
+narrow: {"words":"32","stamp":"Not saved","bubble":false,"slash":false,"palette":false,"find":null,"outline":"","current":null,"title":"Meeting notes — Prose","cmdbar":{"toolsClipped":0,"crumbClipped":0,"gapBeforeEnd":47,"appName":false,"insertLabel":false,"pdfLabel":false}}

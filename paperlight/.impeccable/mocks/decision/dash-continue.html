@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Dashboard · Continue stage</title>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1440px;height:900px;overflow:hidden}
+body{display:grid;grid-template-columns:64px 1fr;font-family:Geist,sans-serif;color:#111;background:#FAFAF9}
+.rail{background:#111;display:flex;flex-direction:column;align-items:center;gap:8px;padding:10px 0}
+.mark{width:36px;height:36px;background:#fff;color:#111;font-weight:800;font-size:20px;display:grid;place-items:center;margin-bottom:18px}
+.sw{width:44px;height:44px;display:grid;place-items:center;position:relative}.sw i{width:20px;height:20px;border:2px solid #fff;display:block}
+.sw.on{background:rgba(255,255,255,.18)}.sw b{position:absolute;right:6px;bottom:6px;width:7px;height:7px}
+.stage{display:grid;grid-template-rows:56px 1fr;min-width:0}
+.bar{display:flex;align-items:center;gap:12px;padding:0 164px 0 24px;border-bottom:1px solid #111;background:#fff}
+.bar h1{font-size:14px;font-weight:700}
+.pill{margin-left:auto;height:34px;width:210px;border:1px solid #E2E2E2;display:flex;align-items:center;padding:0 10px;font-size:13px;color:#595959}
+.main{padding:28px 48px;display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;align-content:start;background-image:linear-gradient(to right,#EEEEEC 1px,transparent 1px);background-size:113px 100%;background-position:48px 0}
+.lead{grid-column:1/9;display:flex;flex-direction:column;gap:14px}
+.lh{display:flex;align-items:flex-end;justify-content:space-between;border-bottom:1px solid #111;padding-bottom:12px}
+.lh h2{font-size:42px;font-weight:800;letter-spacing:-.04em;line-height:.9}
+.lh small{display:block;font-size:12px;color:#595959;margin-bottom:6px;font-weight:500}
+.go{height:36px;padding:0 16px;background:#111;color:#fff;font-size:13px;font-weight:600;display:grid;place-items:center}
+.view{background:#fff;border:1px solid #111;padding:26px;display:grid;place-items:center;height:470px;position:relative}
+.band{position:absolute;left:0;top:0;bottom:0;width:10px;background:#F2C230}
+.slide{width:704px;height:396px;background:#fff;border:1px solid #E2E2E2;padding:48px 56px;display:flex;flex-direction:column}
+.slide i{width:48px;height:8px;background:#F2C230;margin-bottom:22px;display:block}
+.slide h3{font-size:46px;font-weight:800;letter-spacing:-.03em;line-height:1.02}
+.slide p{margin-top:18px;font-size:19px;color:#595959}
+.slide .f{margin-top:auto;display:flex;justify-content:space-between;font:500 11px 'Geist Mono';color:#595959}
+.meta{display:flex;gap:28px;font-size:12px;color:#595959}.meta b{font:500 12px 'Geist Mono';color:#111}
+.side{grid-column:9/13;display:flex;flex-direction:column;gap:12px}
+.app{display:grid;grid-template-columns:110px 1fr;min-height:150px;background:#fff;border:1px solid #E2E2E2}
+.app .f{padding:12px;color:#fff;display:flex;flex-direction:column;justify-content:space-between}
+.app .f b{font-size:22px;font-weight:800;letter-spacing:-.03em}
+.app .f span{font-size:11px;font-weight:600;border:1.5px solid currentColor;padding:5px 8px;align-self:flex-start}
+.p .f{background:#D63A22}.j .f{background:#0B7A6C}.c .f{background:#2448D8}
+.app ul{list-style:none;padding:10px 14px;display:flex;flex-direction:column;gap:9px}
+.app li{display:flex;flex-direction:column;gap:2px}
+.app li b{font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.app li small{font:500 11px 'Geist Mono';color:#595959}
+.app li:first-child b{font-size:14px}
+.rest{grid-column:1/-1;margin-top:26px;border-top:1px solid #111;padding-top:12px;display:flex;gap:28px;font-size:13px;font-weight:600}
+.rest span{color:#595959;font-weight:500}
+</style></head><body>
+<nav class="rail"><div class="mark">P</div><div class="sw on"><i></i></div><div class="sw"><i></i><b style="background:#D63A22"></b></div><div class="sw"><i></i><b style="background:#2448D8"></b></div><div class="sw"><i></i><b style="background:#F2C230"></b></div><div class="sw"><i></i><b style="background:#0B7A6C"></b></div></nav>
+<div class="stage">
+<header class="bar"><h1>Dashboard</h1><div class="pill">Search commands</div></header>
+<main class="main">
+<section class="lead">
+<div class="lh"><div><small>Deck · edited today at 10:59</small><h2>Paperlight launch talk</h2></div><span class="go">Continue in Deck →</span></div>
+<div class="view"><span class="band"></span><div class="slide"><i></i><h3>Four apps, one quiet desk</h3><p>Prose, Cells, Deck and Jotbook share one design.</p><div class="f"><span>Paperlight launch talk</span><span>03 / 07</span></div></div></div>
+<div class="meta"><span>Slides <b>07</b></span><span>Planned <b>5:30</b></span><span>Theme <b>Paper</b></span><span>Stored on this computer</span></div>
+</section>
+<aside class="side">
+<div class="app p"><div class="f"><b>Prose</b><span>+ New</span></div><ul><li><b>Episode 14 script</b><small>2,140 words · yesterday</small></li><li><b>README notes</b><small>520 words · today</small></li><li><b>Sponsor reply draft</b><small>Draft · Mon</small></li></ul></div>
+<div class="app j"><div class="f"><b>Jotbook</b><span>+ Page</span></div><ul><li><b>Ideas inbox</b><small>Channel · Ideas · today</small></li><li><b>Build log, day 3</b><small>655 words · Wed</small></li><li><b>Shot list, episode 14</b><small>412 words · Mon</small></li></ul></div>
+<div class="app c"><div class="f"><b>Cells</b><span>+ New</span></div><ul><li><b>Video views, October</b><small>212 rows · today</small></li><li><b>Channel budget 2026</b><small>3 sheets · Tue</small></li><li><b>Gear list</b><small>.xlsx · Downloads</small></li></ul></div>
+</aside>
+<div class="rest">Also recent<span>Invoice 0142 · Cells</span><span>Thank-you letter · Prose</span><span>Pitch deck · Deck</span><span>Reading list · Jotbook</span></div>
+</main></div></body></html>

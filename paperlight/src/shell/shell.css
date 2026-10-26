@@ -1,0 +1,352 @@
+.pl-shell {
+  display: grid;
+  grid-template-columns: var(--rail-w) minmax(0, 1fr);
+  height: 100%;
+}
+
+.pl-stage {
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Rail: the app's flat colour field, full height. */
+.pl-rail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 0 12px;
+  background: var(--accent);
+  color: var(--on-accent);
+  transition: background-color var(--t-med) var(--ease-out);
+}
+
+:root[data-app='home'] .pl-rail,
+:root[data-app='dashboard'] .pl-rail {
+  border-right: 1px solid var(--seam);
+}
+
+.pl-rail-mark {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  background: #111111;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin-bottom: 18px;
+}
+
+:root[data-app='home'] .pl-rail-mark,
+:root[data-app='dashboard'] .pl-rail-mark {
+  background: #FFFFFF;
+  color: #111111;
+}
+
+/* On Suite Ink, darkening shows nothing: the Home and Dashboard rails lighten instead. */
+:root[data-app='home'] .pl-rail-app:hover,
+:root[data-app='dashboard'] .pl-rail-app:hover {
+  background: rgb(255 255 255 / 0.1);
+}
+
+:root[data-app='home'] .pl-rail-app[aria-current='page'],
+:root[data-app='dashboard'] .pl-rail-app[aria-current='page'] {
+  background: rgb(255 255 255 / 0.18);
+}
+
+/* The dashboard switch: its swatch is all four app fields, quartered. */
+.pl-rail-dash {
+  margin-bottom: 10px;
+}
+
+.pl-rail-quad {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  display: grid;
+  grid-template-columns: 4px 4px;
+  grid-template-rows: 4px 4px;
+  outline: 1px solid rgb(255 255 255 / 0.85);
+}
+
+.pl-rail-quad i:nth-child(1) { background: var(--prose); }
+.pl-rail-quad i:nth-child(2) { background: var(--jotbook); }
+.pl-rail-quad i:nth-child(3) { background: var(--cells); }
+.pl-rail-quad i:nth-child(4) { background: var(--deck); }
+
+.pl-rail-apps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pl-rail-foot {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pl-rail-app {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  color: inherit;
+  transition: background-color var(--t-fast) var(--ease-out);
+}
+
+.pl-rail-app svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.9;
+}
+
+.pl-rail-app:hover {
+  background: rgb(0 0 0 / 0.14);
+}
+
+.pl-rail-app[aria-current='page'] {
+  background: rgb(0 0 0 / 0.24);
+}
+
+.pl-rail-app[aria-disabled='true'] {
+  cursor: default;
+}
+
+.pl-rail-app[aria-disabled='true'] svg {
+  opacity: 0.55;
+}
+
+.pl-rail-app[aria-disabled='true']:hover {
+  background: rgb(0 0 0 / 0.06);
+}
+
+.pl-rail-swatch {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  width: 7px;
+  height: 7px;
+  outline: 1px solid rgb(255 255 255 / 0.85);
+}
+
+.pl-rail-app[data-app='prose'] .pl-rail-swatch { background: var(--prose); }
+.pl-rail-app[data-app='cells'] .pl-rail-swatch { background: var(--cells); }
+.pl-rail-app[data-app='deck'] .pl-rail-swatch { background: var(--deck); }
+.pl-rail-app[data-app='jotbook'] .pl-rail-swatch { background: var(--jotbook); }
+
+.pl-rail :focus-visible {
+  outline-color: var(--on-accent);
+  outline-offset: -3px;
+}
+
+/* Tooltips beside the rail. */
+.pl-rail [data-tip]::after {
+  content: attr(data-tip);
+  position: absolute;
+  left: calc(100% + 12px);
+  top: 50%;
+  translate: -4px -50%;
+  z-index: 50;
+  padding: 5px 8px;
+  background: var(--ink);
+  color: var(--ground);
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity var(--t-fast) var(--ease-out), translate var(--t-fast) var(--ease-out);
+}
+
+.pl-rail-mark {
+  position: relative;
+}
+
+.pl-rail [data-tip]:hover::after,
+.pl-rail [data-tip]:focus-visible::after {
+  opacity: 1;
+  translate: 0 -50%;
+}
+
+/* An app that crashed, held inside the shell. */
+.pl-crash {
+  margin: auto;
+  max-width: 520px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid var(--seam);
+  background: var(--ground);
+}
+
+.pl-crash-title {
+  font-size: 26px;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+}
+
+.pl-crash-text {
+  color: var(--ink-2);
+}
+
+.pl-crash-detail {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.pl-crash-actions {
+  display: flex;
+  gap: 8px;
+  padding-top: 8px;
+}
+
+/* Command palette. */
+.pl-palette-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgb(0 0 0 / 0.28);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 13vh;
+  animation: pl-fade var(--t-fast) var(--ease-out);
+}
+
+@keyframes pl-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+.pl-palette {
+  width: min(640px, calc(100vw - 96px));
+  background: var(--ground);
+  border: 1px solid var(--seam);
+  animation: pl-drop var(--t-med) var(--ease-out);
+}
+
+.pl-palette-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 60px;
+  padding: 0 16px;
+  border-bottom: 1px solid var(--seam);
+}
+
+.pl-palette-search svg {
+  width: 20px;
+  height: 20px;
+  color: var(--muted);
+}
+
+.pl-palette-search input {
+  flex: 1;
+  border: 0;
+  background: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.pl-palette-list {
+  max-height: min(440px, 60vh);
+  overflow-y: auto;
+  padding: 6px;
+}
+
+.pl-palette-group {
+  padding: 12px 10px 6px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.pl-palette-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 40px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.pl-palette-item[aria-selected='true'] {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.pl-palette-item[aria-selected='true'] .pl-palette-meta,
+.pl-palette-item[aria-selected='true'] kbd {
+  color: inherit;
+  border-color: currentColor;
+  background: transparent;
+}
+
+:root[data-app='home'][data-theme='dark'] .pl-palette-item[aria-selected='true'] {
+  background: var(--ink);
+  color: var(--ground);
+}
+
+.pl-palette-title {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.pl-palette-meta {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.pl-palette-empty {
+  padding: 24px 12px;
+  color: var(--muted);
+}
+
+/* Toasts. */
+.pl-toasts {
+  position: fixed;
+  left: calc(var(--rail-w) + 20px);
+  bottom: calc(var(--status-h) + 16px);
+  z-index: 90;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pl-toast {
+  max-width: 420px;
+  padding: 10px 14px;
+  background: var(--ink);
+  color: var(--ground);
+  font-size: 13px;
+  font-weight: 500;
+  animation: pl-rise var(--t-med) var(--ease-out);
+}
+
+.pl-toast[data-tone='error'] {
+  background: var(--danger);
+  color: #FFFFFF;
+}
+
+@keyframes pl-rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}

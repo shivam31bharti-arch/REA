@@ -1,0 +1,82 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Package locks (keep package-lock.json if you want reproducible builds)
+*.package-lock.json
+
+# Build outputs
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# IDE/Editor
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Large binaries/tools (downloaded separately)
+tools/ghidra_12.1.4_PUBLIC/
+tools/jdk-21/
+
+# Build outputs - paperlight
+paperlight/release/
+paperlight/dist/
+
+# Video files
+broll/**/*.mp4
+broll/**/*.mov
+broll/**/*.avi
+
+# Binary/executable files
+*.exe
+*.dll
+*.pak
+*.bin
+*.blockmap
+*.app.asar
+
+# Embedded git repos (handle as submodules)
+rea/
+
+# Turbo / build cache
+.turbo/
+.turbo-build/
+
+# Misc
+*.tgz
+.cache/
+.temp/
+tmp/

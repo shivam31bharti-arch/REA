@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Jotbook · Three panes</title>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;800&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1440px;height:900px;overflow:hidden}
+body{display:grid;grid-template-columns:64px 1fr;font-family:Geist,sans-serif;color:#111;background:#fff}
+.rail{background:#0B7A6C;display:flex;flex-direction:column;align-items:center;gap:8px;padding:10px 0}
+.mark{width:36px;height:36px;background:#111;color:#fff;font-weight:800;font-size:20px;display:grid;place-items:center;margin-bottom:18px}
+.sw{width:44px;height:44px;display:grid;place-items:center}.sw i{width:20px;height:20px;border:2px solid #fff;display:block}
+.sw.on{background:rgba(0,0,0,.24)}
+.stage{display:grid;grid-template-rows:56px 1fr}
+.bar{display:flex;align-items:center;gap:6px;padding:0 164px 0 16px;border-bottom:1px solid #111}
+.crumb{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;margin-right:18px}
+.crumb b{color:#0A6C60}.crumb span{color:#6E6E6E;font-weight:400}
+.t{height:32px;min-width:32px;display:grid;place-items:center;font-size:14px}
+.end{margin-left:auto;display:flex;gap:10px;align-items:center}
+.pill{height:34px;width:220px;border:1px solid #E2E2E2}
+.stamp{height:26px;padding:0 8px;border:1.5px solid #0B7A6C;color:#0B7A6C;font:500 11px 'Geist Mono',monospace;letter-spacing:.06em;display:grid;place-items:center}
+.primary{height:32px;padding:0 14px;background:#111;color:#fff;font-size:13px;font-weight:600;display:grid;place-items:center}
+.body{display:grid;grid-template-columns:248px 300px 1fr;min-height:0}
+.col{border-right:1px solid #111;padding:20px 16px;overflow:hidden}
+.head{font-size:13px;font-weight:600;padding-bottom:12px;border-bottom:1px solid #111;margin-bottom:12px;display:flex;justify-content:space-between}
+.head small{font-size:12px;color:#595959;font-weight:500}
+.nb{font-size:15px;font-weight:750;margin:14px 0 6px}
+.sec{display:flex;justify-content:space-between;font-size:14px;padding:8px 10px}
+.sec.on{background:#0B7A6C;color:#fff;font-weight:600}
+.sec small{font:500 11px 'Geist Mono',monospace;color:inherit;opacity:.8}
+.pg{padding:12px 6px;border-bottom:1px solid #E2E2E2}
+.pg.on{background:#F2F2F0}
+.pg b{display:block;font-size:15px;font-weight:600}
+.pg p{font-size:13px;color:#595959;margin:4px 0}
+.pg small{font:500 11px 'Geist Mono',monospace;color:#595959}
+.canvas{background:#FAFAF9;background-image:linear-gradient(to right,#EEEEEC 1px,transparent 1px);background-size:72px 100%;padding:40px 48px;overflow:hidden}
+.sheet{width:680px;min-height:900px;background:#fff;border:1px solid #111;padding:56px 64px}
+h1{font-size:40px;font-weight:800;letter-spacing:-.03em;line-height:1.06}
+.meta{margin:10px 0 24px;font-size:12px;color:#595959}
+h2{font-size:22px;font-weight:750;margin:24px 0 10px}
+.body p.t2{font-size:16.5px;line-height:1.65;color:#262626}
+.task{display:flex;gap:10px;align-items:center;font-size:16.5px;margin:8px 0}
+.task i{width:16px;height:16px;border:1.5px solid #111;display:block}.task i.x{background:#0B7A6C;border-color:#0B7A6C}
+</style></head><body>
+<nav class="rail"><div class="mark">P</div><div class="sw"><i></i></div><div class="sw"><i></i></div><div class="sw"><i></i></div><div class="sw on"><i></i></div></nav>
+<div class="stage">
+<header class="bar">
+  <div class="crumb"><b>Jotbook</b><span>/</span>Office suite from scratch</div>
+  <div class="t"><b>B</b></div><div class="t"><i>I</i></div><div class="t"><u>U</u></div><div class="t">☐</div><div class="t">+</div>
+  <div class="end"><div class="pill"></div><div class="stamp">SAVED 22:31</div><div class="primary">New page</div></div>
+</header>
+<div class="body">
+  <aside class="col">
+    <div class="head">Notebooks <small>3</small></div>
+    <div class="nb">Channel</div>
+    <div class="sec on">Video ideas <small>6</small></div><div class="sec">Scripts <small>11</small></div><div class="sec">Sponsors <small>3</small></div>
+    <div class="nb">Work</div>
+    <div class="sec">Meetings <small>8</small></div><div class="sec">Projects <small>4</small></div>
+    <div class="nb">Personal</div>
+    <div class="sec">Reading <small>5</small></div>
+  </aside>
+  <section class="col">
+    <div class="head">Video ideas <small>6 pages</small></div>
+    <div class="pg on"><b>Office suite from scratch</b><p>Build four apps live: Prose, Cells…</p><small>21 Oct</small></div>
+    <div class="pg"><b>Thumbnail tests</b><p>Three faces, one colour field…</p><small>19 Oct</small></div>
+    <div class="pg"><b>Viewer questions</b><p>Most asked: which laptop…</p><small>14 Oct</small></div>
+    <div class="pg"><b>Studio setup tour</b><p>Desk, light, mic arm…</p><small>9 Oct</small></div>
+    <div class="pg"><b>Q&amp;A episode</b><p>Pick ten from the comments…</p><small>2 Oct</small></div>
+  </section>
+  <main class="canvas"><article class="sheet">
+    <h1>Office suite from scratch</h1>
+    <div class="meta">Wednesday 21 October 2026</div>
+    <p class="t2">Build four apps live: Prose, Cells, Deck and Jotbook. Show the design choice on camera before writing code.</p>
+    <h2>Shot list</h2>
+    <div class="task"><i class="x"></i><span>Record the Prose design proof</span></div>
+    <div class="task"><i></i><span>Show Jotbook keeping everything local</span></div>
+  </article></main>
+</div>
+</div>
+</body></html>

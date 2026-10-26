@@ -1,0 +1,1835 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-22T06:19:01.417Z",
+  "title": "Design System: Paperlight",
+  "extensions": {
+    "colorMeta": {
+      "prose-vermilion": {
+        "role": "primary",
+        "displayName": "Prose Vermilion",
+        "canonical": "#D63A22",
+        "oklch": "oklch(58.1% 0.196 31.7)",
+        "tonalRamp": [
+          "#210000",
+          "#4A0300",
+          "#7A0E00",
+          "#AE1900",
+          "#DD4129",
+          "#FF745C",
+          "#FFB6A7",
+          "#FFE9E4"
+        ]
+      },
+      "cells-cobalt": {
+        "role": "secondary",
+        "displayName": "Cells Cobalt",
+        "canonical": "#2448D8",
+        "oklch": "oklch(48.0% 0.222 266.3)",
+        "tonalRamp": [
+          "#010037",
+          "#070078",
+          "#101DB2",
+          "#2448D8",
+          "#4471FF",
+          "#7AA0FF",
+          "#B3CAFF",
+          "#E7EFFE"
+        ]
+      },
+      "deck-sun": {
+        "role": "secondary",
+        "displayName": "Sun",
+        "canonical": "#F2C230",
+        "oklch": "oklch(83.4% 0.158 89.0)",
+        "tonalRamp": [
+          "#110A00",
+          "#2F2200",
+          "#503D00",
+          "#745A00",
+          "#9E7B01",
+          "#C99E04",
+          "#F4C433",
+          "#FFEDC1"
+        ]
+      },
+      "jotbook-viridian": {
+        "role": "secondary",
+        "displayName": "Jotbook Viridian",
+        "canonical": "#0B7A6C",
+        "oklch": "oklch(52.1% 0.092 180.9)",
+        "tonalRamp": [
+          "#000F0C",
+          "#002B25",
+          "#034B42",
+          "#046D60",
+          "#329283",
+          "#5BB8A8",
+          "#83DECE",
+          "#B9FFF1"
+        ]
+      },
+      "accent-text": {
+        "role": "primary",
+        "displayName": "Vermilion Text",
+        "canonical": "#C2311A",
+        "oklch": "oklch(53.8% 0.185 31.8)",
+        "tonalRamp": [
+          "#210000",
+          "#4A0300",
+          "#7A0D00",
+          "#AD1A00",
+          "#D84730",
+          "#FF735B",
+          "#FEB6A7",
+          "#FFE9E4"
+        ]
+      },
+      "accent-text-dark": {
+        "role": "primary",
+        "displayName": "Vermilion Text (dark)",
+        "canonical": "#F26B54",
+        "oklch": "oklch(68.9% 0.171 31.6)",
+        "tonalRamp": [
+          "#210000",
+          "#4A0300",
+          "#7A0D00",
+          "#A92410",
+          "#D34E39",
+          "#FD755D",
+          "#FEB6A8",
+          "#FFE9E4"
+        ]
+      },
+      "jotbook-text": {
+        "role": "secondary",
+        "displayName": "Viridian Text",
+        "canonical": "#0B7A6C",
+        "oklch": "oklch(52.1% 0.092 180.9)",
+        "tonalRamp": [
+          "#000F0C",
+          "#002B25",
+          "#034B42",
+          "#046D60",
+          "#329283",
+          "#5BB8A8",
+          "#83DECE",
+          "#B9FFF1"
+        ]
+      },
+      "jotbook-text-dark": {
+        "role": "secondary",
+        "displayName": "Viridian Text (dark)",
+        "canonical": "#3FBFA9",
+        "oklch": "oklch(73.0% 0.115 179.1)",
+        "tonalRamp": [
+          "#000F0B",
+          "#002B24",
+          "#014B40",
+          "#016D5F",
+          "#029582",
+          "#3BBCA6",
+          "#69E3CC",
+          "#BAFFEF"
+        ]
+      },
+      "cells-text": {
+        "role": "secondary",
+        "displayName": "Cobalt Text",
+        "canonical": "#2448D8",
+        "oklch": "oklch(48.0% 0.222 266.3)",
+        "tonalRamp": [
+          "#010037",
+          "#070078",
+          "#101DB2",
+          "#2448D8",
+          "#4471FF",
+          "#7AA0FF",
+          "#B3CAFF",
+          "#E7EFFE"
+        ]
+      },
+      "cells-text-dark": {
+        "role": "secondary",
+        "displayName": "Cobalt Text (dark)",
+        "canonical": "#7D97FF",
+        "oklch": "oklch(70.3% 0.155 271.4)",
+        "tonalRamp": [
+          "#040033",
+          "#130C6E",
+          "#283392",
+          "#4356B8",
+          "#6279DE",
+          "#859EFE",
+          "#B6C7FF",
+          "#E9EEFF"
+        ]
+      },
+      "deck-text": {
+        "role": "secondary",
+        "displayName": "Deck Text",
+        "canonical": "#8C6A00",
+        "oklch": "oklch(54.3% 0.111 86.4)",
+        "tonalRamp": [
+          "#1E0200",
+          "#3B1C00",
+          "#593900",
+          "#795800",
+          "#9D7B21",
+          "#C09C48",
+          "#E7C26F",
+          "#FAEDD2"
+        ]
+      },
+      "deck-text-dark": {
+        "role": "secondary",
+        "displayName": "Deck Text (dark)",
+        "canonical": "#F2C230",
+        "oklch": "oklch(83.4% 0.158 89.0)",
+        "tonalRamp": [
+          "#230000",
+          "#411600",
+          "#613500",
+          "#815400",
+          "#A67800",
+          "#C99A00",
+          "#F1C12E",
+          "#FDEDC5"
+        ]
+      },
+      "snap-guide": {
+        "role": "secondary",
+        "displayName": "Snap Vermilion",
+        "canonical": "#D63A22",
+        "oklch": "oklch(58.1% 0.196 31.7)",
+        "tonalRamp": [
+          "#3E0000",
+          "#650000",
+          "#8B0000",
+          "#B20500",
+          "#DD4129",
+          "#FF674D",
+          "#FF8F73",
+          "#FFDED2"
+        ]
+      },
+      "saved": {
+        "role": "secondary",
+        "displayName": "Saved Viridian",
+        "canonical": "#0B7A6C",
+        "oklch": "oklch(52.1% 0.092 180.9)",
+        "tonalRamp": [
+          "#000F0C",
+          "#002B25",
+          "#034B42",
+          "#046D60",
+          "#329283",
+          "#5BB8A8",
+          "#83DECE",
+          "#B9FFF1"
+        ]
+      },
+      "saved-dark": {
+        "role": "secondary",
+        "displayName": "Saved Viridian (dark)",
+        "canonical": "#3FBFA9",
+        "oklch": "oklch(73.0% 0.115 179.1)",
+        "tonalRamp": [
+          "#000F0B",
+          "#002B24",
+          "#014B40",
+          "#016D5F",
+          "#029582",
+          "#3BBCA6",
+          "#69E3CC",
+          "#BAFFEF"
+        ]
+      },
+      "chart-ochre": {
+        "role": "tertiary",
+        "displayName": "Chart Ochre",
+        "canonical": "#C99A12",
+        "oklch": "oklch(71.1% 0.142 86.0)",
+        "tonalRamp": [
+          "#110A00",
+          "#312300",
+          "#543E02",
+          "#7A5C02",
+          "#A37C01",
+          "#CC9D1A",
+          "#F2C24D",
+          "#FFEDC6"
+        ]
+      },
+      "ref-ochre": {
+        "role": "tertiary",
+        "displayName": "Reference Ochre",
+        "canonical": "#B7791F",
+        "oklch": "oklch(62.6% 0.125 70.4)",
+        "tonalRamp": [
+          "#140800",
+          "#361F00",
+          "#5D3902",
+          "#865504",
+          "#B17315",
+          "#D69643",
+          "#FDBB69",
+          "#FFEBD4"
+        ]
+      },
+      "ref-violet": {
+        "role": "tertiary",
+        "displayName": "Reference Violet",
+        "canonical": "#7A4FD6",
+        "oklch": "oklch(54.7% 0.197 293.5)",
+        "tonalRamp": [
+          "#0F002A",
+          "#2D0162",
+          "#4D109D",
+          "#6B3DC4",
+          "#8B62EB",
+          "#AB8FFE",
+          "#CBBFFE",
+          "#EFECFE"
+        ]
+      },
+      "ref-violet-dark": {
+        "role": "tertiary",
+        "displayName": "Reference Violet Light",
+        "canonical": "#B39DFF",
+        "oklch": "oklch(75.4% 0.139 293.1)",
+        "tonalRamp": [
+          "#0F002A",
+          "#2C0560",
+          "#482C83",
+          "#664EA8",
+          "#8770CD",
+          "#A993F4",
+          "#CBBFFF",
+          "#EFECFF"
+        ]
+      },
+      "slide-sun-muted": {
+        "role": "tertiary",
+        "displayName": "Sun Muted (slide theme)",
+        "canonical": "#4D3D00",
+        "oklch": "oklch(36.7% 0.075 92.1)",
+        "tonalRamp": [
+          "#160800",
+          "#312200",
+          "#4E3E01",
+          "#6D5C27",
+          "#907F4A",
+          "#B2A16B",
+          "#D9C68F",
+          "#F5EEDB"
+        ]
+      },
+      "slide-sun-surface": {
+        "role": "tertiary",
+        "displayName": "Sun Surface (slide theme)",
+        "canonical": "#F7D766",
+        "oklch": "oklch(88.5% 0.136 93.6)",
+        "tonalRamp": [
+          "#1E0200",
+          "#3A1D00",
+          "#583A00",
+          "#785900",
+          "#9C7D00",
+          "#BE9F22",
+          "#E5C553",
+          "#F9EFCB"
+        ]
+      },
+      "slide-cobalt-muted": {
+        "role": "tertiary",
+        "displayName": "Cobalt Muted (slide theme)",
+        "canonical": "#DCE3FB",
+        "oklch": "oklch(91.8% 0.034 272.8)",
+        "tonalRamp": [
+          "#070A19",
+          "#1E2334",
+          "#3A3F52",
+          "#575D71",
+          "#797F95",
+          "#9AA1B7",
+          "#C0C6DE",
+          "#ECEEF7"
+        ]
+      },
+      "slide-cobalt-surface": {
+        "role": "tertiary",
+        "displayName": "Cobalt Surface (slide theme)",
+        "canonical": "#3A5BE0",
+        "oklch": "oklch(52.9% 0.206 267.9)",
+        "tonalRamp": [
+          "#130061",
+          "#0F0085",
+          "#1824A9",
+          "#2E4BCF",
+          "#4C72F9",
+          "#6B96FF",
+          "#8EBDFF",
+          "#DAEEFF"
+        ]
+      },
+      "slide-grid-rule": {
+        "role": "tertiary",
+        "displayName": "Slide Grid Rule",
+        "canonical": "#ECECEA",
+        "oklch": "oklch(94.3% 0.003 106.5)",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#242423",
+          "#40403E",
+          "#5E5E5C",
+          "#80807E",
+          "#A1A1A0",
+          "#C7C7C5",
+          "#EEEEEE"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Ground",
+        "canonical": "#FFFFFF",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A4A4A4",
+          "#CACACA",
+          "#EEEEEE"
+        ]
+      },
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Canvas",
+        "canonical": "#FAFAF9",
+        "oklch": "oklch(98.5% 0.001 106.4)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242423",
+          "#40403F",
+          "#5E5E5D",
+          "#80807F",
+          "#A4A4A4",
+          "#CACAC9",
+          "#EEEEED"
+        ]
+      },
+      "page": {
+        "role": "neutral",
+        "displayName": "Page",
+        "canonical": "#FFFFFF",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A4A4A4",
+          "#CACACA",
+          "#EEEEEE"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#111111",
+        "oklch": "oklch(17.8% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A4A4A4",
+          "#CACACA",
+          "#EEEEEE"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink 2",
+        "canonical": "#262626",
+        "oklch": "oklch(26.9% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A4A4A4",
+          "#CACACA",
+          "#EEEEEE"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "canonical": "#595959",
+        "oklch": "oklch(46.4% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A4A4A4",
+          "#CACACA",
+          "#EEEEEE"
+        ]
+      },
+      "faint": {
+        "role": "neutral",
+        "displayName": "Faint",
+        "canonical": "#6E6E6E",
+        "oklch": "oklch(53.8% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A4A4A4",
+          "#CACACA",
+          "#EEEEEE"
+        ]
+      },
+      "seam": {
+        "role": "neutral",
+        "displayName": "Seam",
+        "canonical": "#111111",
+        "oklch": "oklch(17.8% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A4A4A4",
+          "#CACACA",
+          "#EEEEEE"
+        ]
+      },
+      "seam-soft": {
+        "role": "neutral",
+        "displayName": "Soft Seam",
+        "canonical": "#E2E2E2",
+        "oklch": "oklch(91.3% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A4A4A4",
+          "#CACACA",
+          "#EEEEEE"
+        ]
+      },
+      "grid-line": {
+        "role": "neutral",
+        "displayName": "Grid Line",
+        "canonical": "#EEEEEC",
+        "oklch": "oklch(94.9% 0.003 106.5)",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#242423",
+          "#40403E",
+          "#5E5E5C",
+          "#80807E",
+          "#A5A5A3",
+          "#CACAC9",
+          "#EEEEEC"
+        ]
+      },
+      "cell-line": {
+        "role": "neutral",
+        "displayName": "Cell Line",
+        "canonical": "#E6E6E3",
+        "oklch": "oklch(92.4% 0.004 106.5)",
+        "tonalRamp": [
+          "#0B0B09",
+          "#252523",
+          "#424240",
+          "#61615F",
+          "#828280",
+          "#A5A5A2",
+          "#C9C9C6",
+          "#EFEFEC"
+        ]
+      },
+      "numeral": {
+        "role": "neutral",
+        "displayName": "Numeral Grey",
+        "canonical": "#8F8F8C",
+        "oklch": "oklch(64.9% 0.004 106.5)",
+        "tonalRamp": [
+          "#0B0B09",
+          "#242422",
+          "#40403D",
+          "#5E5E5B",
+          "#80807D",
+          "#A5A5A2",
+          "#CBCBC7",
+          "#EFEFEB"
+        ]
+      },
+      "hover": {
+        "role": "neutral",
+        "displayName": "Hover",
+        "canonical": "#F2F2F0",
+        "oklch": "oklch(96.1% 0.003 106.4)",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#242423",
+          "#40403E",
+          "#5E5E5C",
+          "#80807E",
+          "#A5A5A3",
+          "#CACAC9",
+          "#EEEEEC"
+        ]
+      },
+      "pressed": {
+        "role": "neutral",
+        "displayName": "Pressed",
+        "canonical": "#E8E8E6",
+        "oklch": "oklch(93.0% 0.003 106.5)",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#242423",
+          "#40403E",
+          "#5E5E5C",
+          "#80807E",
+          "#A5A5A3",
+          "#CACAC9",
+          "#EEEEEC"
+        ]
+      },
+      "highlight": {
+        "role": "neutral",
+        "displayName": "Highlight",
+        "canonical": "#FCE58A",
+        "oklch": "oklch(92.1% 0.114 95.6)",
+        "tonalRamp": [
+          "#100B00",
+          "#2C2300",
+          "#4C3F00",
+          "#6F5C01",
+          "#957F1C",
+          "#BAA449",
+          "#E1CA70",
+          "#FFEFB0"
+        ]
+      },
+      "code-ground": {
+        "role": "neutral",
+        "displayName": "Code Ground",
+        "canonical": "#F3F3F1",
+        "oklch": "oklch(96.4% 0.003 106.4)",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#242423",
+          "#40403E",
+          "#5E5E5C",
+          "#80807E",
+          "#A5A5A3",
+          "#CACAC9",
+          "#EEEEEC"
+        ]
+      },
+      "danger": {
+        "role": "error",
+        "displayName": "Danger",
+        "canonical": "#B42318",
+        "oklch": "oklch(50.0% 0.182 29.5)",
+        "tonalRamp": [
+          "#210000",
+          "#4C0000",
+          "#7D0000",
+          "#AD1A10",
+          "#D74839",
+          "#FF7361",
+          "#FFB5A9",
+          "#FEE9E5"
+        ]
+      },
+      "ground-dark": {
+        "role": "neutral",
+        "displayName": "Graphite Ground",
+        "canonical": "#121212",
+        "oklch": "oklch(18.2% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A4A4A4",
+          "#CACACA",
+          "#EEEEEE"
+        ]
+      },
+      "canvas-dark": {
+        "role": "neutral",
+        "displayName": "Graphite Canvas",
+        "canonical": "#0D0D0D",
+        "oklch": "oklch(15.9% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A4A4A4",
+          "#CACACA",
+          "#EEEEEE"
+        ]
+      },
+      "page-dark": {
+        "role": "neutral",
+        "displayName": "Graphite Page",
+        "canonical": "#171717",
+        "oklch": "oklch(20.5% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A4A4A4",
+          "#CACACA",
+          "#EEEEEE"
+        ]
+      },
+      "ink-dark": {
+        "role": "neutral",
+        "displayName": "Ink (dark)",
+        "canonical": "#EDEDED",
+        "oklch": "oklch(94.6% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A4A4A4",
+          "#CACACA",
+          "#EEEEEE"
+        ]
+      },
+      "ink-2-dark": {
+        "role": "neutral",
+        "displayName": "Ink 2 (dark)",
+        "canonical": "#D6D6D6",
+        "oklch": "oklch(87.6% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A4A4A4",
+          "#CACACA",
+          "#EEEEEE"
+        ]
+      },
+      "muted-dark": {
+        "role": "neutral",
+        "displayName": "Muted (dark)",
+        "canonical": "#A6A6A6",
+        "oklch": "oklch(72.5% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A4A4A4",
+          "#CACACA",
+          "#EEEEEE"
+        ]
+      },
+      "faint-dark": {
+        "role": "neutral",
+        "displayName": "Faint (dark)",
+        "canonical": "#8C8C8C",
+        "oklch": "oklch(64.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A4A4A4",
+          "#CACACA",
+          "#EEEEEE"
+        ]
+      },
+      "seam-dark": {
+        "role": "neutral",
+        "displayName": "Seam (dark)",
+        "canonical": "#3A3A3A",
+        "oklch": "oklch(34.8% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A4A4A4",
+          "#CACACA",
+          "#EEEEEE"
+        ]
+      },
+      "seam-soft-dark": {
+        "role": "neutral",
+        "displayName": "Soft Seam (dark)",
+        "canonical": "#2A2A2A",
+        "oklch": "oklch(28.5% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A4A4A4",
+          "#CACACA",
+          "#EEEEEE"
+        ]
+      },
+      "grid-line-dark": {
+        "role": "neutral",
+        "displayName": "Grid Line (dark)",
+        "canonical": "#191919",
+        "oklch": "oklch(21.3% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A4A4A4",
+          "#CACACA",
+          "#EEEEEE"
+        ]
+      },
+      "cell-line-dark": {
+        "role": "neutral",
+        "displayName": "Cell Line (dark)",
+        "canonical": "#262626",
+        "oklch": "oklch(26.9% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "numeral-dark": {
+        "role": "neutral",
+        "displayName": "Numeral Grey (dark)",
+        "canonical": "#6A6A6A",
+        "oklch": "oklch(52.4% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A4A4A4",
+          "#CACACA",
+          "#EEEEEE"
+        ]
+      },
+      "hover-dark": {
+        "role": "neutral",
+        "displayName": "Hover (dark)",
+        "canonical": "#1E1E1E",
+        "oklch": "oklch(23.5% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A4A4A4",
+          "#CACACA",
+          "#EEEEEE"
+        ]
+      },
+      "pressed-dark": {
+        "role": "neutral",
+        "displayName": "Pressed (dark)",
+        "canonical": "#262626",
+        "oklch": "oklch(26.9% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A4A4A4",
+          "#CACACA",
+          "#EEEEEE"
+        ]
+      },
+      "highlight-dark": {
+        "role": "neutral",
+        "displayName": "Highlight (dark)",
+        "canonical": "#7A6516",
+        "oklch": "oklch(51.3% 0.097 93.0)",
+        "tonalRamp": [
+          "#100A00",
+          "#2D2300",
+          "#4E3E00",
+          "#705C05",
+          "#947F35",
+          "#B9A35A",
+          "#E0CA80",
+          "#FFEEB7"
+        ]
+      },
+      "code-ground-dark": {
+        "role": "neutral",
+        "displayName": "Code Ground (dark)",
+        "canonical": "#1F1F1F",
+        "oklch": "oklch(23.9% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A4A4A4",
+          "#CACACA",
+          "#EEEEEE"
+        ]
+      },
+      "danger-dark": {
+        "role": "error",
+        "displayName": "Danger (dark)",
+        "canonical": "#F97066",
+        "oklch": "oklch(70.9% 0.170 26.5)",
+        "tonalRamp": [
+          "#210000",
+          "#4C0003",
+          "#7C010B",
+          "#A92323",
+          "#D24D46",
+          "#FD7469",
+          "#FFB5AC",
+          "#FEE9E6"
+        ]
+      },
+      "suite-dark": {
+        "role": "neutral",
+        "displayName": "Suite Ink (dark)",
+        "canonical": "#000000",
+        "oklch": "oklch(0.0% 0.000 0.0)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A4A4A4",
+          "#CACACA",
+          "#EEEEEE"
+        ]
+      },
+      "present-stage": {
+        "role": "neutral",
+        "displayName": "Present Stage",
+        "canonical": "#000000",
+        "oklch": "oklch(0.0% 0.000 0.0)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A1A1A1",
+          "#C7C7C7",
+          "#EEEEEE"
+        ]
+      },
+      "present-band-next": {
+        "role": "neutral",
+        "displayName": "Band Next",
+        "canonical": "#333333",
+        "oklch": "oklch(32.1% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#242424",
+          "#404040",
+          "#5D5D5D",
+          "#808080",
+          "#A1A1A1",
+          "#C7C7C7",
+          "#EEEEEE"
+        ]
+      },
+      "slide-cobalt-accent-text": {
+        "role": "tertiary",
+        "displayName": "Cobalt Accent Text (slide theme)",
+        "canonical": "#FFD24D",
+        "oklch": "oklch(88.0% 0.154 89.8)",
+        "tonalRamp": [
+          "#110A00",
+          "#2B2000",
+          "#493800",
+          "#68520E",
+          "#8B6E08",
+          "#AE8A0E",
+          "#DEB11D",
+          "#FEEAB4"
+        ]
+      },
+      "slide-sun-guide": {
+        "role": "tertiary",
+        "displayName": "Sun Guide (slide theme)",
+        "canonical": "#A11F14",
+        "oklch": "oklch(46.1% 0.167 29.7)",
+        "tonalRamp": [
+          "#200000",
+          "#470100",
+          "#730300",
+          "#9D1A10",
+          "#C03F31",
+          "#E35F4E",
+          "#FA998A",
+          "#FEE5E0"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Home title only."
+      },
+      "field-name": {
+        "displayName": "Field Name",
+        "purpose": "App names on Home colour fields; later apps use clamp(22px, 2.3vw, 30px)."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Two-digit section numbers in the Prose outline, page numbers in the Jotbook page strip, sheet numbers in the Cells sheet strip and slide numbers in the Deck timeline and sorter; the suite signature."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Document H1 and the Jotbook note title."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Document H2, crash fallback heading, empty-note heading."
+      },
+      "subtitle": {
+        "displayName": "Subtitle",
+        "purpose": "Document H3 and dialog titles."
+      },
+      "body-document": {
+        "displayName": "Document Body",
+        "purpose": "Paragraphs on the page and in the Jotbook note, in Ink 2."
+      },
+      "body": {
+        "displayName": "UI Body",
+        "purpose": "App chrome base text."
+      },
+      "cell": {
+        "displayName": "Cell",
+        "purpose": "Cells grid text and the in-cell editor, Geist with tabular figures so number columns align."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons, menu items, toasts, New sheet, filter values."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Meta, descriptions, status bar and selection figures, tooltips, field-row labels, note date line, search location and count, function descriptions, the dialog problem line."
+      },
+      "mono-formula": {
+        "displayName": "Mono Formula",
+        "purpose": "The active cell's contents in the Cells formula line."
+      },
+      "mono-address": {
+        "displayName": "Mono Address",
+        "purpose": "The cell address box, function names in suggestions and the argument signature; Deck's planned-time field and text size value."
+      },
+      "mono-figure": {
+        "displayName": "Mono Figure",
+        "purpose": "Word counts, find counts, zoom value, page numbers, key caps, strip dates and row counts, search-hit dates, chart range labels, Deck's timeline and sorter times (the timeline total at 12px). Figures only."
+      },
+      "stamp": {
+        "displayName": "State Stamp",
+        "purpose": "Uppercase mono document state; the only uppercase mono text."
+      },
+      "present-clock": {
+        "displayName": "Present Clock",
+        "purpose": "Elapsed time in Deck's presenter view, white on the black stage; a numeral, so Geist rather than mono."
+      },
+      "slide-number": {
+        "displayName": "Slide Number",
+        "purpose": "The Section layout number, 200px in the theme accent text. Slide pixels on the 1280 by 720 surface."
+      },
+      "slide-title": {
+        "displayName": "Slide Title",
+        "purpose": "The Title layout title (80px); Statement is 76px and Section title 60px with the same line height and tracking."
+      },
+      "slide-heading": {
+        "displayName": "Slide Heading",
+        "purpose": "Slide titles in Title and points and Two columns (54px); Picture title is 44px. Line height 1.08 from 40px, tracking -0.03em from 40px."
+      },
+      "slide-body": {
+        "displayName": "Slide Body",
+        "purpose": "Subtitle and points (30px), two-column points (28px), caption (24px); line height 1.32 below 40px. Bullets are squares in the theme accent."
+      },
+      "slide-footer": {
+        "displayName": "Slide Footer",
+        "purpose": "Deck title and the mono \"03 / 07\" count in theme muted, 96px in and 30px from the bottom, on every layout except Title and Statement."
+      },
+      "stage-title": {
+        "displayName": "Stage title",
+        "purpose": "The Dashboard Continue Stage title: 42px/800, 0.96, -0.04em, two lines at most, balanced."
+      },
+      "strip-name": {
+        "displayName": "Strip name",
+        "purpose": "App names in the Dashboard app strip fields: 22px/800, line height 1, -0.03em."
+      }
+    },
+    "shadows": [
+      {
+        "name": "none",
+        "value": "none",
+        "purpose": "The system has no drop shadows. Floating layers use a 1px Seam border; transient tools invert to ink."
+      },
+      {
+        "name": "scrim",
+        "value": "rgb(0 0 0 / 0.28)",
+        "purpose": "Backdrop behind the command palette and dialogs (a dim, not a shadow)."
+      },
+      {
+        "name": "rail-hover",
+        "value": "rgb(0 0 0 / 0.14)",
+        "purpose": "Rail switch hover over the field colour."
+      },
+      {
+        "name": "rail-current",
+        "value": "rgb(0 0 0 / 0.24)",
+        "purpose": "Current app switch in the rail."
+      },
+      {
+        "name": "rail-hover-ink",
+        "value": "rgb(255 255 255 / 0.1)",
+        "purpose": "Rail switch hover on the Suite Ink rail of Home and the Dashboard, where darkening would not show."
+      },
+      {
+        "name": "rail-current-ink",
+        "value": "rgb(255 255 255 / 0.18)",
+        "purpose": "Current switch on the Suite Ink rail (the Dashboard switch while the Dashboard is open)."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The only easing: exponential ease-out, no bounce."
+      },
+      {
+        "name": "t-fast",
+        "value": "160ms",
+        "purpose": "Hover fills, menus, \"/\" menu, popovers, tooltips."
+      },
+      {
+        "name": "t-med",
+        "value": "200ms",
+        "purpose": "Palette, find bar, toasts, rail colour change, numeral and bar updates, focus-mode dimming, template lift."
+      },
+      {
+        "name": "drop",
+        "value": "translateY(-4px) to 0 with opacity",
+        "purpose": "Floating layers enter by dropping 4px on the vertical axis."
+      },
+      {
+        "name": "rise",
+        "value": "translateY(6px) to 0 with opacity",
+        "purpose": "Toasts rise 6px into place."
+      },
+      {
+        "name": "fade",
+        "value": "opacity 0 to 1",
+        "purpose": "Dialog scrim fades in at 160ms; the dialog plane itself drops 4px at 200ms."
+      },
+      {
+        "name": "lift",
+        "value": "translate 0 -4px",
+        "purpose": "Template thumbnails lift 4px on hover/focus while the border turns the template's app field (vermilion for documents, cobalt for workbooks)."
+      },
+      {
+        "name": "grid-glide",
+        "value": "left, top, width, height 120ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Cells selection frame and fill handle glide to the new cell or range; the one step faster than 160ms so keyboard movement never lags."
+      },
+      {
+        "name": "marquee",
+        "value": "stroke-dashoffset 0 to -9, 700ms linear infinite (dash 5 4)",
+        "purpose": "Marching-ants outline around copied or cut cells until the paste."
+      },
+      {
+        "name": "chart-grow",
+        "value": "200ms easeOutQuart (chart.js)",
+        "purpose": "Chart series grow in and update when their cells change; off under reduced motion."
+      },
+      {
+        "name": "tools-rise",
+        "value": "translateY(-4px) to 0 with opacity, 160ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Deck: the selected object's tools (and the slide tools on deselect) rise into the command bar."
+      },
+      {
+        "name": "timeline-resize",
+        "value": "flex-grow 200ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Deck: every timeline block eases to its new share of planned seconds when a slide's time changes; numeral colour 200ms, block edge and fill 160ms."
+      },
+      {
+        "name": "sorter-fade",
+        "value": "opacity 0 to 1, 160ms",
+        "purpose": "Deck: the slide sorter fades in over the work area."
+      },
+      {
+        "name": "present-crossfade",
+        "value": "opacity 0 to 1, 200ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Deck: each slide fades in when presenting; the only transition between slides."
+      },
+      {
+        "name": "present-cursor",
+        "value": "left 500ms linear",
+        "purpose": "Deck: the elapsed-time cursor on the presenting band moves with the half-second clock."
+      },
+      {
+        "name": "present-hud",
+        "value": "opacity 200ms, hidden after 2.2s idle",
+        "purpose": "Deck: the presenting HUD shows when the pointer moves and fades away."
+      },
+      {
+        "name": "dash-dwell",
+        "value": "300ms pointer rest; keyboard focus immediate",
+        "purpose": "Dashboard: resting the pointer on a strip item or an Also recent row puts it on the stage; leaving sooner cancels; focus stages it at once. A delay, not an animation."
+      },
+      {
+        "name": "dash-stage-fade",
+        "value": "opacity 0 to 1, 200ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Dashboard: the new preview fades in when the stage changes; the old one is replaced, not cross-faded."
+      },
+      {
+        "name": "dash-band",
+        "value": "background-color 200ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Dashboard: the stage frame's 10px field band changes to the staged app's field."
+      },
+      {
+        "name": "dash-go-nudge",
+        "value": "translate 3px 0, 160ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Dashboard: the Continue / Open button arrow moves 3px right on hover."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "transition-duration and animation-duration 0ms",
+        "purpose": "All motion is disabled under prefers-reduced-motion, including the grid glide, the copy marquee, chart grow-in, the Deck tools rise, timeline resize, sorter fade, presenting cross-fade and band cursor, and the Dashboard's stage fade, band colour change and arrow nudge."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "cells-tool-labels",
+        "value": "1240px (container)",
+        "purpose": "Cells: Sort, Filter and Chart labels hide; those tools become 32px icon buttons."
+      },
+      {
+        "name": "deck-tool-labels",
+        "value": "1240px (container)",
+        "purpose": "Deck: labels of plain tool buttons (Slide, Text, Shape, Picture, Sorter; Fill, Outline, Replace, Arrange) hide and those tools become 32px icon buttons. Layout and Theme keep labels."
+      },
+      {
+        "name": "cmdbar-search-label",
+        "value": "1230px (container)",
+        "purpose": "Command bar hides the search label."
+      },
+      {
+        "name": "deck-export-label",
+        "value": "1180px (container)",
+        "purpose": "Deck: the Export label hides; Export becomes a 32px outline icon menu."
+      },
+      {
+        "name": "cmdbar-lists-align",
+        "value": "1120px (container)",
+        "purpose": "Prose: list toggles and alignment button leave the bar; title input narrows to 180px."
+      },
+      {
+        "name": "cmdbar-pickers",
+        "value": "1040px (container)",
+        "purpose": "Jotbook: notebook and section pickers narrow from 180px to 132px. Deck: the deck picker keeps 180px."
+      },
+      {
+        "name": "cells-insert-label",
+        "value": "1080px (container)",
+        "purpose": "Cells: the Insert label hides."
+      },
+      {
+        "name": "cells-align",
+        "value": "940px (container)",
+        "purpose": "Cells: the alignment menu leaves the bar (alignment stays in Ctrl K)."
+      },
+      {
+        "name": "cmdbar-app-name",
+        "value": "960px (container)",
+        "purpose": "Shared: app name and crumb slashes leave the bar (Jotbook pickers stay)."
+      },
+      {
+        "name": "cmdbar-labels",
+        "value": "900px (container)",
+        "purpose": "Shared: button labels hide; Insert and PDF become 32px icon buttons. Cells: the workbook title narrows to 124px. Deck: the Layout and Theme menus lose their labels here."
+      },
+      {
+        "name": "cmdbar-style",
+        "value": "820px (container)",
+        "purpose": "Prose: style picker narrows from 120px to 104px."
+      },
+      {
+        "name": "home-stack",
+        "value": "1240px",
+        "purpose": "Home title goes full width and the lede drops below it."
+      },
+      {
+        "name": "canvas-wide",
+        "value": "1640px",
+        "purpose": "Editor canvas left inset grows from 72px to 144px (two columns)."
+      },
+      {
+        "name": "print",
+        "value": "@media print, A4, 25.4mm margins",
+        "purpose": "Forces light tokens in both themes and renders only the page."
+      },
+      {
+        "name": "deck-timeline-block",
+        "value": "108px (block container)",
+        "purpose": "Deck: on timeline blocks this narrow the planned time moves under the numeral."
+      },
+      {
+        "name": "deck-print",
+        "value": "@media print, one 1280 by 720 page per slide",
+        "purpose": "Deck PDF export: page size injected at export; only the slides render, in their slide theme."
+      },
+      {
+        "name": "dash-frame",
+        "value": "clamp(340px, calc(100vh - 380px), 600px)",
+        "purpose": "Dashboard: stage frame height, leaving room for the Also recent heading and first row at common window sizes; clamp(320px, calc(100vh - 340px), 520px) under 1080px."
+      },
+      {
+        "name": "dash-stack",
+        "value": "1080px",
+        "purpose": "Dashboard: the stage takes all 12 columns, the three app strips sit in a row under it, Also recent drops to two columns."
+      },
+      {
+        "name": "dash-status",
+        "value": "960px",
+        "purpose": "Dashboard: per-app counts leave the status bar."
+      },
+      {
+        "name": "dash-single",
+        "value": "760px",
+        "purpose": "Dashboard: grid pads 20px 24px, strips and Also recent go to one column, the figures row wraps."
+      }
+    ],
+    "dataPalettes": {
+      "chartSeries": {
+        "light": [
+          "#2448D8",
+          "#111111",
+          "#D63A22",
+          "#0B7A6C",
+          "#C99A12",
+          "#8F8F8C"
+        ],
+        "dark": [
+          "#7D97FF",
+          "#EDEDED",
+          "#F26B54",
+          "#3FBFA9",
+          "#F2C230",
+          "#8F8F8C"
+        ],
+        "gridlines": {
+          "light": "#EEEEEC",
+          "dark": "#242424"
+        },
+        "purpose": "Chart series in order; the first is always the Cells accent. Value-axis gridlines per theme; the category axis is a Seam line with no gridlines."
+      },
+      "referenceOutlines": {
+        "light": [
+          "#2448D8",
+          "#D63A22",
+          "#0B7A6C",
+          "#B7791F",
+          "#7A4FD6"
+        ],
+        "dark": [
+          "#7D97FF",
+          "#F26B54",
+          "#3FBFA9",
+          "#F2C230",
+          "#B39DFF"
+        ],
+        "purpose": "Each range a formula names, in order, while the formula is edited: a 1.5px outline over a 9% tint. Theme-aware; every colour clears 3:1 on its page."
+      },
+      "cellFills": {
+        "colors": {
+          "grey": "#EDEDEB",
+          "cobalt": "#DCE3FB",
+          "vermilion": "#FBE1DB",
+          "viridian": "#D4EDE9",
+          "sun": "#FCEFC4"
+        },
+        "purpose": "User cell fills; always #111 text and an 8% ink cell edge."
+      },
+      "cellText": {
+        "colors": {
+          "cobalt": "#2448D8",
+          "vermilion": "#C2311A",
+          "viridian": "#0B7A6C",
+          "grey": "#595959"
+        },
+        "dark": {
+          "#2448D8": "#7D97FF",
+          "#C2311A": "#F26B54",
+          "#0B7A6C": "#3FBFA9",
+          "#595959": "#A6A6A6"
+        },
+        "purpose": "User cell text colours; lifted to the dark values on the graphite page. Text on a filled cell stays #111 unless a colour was chosen."
+      },
+      "slideThemes": {
+        "themes": {
+          "paper": {
+            "background": "#FFFFFF",
+            "text": "#111111",
+            "muted": "#595959",
+            "accent": "#F2C230",
+            "accentText": "#8C6A00",
+            "surface": "#F2F2F0",
+            "decoration": "bar: 64 by 10px accent, 30px above the title",
+            "select": "#8C6A00",
+            "guide": "#D63A22"
+          },
+          "ink": {
+            "background": "#111111",
+            "text": "#FFFFFF",
+            "muted": "#A6A6A6",
+            "accent": "#F2C230",
+            "accentText": "#F2C230",
+            "surface": "#262626",
+            "decoration": "bar",
+            "select": "#F2C230",
+            "guide": "#D63A22"
+          },
+          "sun": {
+            "background": "#F2C230",
+            "text": "#111111",
+            "muted": "#4D3D00",
+            "accent": "#111111",
+            "accentText": "#111111",
+            "surface": "#F7D766",
+            "decoration": "rule: 3px text colour across the margins, 76px above the bottom",
+            "select": "#111111",
+            "guide": "#A11F14"
+          },
+          "cobalt": {
+            "background": "#2448D8",
+            "text": "#FFFFFF",
+            "muted": "#DCE3FB",
+            "accent": "#F2C230",
+            "accentText": "#FFD24D",
+            "surface": "#3A5BE0",
+            "decoration": "band: 18px accent down the left edge",
+            "select": "#F2C230",
+            "guide": "#FFFFFF"
+          },
+          "grid": {
+            "background": "#FFFFFF",
+            "text": "#111111",
+            "muted": "#595959",
+            "accent": "#D63A22",
+            "accentText": "#C2311A",
+            "surface": "#F2F2F0",
+            "decoration": "grid: twelve columns in 1px #ECECEA on both edges, plus the bar",
+            "select": "#8C6A00",
+            "guide": "#D63A22"
+          }
+        },
+        "fixedColors": {
+          "ink": "#111111",
+          "white": "#FFFFFF",
+          "vermilion": "#D63A22",
+          "cobalt": "#2448D8",
+          "viridian": "#0B7A6C",
+          "sun": "#F2C230"
+        },
+        "purpose": "Deck slide themes: content, not chrome. They do not follow the UI theme and export unchanged to .pptx and PDF. Type in the accent resolves to accentText. Colour menus offer Theme text, Theme muted, Theme accent, then the fixed colours, and None for fills and outlines. Each theme also sets the editing marks drawn over its slides: select (selection outline and handle stroke, handles filled with the background) and guide (snap guides, columns at 40%), each 3:1 or better on the ground, the same in light and graphite UI."
+      },
+      "presenting": {
+        "colors": {
+          "stage": "#000000",
+          "text": "#EDEDED",
+          "clock": "#FFFFFF",
+          "label": "#A6A6A6",
+          "rule": "#3A3A3A",
+          "bandPast": "#8F8F8C",
+          "bandNow": "#F2C230",
+          "bandNext": "#333333",
+          "cursorAndHud": "#111111",
+          "cursorEdge": "#FFFFFF"
+        },
+        "purpose": "Deck presenting, identical in both UI themes."
+      }
+    }
+  },
+  "components": [
+    {
+      "name": "Save (Primary Button)",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single filled ink control in a command bar; in Prose it saves .docx and splits off a file-actions menu. In Deck the single filled control is Present.",
+      "html": "<div class=\"ds-split\"><button class=\"ds-btn-primary\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\" width=\"16\" height=\"16\"><path d=\"M5 3h11l3 3v15H5z\"/><path d=\"M8 3v5h7V3\"/><path d=\"M8 21v-7h8v7\"/></svg><span>Save</span></button><button class=\"ds-btn-primary ds-split-more\" aria-label=\"More file actions\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" width=\"16\" height=\"16\"><path d=\"m6 9 6 6 6-6\"/></svg></button></div>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#D63A22;--on-accent:#FFFFFF;--accent-text:#C2311A;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-split{display:flex} .ds-btn-primary{height:32px;min-width:32px;padding:0 10px;display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid transparent;border-radius:0;background:none;color:var(--ink);font-family:var(--font-sans);font-size:13px;font-weight:500;white-space:nowrap;cursor:pointer;transition:background-color var(--t-fast) var(--ease-out),border-color var(--t-fast) var(--ease-out);background:var(--ink);color:var(--ground);padding:0 14px;font-weight:600} .ds-btn-primary:hover{background:var(--ink-2)} .ds-btn-primary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;} .ds-split-more{width:30px;min-width:30px;padding:0;border-left:1px solid color-mix(in srgb,var(--ground) 30%,transparent)}"
+    },
+    {
+      "name": "Export PDF (Outline Button)",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary visible action beside Save: transparent with a soft seam stroke.",
+      "html": "<button class=\"ds-btn-outline\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\" width=\"16\" height=\"16\"><path d=\"M12 3v12\"/><path d=\"M7 10l5 5 5-5\"/><path d=\"M4 21h16\"/></svg><span>PDF</span></button>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#D63A22;--on-accent:#FFFFFF;--accent-text:#C2311A;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-btn-outline{height:32px;min-width:32px;padding:0 10px;display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid transparent;border-radius:0;background:none;color:var(--ink);font-family:var(--font-sans);font-size:13px;font-weight:500;white-space:nowrap;cursor:pointer;transition:background-color var(--t-fast) var(--ease-out),border-color var(--t-fast) var(--ease-out);border-color:var(--seam-soft)} .ds-btn-outline:hover{background:var(--hover)} .ds-btn-outline:active{background:var(--pressed)} .ds-btn-outline:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}"
+    },
+    {
+      "name": "Danger Button",
+      "kind": "button",
+      "refersTo": "button-danger",
+      "description": "Destructive actions only, as the confirming button of a confirm dialog: Danger text, 10% Danger wash on hover, never a solid red block, always set apart by space.",
+      "html": "<button class=\"ds-btn-danger\">Delete page</button>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#D63A22;--on-accent:#FFFFFF;--accent-text:#C2311A;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-btn-danger{height:32px;min-width:32px;padding:0 10px;display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid transparent;border-radius:0;background:none;color:var(--ink);font-family:var(--font-sans);font-size:13px;font-weight:500;white-space:nowrap;cursor:pointer;transition:background-color var(--t-fast) var(--ease-out),border-color var(--t-fast) var(--ease-out);color:var(--danger)} .ds-btn-danger:hover{background:color-mix(in srgb,var(--danger) 10%,transparent)} .ds-btn-danger:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}"
+    },
+    {
+      "name": "Toolbar Toggles (Ghost Icon Buttons)",
+      "kind": "button",
+      "refersTo": "button-icon",
+      "description": "32px square ghost buttons; a pressed toggle gains a 1px ink stroke rather than a fill.",
+      "html": "<div class=\"ds-group\"><button class=\"ds-btn-icon\" aria-pressed=\"true\" aria-label=\"Bold\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" width=\"16\" height=\"16\"><path d=\"M7 4h6a4 4 0 0 1 0 8H7z\"/><path d=\"M7 12h7a4 4 0 0 1 0 8H7z\"/></svg></button><button class=\"ds-btn-icon\" aria-label=\"Italic\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" width=\"16\" height=\"16\"><path d=\"M14 4h-4M14 20h-4M15 4 9 20\"/></svg></button><button class=\"ds-btn-icon\" aria-label=\"Link\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" width=\"16\" height=\"16\"><path d=\"M10 14a4 4 0 0 0 6 0l3-3a4 4 0 0 0-6-6l-1 1\"/><path d=\"M14 10a4 4 0 0 0-6 0l-3 3a4 4 0 0 0 6 6l1-1\"/></svg></button></div>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#D63A22;--on-accent:#FFFFFF;--accent-text:#C2311A;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-group{display:flex;gap:2px} .ds-btn-icon{height:32px;min-width:32px;padding:0 10px;display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid transparent;border-radius:0;background:none;color:var(--ink);font-family:var(--font-sans);font-size:13px;font-weight:500;white-space:nowrap;cursor:pointer;transition:background-color var(--t-fast) var(--ease-out),border-color var(--t-fast) var(--ease-out);width:32px;padding:0} .ds-btn-icon:hover{background:var(--hover)} .ds-btn-icon:active{background:var(--pressed)} .ds-btn-icon[aria-pressed=\"true\"]{border-color:var(--ink)} .ds-btn-icon:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}"
+    },
+    {
+      "name": "State Stamp",
+      "kind": "custom",
+      "refersTo": "state-stamp",
+      "description": "Always-visible document state in uppercase mono with a 1.5px currentColor border; Saved takes its own Saved Viridian token in every app.",
+      "html": "<div class=\"ds-row\"><span class=\"ds-stamp\" data-kind=\"unsaved\">Unsaved</span><span class=\"ds-stamp\" data-kind=\"saved\">Saved 14:32</span><span class=\"ds-stamp\" data-kind=\"exported\">Exported 14:35</span></div>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#D63A22;--on-accent:#FFFFFF;--accent-text:#C2311A;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--saved:#0B7A6C;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-row{display:flex;gap:10px} .ds-stamp{height:26px;padding:0 8px;display:inline-flex;align-items:center;border:1.5px solid currentColor;font-family:var(--font-mono);font-size:11px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;white-space:nowrap;color:var(--muted)} .ds-stamp[data-kind=\"unsaved\"]{color:var(--accent-text)} .ds-stamp[data-kind=\"saved\"]{color:var(--saved)} .ds-stamp[data-kind=\"exported\"]{color:var(--ink)}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Square input with a soft seam stroke that turns ink on focus; no glow.",
+      "html": "<label class=\"ds-field\">Link address<input class=\"ds-input\" placeholder=\"https://\" /></label>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#D63A22;--on-accent:#FFFFFF;--accent-text:#C2311A;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-field{display:flex;flex-direction:column;gap:4px;font-family:var(--font-sans);font-size:12px;font-weight:600;color:var(--muted);width:320px} .ds-input{height:34px;padding:0 10px;border:1px solid var(--seam-soft);border-radius:0;background:var(--ground);font:inherit;font-size:14px;font-weight:400;color:var(--ink);outline:none} .ds-input::placeholder{color:var(--faint)} .ds-input:hover{border-color:var(--ink-2)} .ds-input:focus-visible,.ds-input:focus{border-color:var(--ink)}"
+    },
+    {
+      "name": "App Rail",
+      "kind": "nav",
+      "refersTo": "rail-prose",
+      "description": "The 64px full-height field of the current app, with the suite mark and 44px app switches.",
+      "html": "<nav class=\"ds-rail\"><div class=\"ds-mark\">P</div><button class=\"ds-rail-app\" aria-current=\"page\" aria-label=\"Prose\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" width=\"20\" height=\"20\"><path d=\"M6 3h9l4 4v14H6z\"/><path d=\"M9 12h7M9 16h7\"/></svg><i style=\"background:var(--prose)\"></i></button><button class=\"ds-rail-app\" aria-label=\"Cells\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" width=\"20\" height=\"20\"><path d=\"M4 4h16v16H4zM4 10h16M4 15h16M10 4v16\"/></svg><i style=\"background:var(--cells)\"></i></button></nav>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#D63A22;--on-accent:#FFFFFF;--accent-text:#C2311A;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-rail{width:64px;height:220px;display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px 0 12px;background:var(--accent);color:var(--on-accent);font-family:var(--font-sans)} .ds-mark{width:36px;height:36px;display:grid;place-items:center;background:#111111;color:#FFFFFF;font-size:20px;font-weight:800;letter-spacing:-0.04em;margin-bottom:18px} .ds-rail-app{position:relative;width:44px;height:44px;display:grid;place-items:center;color:inherit;background:none;border:0;cursor:pointer;transition:background-color var(--t-fast) var(--ease-out)} .ds-rail-app:hover{background:rgb(0 0 0 / 0.14)} .ds-rail-app[aria-current=\"page\"]{background:rgb(0 0 0 / 0.24)} .ds-rail-app:focus-visible{outline:2px solid var(--on-accent);outline-offset:-3px} .ds-rail-app i{position:absolute;right:6px;bottom:6px;width:7px;height:7px;outline:1px solid rgb(255 255 255 / 0.85)}"
+    },
+    {
+      "name": "Notebook and Section Picker Crumbs",
+      "kind": "nav",
+      "refersTo": "picker-crumb",
+      "description": "Jotbook's crumb: the app name in accent text, Faint slashes, and two 14px/600 ghost pickers (max 180px, ellipsis) that open notebook and section menus.",
+      "html": "<div class=\"ds-crumb\"><span class=\"ds-app\">Jotbook</span><span class=\"ds-slash\">/</span><button class=\"ds-picker\"><span class=\"ds-pn\">My notebook</span><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" width=\"16\" height=\"16\"><path d=\"m6 9 6 6 6-6\"/></svg></button><span class=\"ds-slash\">/</span><button class=\"ds-picker\" aria-expanded=\"true\"><span class=\"ds-pn\">Video ideas</span><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" width=\"16\" height=\"16\"><path d=\"m6 9 6 6 6-6\"/></svg></button></div>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#0B7A6C;--on-accent:#FFFFFF;--accent-text:#0B7A6C;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-crumb{display:flex;align-items:center;gap:8px;font-family:var(--font-sans)} .ds-app{font-size:14px;font-weight:700;color:var(--accent-text)} .ds-slash{color:var(--faint)} .ds-picker{height:32px;min-width:32px;padding:0 10px;display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid transparent;border-radius:0;background:none;color:var(--ink);font-family:var(--font-sans);font-size:13px;font-weight:500;white-space:nowrap;cursor:pointer;transition:background-color var(--t-fast) var(--ease-out),border-color var(--t-fast) var(--ease-out);max-width:180px;padding:0 6px 0 8px;font-size:14px;font-weight:600} .ds-picker:hover{background:var(--hover)} .ds-picker:active{background:var(--pressed)} .ds-picker[aria-expanded=\"true\"]{border-color:var(--ink)} .ds-picker:focus-visible{outline:2px solid var(--accent);outline-offset:2px;} .ds-pn{overflow:hidden;text-overflow:ellipsis}"
+    },
+    {
+      "name": "Command Palette",
+      "kind": "custom",
+      "refersTo": "palette-item-selected",
+      "description": "Flat ground plane with a 1px ink border; the selected row fills with the app accent.",
+      "html": "<div class=\"ds-palette\"><div class=\"ds-search\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" width=\"20\" height=\"20\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m20 20-4-4\"/></svg><input placeholder=\"Search commands\" /></div><div class=\"ds-list\"><div class=\"ds-group-h\">Document</div><div class=\"ds-item\" aria-selected=\"true\"><span class=\"ds-title\">Export PDF</span><kbd class=\"ds-kbd\">Ctrl P</kbd></div><div class=\"ds-item\"><span class=\"ds-title\">Save</span><kbd class=\"ds-kbd\">Ctrl S</kbd></div></div></div>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#D63A22;--on-accent:#FFFFFF;--accent-text:#C2311A;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-palette{width:420px;background:var(--ground);border:1px solid var(--seam);font-family:var(--font-sans);color:var(--ink);animation:ds-drop var(--t-med) var(--ease-out)} @keyframes ds-drop{from{opacity:0;transform:translateY(-4px)}} .ds-search{display:flex;align-items:center;gap:12px;height:60px;padding:0 16px;border-bottom:1px solid var(--seam);color:var(--muted)} .ds-search input{flex:1;border:0;background:none;font:inherit;font-size:18px;font-weight:500;letter-spacing:-0.01em;color:var(--ink);outline:none} .ds-list{padding:6px} .ds-group-h{padding:12px 10px 6px;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)} .ds-item{display:flex;align-items:center;gap:12px;height:40px;padding:0 10px;cursor:pointer} .ds-item:hover{background:var(--hover)} .ds-item[aria-selected=\"true\"]{background:var(--accent);color:var(--on-accent)} .ds-title{flex:1;font-size:14px;font-weight:500} .ds-kbd{font-family:var(--font-mono);font-size:11px;line-height:1;padding:3px 5px;border:1px solid var(--seam-soft);color:var(--muted)} .ds-item[aria-selected=\"true\"] .ds-kbd{color:inherit;border-color:currentColor} @media (prefers-reduced-motion: reduce){.ds-palette{animation:none}}"
+    },
+    {
+      "name": "Menu With Danger Item",
+      "kind": "custom",
+      "refersTo": "menu-item-danger",
+      "description": "Flat menu panel; the active entry's label is accent text and the destructive entry sits last behind a separator in Danger text, ending in an ellipsis because it opens a confirm dialog.",
+      "html": "<div class=\"ds-menu\" role=\"menu\"><div class=\"ds-mi\" data-active=\"true\"><span class=\"ds-ml\">Video ideas</span><span class=\"ds-md\">4 pages</span></div><div class=\"ds-mi\"><span class=\"ds-ml\">Scripts</span><span class=\"ds-md\">2 pages</span></div><div class=\"ds-msep\"></div><div class=\"ds-mi\"><span class=\"ds-mic\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" width=\"16\" height=\"16\"><path d=\"M12 5v14M5 12h14\"/></svg></span><span class=\"ds-ml\">New section…</span></div><div class=\"ds-mi\"><span class=\"ds-mic\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" width=\"16\" height=\"16\"><path d=\"M4 20h4L19 9l-4-4L4 16z\"/></svg></span><span class=\"ds-ml\">Rename section…</span></div><div class=\"ds-msep\"></div><div class=\"ds-mi is-danger\"><span class=\"ds-mic\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" width=\"16\" height=\"16\"><path d=\"M3 6h18\"/><path d=\"M8 6V4h8v2\"/><path d=\"M6 6l1 14h10l1-14\"/></svg></span><span class=\"ds-ml\">Delete section…</span></div></div>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#0B7A6C;--on-accent:#FFFFFF;--accent-text:#0B7A6C;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-menu{width:260px;display:flex;flex-direction:column;padding:6px;background:var(--ground);border:1px solid var(--seam);font-family:var(--font-sans);animation:ds-drop var(--t-fast) var(--ease-out)} @keyframes ds-drop{from{opacity:0;transform:translateY(-4px)}} .ds-mi{display:flex;align-items:center;gap:10px;min-height:36px;padding:6px 10px;color:var(--ink);cursor:pointer} .ds-mi:hover{background:var(--hover)} .ds-ml{flex:1;font-size:13px;font-weight:500} .ds-md{font-size:12px;color:var(--muted)} .ds-mi[data-active=\"true\"] .ds-ml{color:var(--accent-text)} .ds-mic{display:inline-flex;color:var(--muted)} .ds-mi.is-danger,.ds-mi.is-danger .ds-mic{color:var(--danger)} .ds-msep{height:1px;margin:6px 4px;background:var(--seam-soft)} @media (prefers-reduced-motion: reduce){.ds-menu{animation:none}}"
+    },
+    {
+      "name": "Confirm Dialog",
+      "kind": "custom",
+      "refersTo": "dialog",
+      "description": "Flat ground plane with an ink edge over a 28% scrim; 19px/650 title, Ink 2 message, Cancel first (outline, focused), a spacer, the danger text button last. Prompt dialogs use the same frame with a labelled field and ghost Cancel then primary confirm. A prompt whose name cannot be used stays open with a Danger input stroke and a 12px Danger line under the field.",
+      "html": "<div class=\"ds-scrim\"><form class=\"ds-dialog\" role=\"alertdialog\" aria-labelledby=\"ds-dt\"><h2 class=\"ds-dt\" id=\"ds-dt\">Delete “Thumbnail tests”?</h2><p class=\"ds-dm\">This removes the page from this computer. It can't be undone.</p><div class=\"ds-da\"><button type=\"button\" class=\"ds-b ds-b-outline\" autofocus>Cancel</button><span class=\"ds-sp\"></span><button type=\"submit\" class=\"ds-b ds-b-danger\">Delete page</button></div></form></div>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#0B7A6C;--on-accent:#FFFFFF;--accent-text:#0B7A6C;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-scrim{width:520px;padding:40px 0;display:flex;justify-content:center;background:rgb(0 0 0 / 0.28);animation:ds-fade var(--t-fast) var(--ease-out)} @keyframes ds-fade{from{opacity:0}} .ds-dialog{width:min(420px,calc(100% - 64px));padding:20px;display:flex;flex-direction:column;gap:14px;background:var(--ground);border:1px solid var(--seam);font-family:var(--font-sans);animation:ds-drop var(--t-med) var(--ease-out)} @keyframes ds-drop{from{opacity:0;transform:translateY(-4px)}} .ds-dt{margin:0;font-size:19px;font-weight:650;line-height:1.3;letter-spacing:-0.01em;color:var(--ink)} .ds-dm{margin:0;font-size:14px;line-height:1.5;color:var(--ink-2)} .ds-da{display:flex;justify-content:flex-end;gap:8px;padding-top:4px} .ds-sp{flex:1} .ds-b{height:32px;min-width:32px;padding:0 10px;display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid transparent;border-radius:0;background:none;color:var(--ink);font-family:var(--font-sans);font-size:13px;font-weight:500;white-space:nowrap;cursor:pointer;transition:background-color var(--t-fast) var(--ease-out),border-color var(--t-fast) var(--ease-out)} .ds-b:focus-visible{outline:2px solid var(--accent);outline-offset:2px;} .ds-b-outline{border-color:var(--seam-soft)} .ds-b-outline:hover{background:var(--hover)} .ds-b-danger{color:var(--danger)} .ds-b-danger:hover{background:color-mix(in srgb,var(--danger) 10%,transparent)} @media (prefers-reduced-motion: reduce){.ds-scrim,.ds-dialog{animation:none}}"
+    },
+    {
+      "name": "Numeral Outline",
+      "kind": "custom",
+      "refersTo": "outline-numeral",
+      "description": "The signature: oversized section numerals with word-count length bars; the current section's numeral takes accent text (Vermilion Text) and its bar Ink.",
+      "html": "<ol class=\"ds-outline\"><li><a class=\"ds-ol-link\" aria-current=\"location\"><span class=\"ds-num\">01</span><span class=\"ds-text\">Cold open</span><span class=\"ds-meter\"><span class=\"ds-bar\" style=\"width:120px\"></span><span class=\"ds-words\">412</span></span></a></li><li><a class=\"ds-ol-link\"><span class=\"ds-num\">02</span><span class=\"ds-text\">The build</span><span class=\"ds-meter\"><span class=\"ds-bar\" style=\"width:64px\"></span><span class=\"ds-words\">218</span></span></a></li></ol>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#D63A22;--on-accent:#FFFFFF;--accent-text:#C2311A;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-outline{list-style:none;margin:0;padding:0;width:222px;display:flex;flex-direction:column;gap:6px;font-family:var(--font-sans)} .ds-ol-link{display:grid;grid-template-columns:58px minmax(0,1fr);column-gap:10px;align-items:end;padding:6px 4px;color:var(--ink);cursor:pointer} .ds-ol-link:hover{background:var(--hover)} .ds-num{grid-row:1 / 3;align-self:start;font-size:42px;line-height:0.84;font-weight:800;letter-spacing:-0.04em;font-variant-numeric:tabular-nums;color:var(--numeral);transition:color var(--t-med) var(--ease-out)} .ds-ol-link[aria-current=\"location\"] .ds-num{color:var(--accent-text)} .ds-text{font-size:14px;font-weight:600;line-height:1.3} .ds-meter{grid-column:2;display:flex;align-items:center;gap:8px;margin-top:8px} .ds-bar{height:4px;background:var(--seam-soft)} .ds-ol-link[aria-current=\"location\"] .ds-bar{background:var(--ink)} .ds-words{font-family:var(--font-mono);font-size:11px;color:var(--muted)}"
+    },
+    {
+      "name": "Numbered Strip (Page Strip)",
+      "kind": "custom",
+      "refersTo": "page-strip",
+      "description": "Signature strip shared by Jotbook pages and Cells sheets: 42px/800 numerals in Numeral Grey, the current one in accent text on a Hover fill; a 4px length bar as a share of the longest entry (60px label reserve, minimum 6%, none when empty) and an 11px mono label.",
+      "html": "<nav class=\"ds-strip\"><h2 class=\"ds-sh\"><span>Video ideas</span><span class=\"ds-sc\">3 pages</span></h2><ol class=\"ds-sl\"><li><button class=\"ds-se\" aria-current=\"page\"><span class=\"ds-sn\">01</span><span class=\"ds-st\">Office suite from scratch</span><span class=\"ds-sm\"><span class=\"ds-sb\" style=\"width:calc(100% - 60px)\"></span><span class=\"ds-sd\">Oct 21</span></span></button></li><li><button class=\"ds-se\"><span class=\"ds-sn\">02</span><span class=\"ds-st\">Thumbnail tests</span><span class=\"ds-sm\"><span class=\"ds-sb\" style=\"width:calc((100% - 60px) * 0.18)\"></span><span class=\"ds-sd\">Oct 21</span></span></button></li><li><button class=\"ds-se\"><span class=\"ds-sn\">03</span><span class=\"ds-st\">Viewer questions</span><span class=\"ds-sm\"><span class=\"ds-sb\" style=\"width:calc((100% - 60px) * 0.36)\"></span><span class=\"ds-sd\">Oct 20</span></span></button></li></ol></nav>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#0B7A6C;--on-accent:#FFFFFF;--accent-text:#0B7A6C;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-strip{width:248px;padding:24px 0 16px;background:var(--ground);border-right:1px solid var(--seam);font-family:var(--font-sans)} .ds-sh{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 18px 12px 20px;padding-bottom:12px;border-bottom:1px solid var(--seam);font-size:13px;font-weight:600;color:var(--ink)} .ds-sc{font-size:12px;font-weight:500;color:var(--muted)} .ds-sl{list-style:none;margin:0;padding:0 10px 0 12px;display:flex;flex-direction:column;gap:2px} .ds-se{width:100%;display:grid;grid-template-columns:56px minmax(0,1fr);column-gap:10px;align-items:end;padding:8px 34px 8px 8px;text-align:left;border:0;background:none;color:var(--ink);font:inherit;cursor:pointer;transition:background-color var(--t-fast) var(--ease-out)} .ds-se:hover,.ds-se[aria-current=\"page\"]{background:var(--hover)} .ds-se:focus-visible{outline:2px solid var(--accent);outline-offset:2px;} .ds-sn{grid-row:1 / 3;align-self:start;font-size:42px;line-height:0.84;font-weight:800;letter-spacing:-0.04em;font-variant-numeric:tabular-nums;color:var(--numeral);transition:color var(--t-med) var(--ease-out)} .ds-se[aria-current=\"page\"] .ds-sn{color:var(--accent-text)} .ds-st{font-size:14px;font-weight:600;line-height:1.3} .ds-sm{display:flex;align-items:center;gap:8px;margin-top:7px} .ds-sb{flex:none;transition:width var(--t-med) var(--ease-out),background-color var(--t-med) var(--ease-out);max-width:calc(100% - 60px);height:4px;background:var(--seam-soft)} .ds-se[aria-current=\"page\"] .ds-sb{background:var(--ink)} .ds-sd{flex:none;font-family:var(--font-mono);font-size:11px;color:var(--muted)}"
+    },
+    {
+      "name": "Search Panel",
+      "kind": "custom",
+      "refersTo": "search-box",
+      "description": "Cross-notebook search that replaces the page strip in place: 40px ink-stroked search box, count line over an ink rule, hits with location, title, snippet and mono date; matches marked with a flat accent fill.",
+      "html": "<section class=\"ds-search\"><div class=\"ds-box\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" width=\"16\" height=\"16\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m20 20-4-4\"/></svg><input value=\"laptop\" aria-label=\"Search every notebook\" /><button class=\"ds-x\" aria-label=\"Close search\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" width=\"16\" height=\"16\"><path d=\"M6 6l12 12M18 6 6 18\"/></svg></button></div><p class=\"ds-count\">1 page</p><ol class=\"ds-hits\"><li class=\"ds-hit\" aria-selected=\"true\"><span class=\"ds-where\">My notebook / Video ideas</span><span class=\"ds-ht\">Viewer questions</span><span class=\"ds-snip\">Most asked: which <mark>laptop</mark>, which mic, which camera.</span><span class=\"ds-hd\">Oct 21</span></li></ol></section>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#0B7A6C;--on-accent:#FFFFFF;--accent-text:#0B7A6C;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-search{width:248px;padding:24px 0 16px;background:var(--ground);border-right:1px solid var(--seam);font-family:var(--font-sans)} .ds-box{display:flex;align-items:center;gap:8px;margin:0 12px 0 16px;padding-left:10px;height:40px;border:1px solid var(--ink);color:var(--muted)} .ds-box input{flex:1;min-width:0;border:0;background:none;font:inherit;font-size:14px;font-weight:500;color:var(--ink);outline:none} .ds-x{width:32px;height:32px;display:grid;place-items:center;border:0;background:none;color:var(--ink);cursor:pointer} .ds-x:hover{background:var(--hover)} .ds-x:focus-visible{outline:2px solid var(--accent);outline-offset:2px;} .ds-count{margin:10px 18px 8px 20px;padding-bottom:10px;border-bottom:1px solid var(--seam);font-size:12px;color:var(--muted)} .ds-hits{list-style:none;margin:0;padding:0 10px 0 12px} .ds-hit{display:flex;flex-direction:column;gap:3px;padding:10px 8px;border-bottom:1px solid var(--seam-soft);cursor:pointer} .ds-hit[aria-selected=\"true\"],.ds-hit:hover{background:var(--hover)} .ds-where{font-size:12px;color:var(--muted)} .ds-ht{font-size:14px;font-weight:600;color:var(--ink)} .ds-snip{font-size:13px;line-height:1.45;color:var(--ink-2)} .ds-hit mark{background:var(--accent);color:var(--on-accent);padding:0 1px} .ds-hd{font-family:var(--font-mono);font-size:11px;color:var(--muted)}"
+    },
+    {
+      "name": "Sheet Strip",
+      "kind": "nav",
+      "refersTo": "sheet-strip",
+      "description": "Cells instance of the numbered strip: sheets numbered 01, 02, 03, each bar measuring used rows with an \"N rows\" mono label; the current numeral in Cobalt Text; a Muted New sheet row below.",
+      "html": "<nav class=\"ds-strip\"><h2 class=\"ds-sh\"><span>Channel numbers 2026</span><span class=\"ds-sc\">3 sheets</span></h2><ol class=\"ds-sl\"><li><button class=\"ds-se\" aria-current=\"page\"><span class=\"ds-sn\">01</span><span class=\"ds-st\">Q3 videos</span><span class=\"ds-sm\"><span class=\"ds-sb\" style=\"width:calc((100% - 60px) * 0.875)\"></span><span class=\"ds-sd\">7 rows</span></span></button></li><li><button class=\"ds-se\"><span class=\"ds-sn\">02</span><span class=\"ds-st\">Sponsors</span><span class=\"ds-sm\"><span class=\"ds-sb\" style=\"width:calc(100% - 60px)\"></span><span class=\"ds-sd\">8 rows</span></span></button></li><li><button class=\"ds-se\"><span class=\"ds-sn\">03</span><span class=\"ds-st\">Upload plan</span><span class=\"ds-sm\"><span class=\"ds-sb\" style=\"width:calc((100% - 60px) * 0.5)\"></span><span class=\"ds-sd\">4 rows</span></span></button></li></ol><button class=\"ds-add\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" width=\"16\" height=\"16\"><path d=\"M12 5v14M5 12h14\"/></svg>New sheet</button></nav>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#2448D8;--on-accent:#FFFFFF;--accent-text:#2448D8;--accent-soft:color-mix(in srgb,#2448D8 14%,transparent);--saved:#0B7A6C;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--cell-line:#E6E6E3;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-strip{width:248px;padding:24px 0 0;background:var(--ground);border-right:1px solid var(--seam);font-family:var(--font-sans)} .ds-sh{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 18px 12px 20px;padding-bottom:12px;border-bottom:1px solid var(--seam);font-size:13px;font-weight:600;color:var(--ink)} .ds-sc{font-size:12px;font-weight:500;color:var(--muted)} .ds-sl{list-style:none;margin:0;padding:0 10px 0 12px;display:flex;flex-direction:column;gap:2px} .ds-se{width:100%;display:grid;grid-template-columns:56px minmax(0,1fr);column-gap:10px;align-items:end;padding:8px 34px 8px 8px;text-align:left;border:0;background:none;color:var(--ink);font:inherit;cursor:pointer;transition:background-color var(--t-fast) var(--ease-out)} .ds-se:hover,.ds-se[aria-current=\"page\"]{background:var(--hover)} .ds-se:focus-visible{outline:2px solid var(--accent);outline-offset:2px} .ds-sn{grid-row:1 / 3;align-self:start;font-size:42px;line-height:0.84;font-weight:800;letter-spacing:-0.04em;font-variant-numeric:tabular-nums;color:var(--numeral);transition:color var(--t-med) var(--ease-out)} .ds-se[aria-current=\"page\"] .ds-sn{color:var(--accent-text)} .ds-st{font-size:14px;font-weight:600;line-height:1.3} .ds-sm{display:flex;align-items:center;gap:8px;margin-top:7px} .ds-sb{flex:none;max-width:calc(100% - 60px);height:4px;background:var(--seam-soft);transition:width var(--t-med) var(--ease-out)} .ds-se[aria-current=\"page\"] .ds-sb{background:var(--ink)} .ds-sd{flex:none;font-family:var(--font-mono);font-size:11px;color:var(--muted)} .ds-add{margin:6px 12px 20px;height:36px;display:flex;align-items:center;gap:8px;padding:0 10px;border:0;background:none;font:inherit;font-size:13px;font-weight:500;color:var(--muted);cursor:pointer;transition:background-color var(--t-fast) var(--ease-out),color var(--t-fast) var(--ease-out)} .ds-add:hover{background:var(--hover);color:var(--ink)} .ds-add:focus-visible{outline:2px solid var(--accent);outline-offset:2px}"
+    },
+    {
+      "name": "Talk Timeline",
+      "kind": "custom",
+      "refersTo": "timeline-block",
+      "description": "Deck signature: one numbered block per slide, as wide as its planned seconds (min 72px); the current block takes a 2px ink edge over an 18% sun tint and a Deck Text numeral; a dashed add block ends the track.",
+      "html": "<section class=\"ds-tl\"><header class=\"ds-tlh\"><h2>Talk timeline</h2><span class=\"ds-tlt\">4 slides · 3:15 planned</span></header><ol class=\"ds-tlk\"><li class=\"ds-tls\" style=\"flex-grow:30\"><button class=\"ds-tlb\"><span class=\"ds-tltop\"><span class=\"ds-tln\">01</span><span class=\"ds-tlm\">0:30</span></span><span class=\"ds-tlx\">Paperlight</span></button></li><li class=\"ds-tls\" style=\"flex-grow:75\"><button class=\"ds-tlb\" aria-current=\"step\"><span class=\"ds-tltop\"><span class=\"ds-tln\">02</span><span class=\"ds-tlm\">1:15</span></span><span class=\"ds-tlx\">Four apps, one quiet desk</span></button></li><li class=\"ds-tls\" style=\"flex-grow:60\"><button class=\"ds-tlb\"><span class=\"ds-tltop\"><span class=\"ds-tln\">03</span><span class=\"ds-tlm\">1:00</span></span><span class=\"ds-tlx\">Live demo</span></button></li><li class=\"ds-tls\" style=\"flex-grow:30\"><button class=\"ds-tlb\"><span class=\"ds-tltop\"><span class=\"ds-tln\">04</span><span class=\"ds-tlm\">0:30</span></span><span class=\"ds-tlx\">Thank you</span></button></li><li class=\"ds-tla\"><button aria-label=\"Add a slide\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 5v14M5 12h14\"/></svg></button></li></ol></section>",
+      "css": ":host{--deck:#F2C230;--accent:#F2C230;--on-accent:#111111;--accent-text:#8C6A00;--deck-text:#8C6A00;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-tl{display:flex;flex-direction:column;gap:10px;padding:14px 20px 16px;border-top:1px solid var(--seam);background:var(--ground);font-family:var(--font-sans);color:var(--ink)} .ds-tlh{display:flex;justify-content:space-between;align-items:baseline} .ds-tlh h2{margin:0;font-size:13px;font-weight:600} .ds-tlt{font-family:var(--font-mono);font-size:12px;color:var(--muted)} .ds-tlk{display:flex;gap:4px;height:104px;margin:0;padding:0;list-style:none} .ds-tls{display:flex;flex-basis:0;min-width:72px;transition:flex-grow var(--t-med) var(--ease-out)} .ds-tlb{container-type:inline-size;flex:1;min-width:0;display:flex;flex-direction:column;justify-content:space-between;padding:9px 10px 8px;border:1px solid var(--seam-soft);border-radius:0;background:var(--page);color:var(--ink);font:inherit;text-align:left;cursor:grab;transition:border-color var(--t-fast) var(--ease-out),background-color var(--t-fast) var(--ease-out)} .ds-tlb:hover{border-color:var(--ink)} .ds-tlb:focus-visible{outline:2px solid var(--ink);outline-offset:2px} .ds-tlb[aria-current=\"step\"]{border:2px solid var(--ink);padding:8px 9px 7px;background:color-mix(in srgb,var(--deck) 18%,var(--page))} .ds-tltop{display:flex;justify-content:space-between;align-items:flex-start;gap:8px} @container (max-width:108px){.ds-tltop{flex-direction:column;gap:4px}} .ds-tln{font-size:42px;line-height:0.84;font-weight:800;letter-spacing:-0.04em;font-variant-numeric:tabular-nums;color:var(--numeral);transition:color var(--t-med) var(--ease-out)} .ds-tlb[aria-current=\"step\"] .ds-tln{color:var(--deck-text)} .ds-tlm{font-family:var(--font-mono);font-size:11px;color:var(--muted)} .ds-tlx{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px;font-weight:600} .ds-tla{display:flex} .ds-tla button{width:64px;display:grid;place-items:center;border:1px dashed var(--faint);border-radius:0;background:none;color:var(--muted);cursor:pointer} .ds-tla button:hover{border-color:var(--ink);color:var(--ink)}"
+    },
+    {
+      "name": "Notes Column",
+      "kind": "custom",
+      "refersTo": "notes-column",
+      "description": "320px speaker notes beside the slide: a planned-time stepper with a mono m:ss field, a 15px Ink 2 notes area, and a footer with the spoken-time estimate and an outline \"Use m:ss\" button.",
+      "html": "<aside class=\"ds-nc\"><header class=\"ds-nch\"><h2>Speaker notes</h2><div class=\"ds-ncp\"><span>Planned</span><div class=\"ds-nct\"><button aria-label=\"15 seconds less\"><svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M5 12h14\"/></svg></button><input value=\"0:45\" aria-label=\"Planned time\"><button aria-label=\"15 seconds more\"><svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 5v14M5 12h14\"/></svg></button></div></div></header><textarea class=\"ds-ncx\" placeholder=\"What you'll say over this slide\">Name each app and the job it replaces.</textarea><footer class=\"ds-ncf\"><span>31 words · about 0:12 to say</span><button class=\"ds-ncu\">Use <span>0:12</span></button></footer></aside>",
+      "css": ":host{--deck:#F2C230;--accent:#F2C230;--on-accent:#111111;--accent-text:#8C6A00;--deck-text:#8C6A00;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-nc{width:320px;height:300px;display:flex;flex-direction:column;gap:12px;padding:20px 20px 14px;border-left:1px solid var(--seam);background:var(--ground);font-family:var(--font-sans);color:var(--ink)} .ds-nch{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:12px;border-bottom:1px solid var(--seam)} .ds-nch h2{margin:0;font-size:13px;font-weight:600} .ds-ncp{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted)} .ds-nct{display:flex;align-items:center;border:1px solid var(--seam-soft)} .ds-nct button{width:30px;height:30px;display:grid;place-items:center;border:0;background:none;color:var(--ink);cursor:pointer} .ds-nct button:hover{background:var(--hover)} .ds-nct input{width:54px;height:30px;border:0;background:none;text-align:center;font-family:var(--font-mono);font-size:13px;font-weight:500;color:var(--ink)} .ds-nct input:focus{outline:2px solid var(--accent-text);outline-offset:-2px} .ds-ncx{flex:1;resize:none;border:0;background:none;color:var(--ink-2);font:inherit;font-size:15px;line-height:1.6;caret-color:var(--accent-text)} .ds-ncx:focus{outline:none} .ds-ncx::placeholder{color:var(--faint)} .ds-ncf{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:12px;color:var(--muted)} .ds-ncu{height:26px;padding:0 10px;border:1px solid var(--seam-soft);border-radius:0;background:none;color:var(--ink);font:inherit;font-size:12px;font-weight:500;cursor:pointer} .ds-ncu:hover{background:var(--hover)} .ds-ncu span{font-family:var(--font-mono)}"
+    },
+    {
+      "name": "Object Chip and Tools",
+      "kind": "chip",
+      "refersTo": "object-chip",
+      "description": "When something on the slide is selected, the bar's slide tools swap for its tools, rising 4px at 160ms, led by a 26px sun chip naming the selection; the chip deselects.",
+      "html": "<div class=\"ds-ot\" role=\"toolbar\" aria-label=\"Text tools\"><button class=\"ds-oc\">Text<svg viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M18 6 6 18M6 6l12 12\"/></svg></button><button class=\"ds-os\">54<svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"m6 9 6 6 6-6\"/></svg></button><button class=\"ds-oi\" aria-pressed=\"true\" aria-label=\"Bold\"><svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M6 12h9a4 4 0 0 1 0 8H6V4h8a4 4 0 0 1 0 8\"/></svg></button><button class=\"ds-oi\" aria-label=\"Italic\"><svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M19 4h-9M14 20H5M15 4 9 20\"/></svg></button></div>",
+      "css": ":host{--deck:#F2C230;--accent:#F2C230;--on-accent:#111111;--accent-text:#8C6A00;--deck-text:#8C6A00;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-ot{display:flex;align-items:center;gap:2px;font-family:var(--font-sans);animation:ds-rise var(--t-fast) var(--ease-out)} @keyframes ds-rise{from{opacity:0;transform:translateY(-4px)}} .ds-oc{height:26px;display:inline-flex;align-items:center;gap:6px;margin-right:6px;padding:0 6px 0 9px;border:0;border-radius:0;background:var(--accent);color:var(--on-accent);font:inherit;font-size:12px;font-weight:700;cursor:pointer} .ds-oc:focus-visible,.ds-oi:focus-visible,.ds-os:focus-visible{outline:2px solid var(--ink);outline-offset:2px} .ds-os{width:68px;height:32px;display:flex;align-items:center;justify-content:space-between;padding:0 6px 0 10px;border:1px solid transparent;border-radius:0;background:none;color:var(--ink);font-family:var(--font-mono);font-size:13px;cursor:pointer} .ds-oi{width:32px;height:32px;display:grid;place-items:center;border:1px solid transparent;border-radius:0;background:none;color:var(--ink);cursor:pointer} .ds-os:hover,.ds-oi:hover{background:var(--hover)} .ds-oi[aria-pressed=\"true\"]{border-color:var(--ink)} @media (prefers-reduced-motion:reduce){.ds-ot{animation:none}}"
+    },
+    {
+      "name": "Slide Canvas Selection",
+      "kind": "custom",
+      "refersTo": "slide-handle",
+      "description": "A selected object on the slide: a 2px outline at 3px offset and eight 11px square handles filled with the slide background, in the slide theme's selection colour (Deck Text on Paper and Grid, Sun on Ink and Cobalt, ink on Sun), and a 1px guide in the theme's guide colour while dragging, all at constant screen size.",
+      "html": "<div class=\"ds-sc\"><div class=\"ds-sl\"><div class=\"ds-sbar\"></div><div class=\"ds-sh\">Four apps, one quiet desk</div><div class=\"ds-sel\"><span style=\"left:0;top:0\"></span><span style=\"left:50%;top:0\"></span><span style=\"left:100%;top:0\"></span><span style=\"left:100%;top:50%\"></span><span style=\"left:100%;top:100%\"></span><span style=\"left:50%;top:100%\"></span><span style=\"left:0;top:100%\"></span><span style=\"left:0;top:50%\"></span></div><i class=\"ds-guide\"></i></div></div>",
+      "css": ":host{--deck:#F2C230;--accent:#F2C230;--on-accent:#111111;--accent-text:#8C6A00;--deck-text:#8C6A00;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-sc{padding:24px 32px;background-color:var(--canvas);background-image:linear-gradient(to right,var(--grid-line) 1px,transparent 1px);background-size:72px 100%} .ds-sl{position:relative;width:480px;height:270px;outline:1px solid var(--seam);background:#FFFFFF;font-family:var(--font-sans);color:#111111} .ds-sbar{position:absolute;left:36px;top:26px;width:24px;height:4px;background:#F2C230} .ds-sh{position:absolute;left:36px;top:38px;width:300px;font-size:20px;font-weight:800;line-height:1.08;letter-spacing:-0.03em} .ds-sel{position:absolute;left:300px;top:110px;width:120px;height:80px;background:#F2C230;outline:2px solid var(--accent-text);outline-offset:3px} .ds-sel span{position:absolute;width:11px;height:11px;margin:-5.5px 0 0 -5.5px;border:1.5px solid var(--accent-text);background:var(--page);box-sizing:border-box} .ds-guide{position:absolute;left:360px;top:0;bottom:0;width:1px;background:#D63A22}"
+    },
+    {
+      "name": "Presenting Band and HUD",
+      "kind": "custom",
+      "refersTo": "present-band-now",
+      "description": "Presenting: the timeline runs as a 10px band of time-sized segments (past grey, now sun, next dark) with a 4px ink cursor edged white; the HUD is an ink chip with mono figures.",
+      "html": "<div class=\"ds-pr\"><div class=\"ds-hud\"><span class=\"ds-f\">02 / 07</span><span class=\"ds-f\">1:42 / 6:00</span><span>P for presenter view · Esc to stop</span></div><div class=\"ds-band\"><span data-state=\"past\" style=\"flex-grow:30\"></span><span data-state=\"now\" style=\"flex-grow:60\"></span><span style=\"flex-grow:75\"></span><span style=\"flex-grow:60\"></span><span style=\"flex-grow:45\"></span><i style=\"left:24%\"></i></div></div>",
+      "css": ":host{--deck:#F2C230;--accent:#F2C230;--on-accent:#111111;--accent-text:#8C6A00;--deck-text:#8C6A00;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-pr{position:relative;height:160px;background:#000000;color:#EDEDED;font-family:var(--font-sans)} .ds-hud{position:absolute;right:22px;bottom:18px;display:flex;gap:20px;padding:6px 10px;background:#111111;font-size:12px;color:#EDEDED} .ds-f{font-family:var(--font-mono)} .ds-band{position:absolute;left:0;right:0;bottom:0;height:10px;display:flex;gap:2px} .ds-band span{flex-basis:0;background:#333333} .ds-band span[data-state=\"past\"]{background:#8F8F8C} .ds-band span[data-state=\"now\"]{background:var(--deck)} .ds-band i{position:absolute;top:-4px;bottom:0;width:4px;margin-left:-2px;border-left:1px solid #FFFFFF;border-right:1px solid #FFFFFF;background:#111111;box-sizing:border-box;transition:left 500ms linear}"
+    },
+    {
+      "name": "Deck Template Thumbnail (Home)",
+      "kind": "card",
+      "refersTo": "template-sheet",
+      "description": "A deck template on Home: its first two slides at 66px stacked on an 80 by 113 Page sheet; lifts 4px on hover while the edge turns Deck Text.",
+      "html": "<button class=\"ds-dt\"><span class=\"ds-dts\"><span class=\"ds-dtd\"><span class=\"ds-sl1\"><i></i><b></b></span><span class=\"ds-sl2\"><i></i><b></b></span></span></span><span class=\"ds-dtn\">Launch talk</span></button>",
+      "css": ":host{--deck:#F2C230;--accent:#F2C230;--on-accent:#111111;--accent-text:#8C6A00;--deck-text:#8C6A00;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-dt{display:flex;flex-direction:column;align-items:flex-start;gap:8px;border:0;background:none;padding:0;font-family:var(--font-sans);color:var(--ink);cursor:pointer;text-align:left} .ds-dts{position:relative;width:80px;height:113px;background:var(--page);border:1px solid var(--seam);transition:translate var(--t-med) var(--ease-out),border-color var(--t-med) var(--ease-out)} .ds-dt:hover .ds-dts,.ds-dt:focus-visible .ds-dts{translate:0 -4px;border-color:var(--deck-text)} .ds-dt:focus-visible{outline:none} .ds-dtd{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px} .ds-sl1,.ds-sl2{position:relative;width:66px;height:37px;background:#FFFFFF;outline:1px solid var(--seam-soft)} .ds-sl1 i,.ds-sl2 i{position:absolute;left:5px;top:6px;width:4px;height:1px;background:#F2C230} .ds-sl1 b,.ds-sl2 b{position:absolute;left:5px;top:10px;width:30px;height:3px;background:#111111} .ds-dtn{font-size:12px;font-weight:600;line-height:1.3}"
+    },
+    {
+      "name": "Formula Line and Function Suggestions",
+      "kind": "input",
+      "refersTo": "formula-line",
+      "description": "The 44px formula line: a 112px mono address box, a Muted function icon, the active cell contents in mono; while a formula is typed, a Seam-bordered list of mono function names with Muted descriptions, the selected name in accent text.",
+      "html": "<div class=\"ds-wrap\"><div class=\"ds-fl\"><input class=\"ds-addr\" value=\"C8\" aria-label=\"Cell address\" /><span class=\"ds-fx\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" width=\"17\" height=\"17\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\"/><path d=\"M9 17c2 0 2-2 2.5-5S13 7 15 7M9 11h5\"/></svg></span><div class=\"ds-field\"><input class=\"ds-formula\" value=\"=AV\" aria-label=\"Formula\" /><div class=\"ds-suggest\" role=\"listbox\"><button class=\"ds-si\" role=\"option\" aria-selected=\"true\"><span class=\"ds-sn\">AVERAGE</span><span class=\"ds-sdsc\">The mean of the numbers</span></button><button class=\"ds-si\" role=\"option\"><span class=\"ds-sn\">AVERAGEIF</span><span class=\"ds-sdsc\">The mean of the numbers that meet a condition</span></button><p class=\"ds-sf\">Tab to insert</p></div></div></div></div>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#2448D8;--on-accent:#FFFFFF;--accent-text:#2448D8;--accent-soft:color-mix(in srgb,#2448D8 14%,transparent);--saved:#0B7A6C;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--cell-line:#E6E6E3;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-wrap{width:640px;height:210px;font-family:var(--font-sans)} .ds-fl{display:flex;height:44px;border-bottom:1px solid var(--seam);background:var(--ground)} .ds-addr{flex:none;width:112px;padding:0 12px;border:0;border-right:1px solid var(--seam-soft);background:none;color:var(--ink);font-family:var(--font-mono);font-size:13px;font-weight:500} .ds-addr:focus{outline:2px solid var(--accent-text);outline-offset:-2px} .ds-fx{flex:none;width:40px;display:grid;place-items:center;color:var(--muted);border-right:1px solid var(--seam-soft)} .ds-field{position:relative;flex:1;display:flex;outline:2px solid var(--accent-text);outline-offset:-2px} .ds-formula{flex:1;min-width:0;padding:0 14px;border:0;background:none;color:var(--ink);font-family:var(--font-mono);font-size:14px;font-weight:500;caret-color:var(--accent);outline:none} .ds-suggest{position:absolute;top:calc(100% + 4px);left:0;min-width:340px;max-width:440px;display:flex;flex-direction:column;padding:6px;border:1px solid var(--seam);background:var(--ground);animation:ds-drop var(--t-fast) var(--ease-out)} @keyframes ds-drop{from{opacity:0;transform:translateY(-4px)}} .ds-si{display:grid;grid-template-columns:118px minmax(0,1fr);gap:10px;align-items:baseline;padding:7px 8px;border:0;background:none;text-align:left;cursor:pointer} .ds-si:hover,.ds-si[aria-selected=\"true\"]{background:var(--hover)} .ds-si:focus-visible{outline:2px solid var(--accent);outline-offset:2px} .ds-sn{font-family:var(--font-mono);font-size:13px;font-weight:500;color:var(--ink)} .ds-si[aria-selected=\"true\"] .ds-sn{color:var(--accent-text)} .ds-sdsc{font-size:12px;color:var(--muted)} .ds-sf{margin:4px 0 0;padding:6px 8px 2px;border-top:1px solid var(--seam-soft);font-size:11px;color:var(--muted)} @media (prefers-reduced-motion: reduce){.ds-suggest{animation:none}}"
+    },
+    {
+      "name": "Grid Selection",
+      "kind": "custom",
+      "refersTo": "grid-cell",
+      "description": "Cells signature: 30px rows on Cell Line rules, sticky Ground headers ruled by Seam; the selection is a 2px Cobalt Text frame over a 14% accent tint, a 9px fill handle, tinted headers in accent text; frame and handle glide at 120ms (hover the sample to see it).",
+      "html": "<div class=\"ds-grid\"><div class=\"ds-corner\"></div><div class=\"ds-ch\">A</div><div class=\"ds-ch\" data-on>B</div><div class=\"ds-ch\">C</div><div class=\"ds-rh\">1</div><div class=\"ds-c\">Video</div><div class=\"ds-c ds-r\">Views</div><div class=\"ds-c ds-r\">CTR</div><div class=\"ds-rh\" data-on>2</div><div class=\"ds-c\">Office suite</div><div class=\"ds-c ds-r\">184,210</div><div class=\"ds-c ds-r\">7.8%</div><div class=\"ds-rh\" data-on>3</div><div class=\"ds-c\">Thumbnails</div><div class=\"ds-c ds-r\">96,455</div><div class=\"ds-c ds-r\">6.1%</div><div class=\"ds-rh\">4</div><div class=\"ds-c\">Total</div><div class=\"ds-c ds-r\"><b>280,665</b></div><div class=\"ds-c\"></div><span class=\"ds-fill\"></span><span class=\"ds-box\"></span><span class=\"ds-handle\"></span></div>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#2448D8;--on-accent:#FFFFFF;--accent-text:#2448D8;--accent-soft:color-mix(in srgb,#2448D8 14%,transparent);--saved:#0B7A6C;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--cell-line:#E6E6E3;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-grid{position:relative;display:grid;grid-template-columns:52px 160px 112px 80px;grid-auto-rows:30px;background:var(--page);font-family:var(--font-sans);font-variant-numeric:tabular-nums;width:max-content} .ds-corner{background:var(--ground);border-right:1px solid var(--seam);border-bottom:1px solid var(--seam)} .ds-ch{display:grid;place-items:center;background:var(--ground);border-bottom:1px solid var(--seam);border-right:1px solid var(--seam-soft);font-size:12px;font-weight:500;color:var(--muted)} .ds-rh{display:flex;align-items:center;justify-content:flex-end;padding-right:10px;background:var(--ground);border-right:1px solid var(--seam);border-bottom:1px solid var(--seam-soft);font-size:12px;color:var(--muted)} .ds-ch[data-on],.ds-rh[data-on]{background:var(--accent-soft);color:var(--accent-text);font-weight:700} .ds-c{display:flex;align-items:center;padding:0 8px;border-right:1px solid var(--cell-line);border-bottom:1px solid var(--cell-line);font-size:14px;color:var(--ink);white-space:nowrap} .ds-r{justify-content:flex-end} .ds-fill{position:absolute;left:212px;top:90px;width:112px;height:30px;background:var(--accent-soft);pointer-events:none;transition:top 120ms var(--ease-out),height 120ms var(--ease-out)} .ds-box{position:absolute;left:212px;top:60px;width:112px;height:60px;border:2px solid var(--accent-text);pointer-events:none;transition:left 120ms var(--ease-out),top 120ms var(--ease-out),width 120ms var(--ease-out),height 120ms var(--ease-out)} .ds-handle{position:absolute;left:319px;top:115px;width:9px;height:9px;border:1.5px solid var(--page);background:var(--accent-text);cursor:crosshair;transition:left 120ms var(--ease-out),top 120ms var(--ease-out)} .ds-grid:hover .ds-box{top:30px;height:90px} .ds-grid:hover .ds-fill{top:60px;height:60px} @media (prefers-reduced-motion: reduce){.ds-box,.ds-handle,.ds-fill{transition:none}}"
+    },
+    {
+      "name": "Chart Frame",
+      "kind": "card",
+      "refersTo": "chart-frame",
+      "description": "A chart floating over the grid: flat Page plane with a Seam edge, a 40px head with the title, the mono source range and icon menus; square bars in the series order; selected, a 2px accent-text outline and a square resize handle.",
+      "html": "<figure class=\"ds-chart\" data-selected><div class=\"ds-head\"><span class=\"ds-ct\">Views by video</span><span class=\"ds-cs\">A1:C6</span><button class=\"ds-ib\" aria-label=\"Chart type\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" width=\"16\" height=\"16\"><path d=\"M3 3v18h18\"/><path d=\"M8 17v-5M13 17V8M18 17v-9\"/></svg></button><button class=\"ds-ib\" aria-label=\"Chart actions\"><svg viewBox=\"0 0 24 24\" fill=\"currentColor\" width=\"16\" height=\"16\"><circle cx=\"5\" cy=\"12\" r=\"1.6\"/><circle cx=\"12\" cy=\"12\" r=\"1.6\"/><circle cx=\"19\" cy=\"12\" r=\"1.6\"/></svg></button></div><div class=\"ds-plot\"><span class=\"ds-bar\" style=\"height:92%\"></span><span class=\"ds-bar\" style=\"height:48%\"></span><span class=\"ds-bar\" style=\"height:36%\"></span><span class=\"ds-bar\" style=\"height:29%\"></span><span class=\"ds-bar\" style=\"height:56%\"></span></div><span class=\"ds-resize\"></span></figure>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#2448D8;--on-accent:#FFFFFF;--accent-text:#2448D8;--accent-soft:color-mix(in srgb,#2448D8 14%,transparent);--saved:#0B7A6C;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--cell-line:#E6E6E3;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-chart{position:relative;margin:8px;width:360px;height:240px;display:flex;flex-direction:column;border:1px solid var(--seam);background:var(--page);font-family:var(--font-sans);color:var(--ink)} .ds-chart[data-selected]{outline:2px solid var(--accent-text);outline-offset:2px} .ds-head{flex:none;height:40px;display:flex;align-items:center;gap:6px;padding:0 4px 0 14px;border-bottom:1px solid var(--seam-soft);cursor:grab} .ds-ct{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:14px;font-weight:700} .ds-cs{font-family:var(--font-mono);font-size:11px;color:var(--muted)} .ds-ib{width:32px;height:32px;display:grid;place-items:center;border:1px solid transparent;background:none;color:var(--ink);cursor:pointer;transition:background-color var(--t-fast) var(--ease-out)} .ds-ib:hover{background:var(--hover)} .ds-ib:active{background:var(--pressed)} .ds-ib:focus-visible{outline:2px solid var(--accent);outline-offset:2px} .ds-plot{flex:1;display:flex;align-items:flex-end;gap:18px;padding:16px 20px 12px;border-bottom:1px solid var(--seam);margin:0 16px 12px 8px;background-image:linear-gradient(to top,var(--grid-line) 1px,transparent 1px);background-size:100% 25%} .ds-bar{flex:1;max-width:56px;background:var(--accent);border-radius:0} .ds-resize{position:absolute;right:-6px;bottom:-6px;width:12px;height:12px;border:1.5px solid var(--accent-text);background:var(--page);cursor:nwse-resize}"
+    },
+    {
+      "name": "Filter Button and Popover",
+      "kind": "custom",
+      "refersTo": "filter-popover",
+      "description": "A 21px square filter button in each filtered header cell (Cobalt fill when its column has a rule) opening a 280px Seam-bordered popover: column name, sort rows, search field, a checkbox list, outline Clear filter and primary Done.",
+      "html": "<div class=\"ds-fwrap\"><button class=\"ds-fb\" data-active aria-label=\"Filter Published\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" width=\"14\" height=\"14\"><path d=\"M3 4h18l-7 8v6l-4 2v-8z\"/></svg></button><div class=\"ds-pop\" role=\"dialog\" aria-label=\"Filter Published\"><p class=\"ds-pt\">Published</p><div class=\"ds-sort\"><button class=\"ds-b\">Sort A to Z</button><button class=\"ds-b\">Sort Z to A</button></div><label class=\"ds-search\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" width=\"15\" height=\"15\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m20 20-4-4\"/></svg><input placeholder=\"Search values\" /></label><div class=\"ds-list\"><label class=\"ds-row ds-all\"><input type=\"checkbox\" /> Select all</label><label class=\"ds-row\"><input type=\"checkbox\" checked /> Jul 2026</label><label class=\"ds-row\"><input type=\"checkbox\" /> Aug 2026</label></div><div class=\"ds-act\"><button class=\"ds-b ds-b-outline\">Clear filter</button><span class=\"ds-sp\"></span><button class=\"ds-b ds-b-primary\">Done</button></div></div></div>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#2448D8;--on-accent:#FFFFFF;--accent-text:#2448D8;--accent-soft:color-mix(in srgb,#2448D8 14%,transparent);--saved:#0B7A6C;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--cell-line:#E6E6E3;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-fwrap{display:flex;gap:16px;align-items:flex-start;font-family:var(--font-sans);color:var(--ink)} .ds-fb{width:21px;height:21px;display:grid;place-items:center;border:1px solid var(--seam-soft);background:var(--ground);color:var(--ink);cursor:pointer} .ds-fb:hover{border-color:var(--ink)} .ds-fb[data-active]{border-color:var(--accent);background:var(--accent);color:var(--on-accent)} .ds-fb:focus-visible{outline:2px solid var(--accent);outline-offset:2px} .ds-pop{width:280px;display:flex;flex-direction:column;gap:10px;padding:12px;border:1px solid var(--seam);background:var(--ground);animation:ds-drop var(--t-fast) var(--ease-out)} @keyframes ds-drop{from{opacity:0;transform:translateY(-4px)}} .ds-pt{margin:0;font-size:14px;font-weight:700} .ds-sort{display:flex;flex-direction:column} .ds-b{height:32px;padding:0 10px;display:inline-flex;align-items:center;gap:6px;border:1px solid transparent;background:none;color:var(--ink);font:inherit;font-size:13px;font-weight:500;cursor:pointer;transition:background-color var(--t-fast) var(--ease-out)} .ds-sort .ds-b{justify-content:flex-start} .ds-b:hover{background:var(--hover)} .ds-b:focus-visible{outline:2px solid var(--accent);outline-offset:2px} .ds-b-outline{border-color:var(--seam-soft)} .ds-b-primary{background:var(--ink);color:var(--ground);padding:0 14px;font-weight:600} .ds-b-primary:hover{background:var(--ink-2)} .ds-search{display:flex;align-items:center;gap:8px;height:34px;padding:0 10px;border:1px solid var(--seam-soft);color:var(--muted)} .ds-search:focus-within{border-color:var(--ink)} .ds-search input{flex:1;min-width:0;border:0;background:none;font:inherit;font-size:13px;color:var(--ink);outline:none} .ds-list{max-height:220px;overflow-y:auto;padding:4px 0;border:1px solid var(--seam-soft)} .ds-row{display:flex;align-items:center;gap:10px;padding:5px 10px;font-size:13px;cursor:pointer} .ds-row:hover{background:var(--hover)} .ds-row input{accent-color:var(--accent);width:15px;height:15px;margin:0} .ds-all{font-weight:600;border-bottom:1px solid var(--seam-soft)} .ds-act{display:flex;gap:8px} .ds-sp{flex:1} @media (prefers-reduced-motion: reduce){.ds-pop{animation:none}}"
+    },
+    {
+      "name": "Bubble Toolbar",
+      "kind": "custom",
+      "refersTo": "bubble-toolbar",
+      "description": "Ink-inverted contextual bar over a selection; active marks fill with the accent.",
+      "html": "<div class=\"ds-bubble\"><button class=\"ds-bb\" aria-pressed=\"true\" aria-label=\"Bold\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" width=\"16\" height=\"16\"><path d=\"M7 4h6a4 4 0 0 1 0 8H7z\"/><path d=\"M7 12h7a4 4 0 0 1 0 8H7z\"/></svg></button><button class=\"ds-bb\" aria-label=\"Italic\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" width=\"16\" height=\"16\"><path d=\"M14 4h-4M14 20h-4M15 4 9 20\"/></svg></button><span class=\"ds-gap\"></span><button class=\"ds-bb\" aria-label=\"Link\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" width=\"16\" height=\"16\"><path d=\"M10 14a4 4 0 0 0 6 0l3-3a4 4 0 0 0-6-6l-1 1\"/><path d=\"M14 10a4 4 0 0 0-6 0l-3 3a4 4 0 0 0 6 6l1-1\"/></svg></button></div>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#D63A22;--on-accent:#FFFFFF;--accent-text:#C2311A;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-bubble{display:inline-flex;align-items:center;padding:3px;background:var(--ink);color:var(--ground);border:1px solid var(--ink)} .ds-bb{width:34px;height:32px;display:grid;place-items:center;color:inherit;background:none;border:0;cursor:pointer} .ds-bb:hover{background:color-mix(in srgb,var(--ground) 16%,transparent)} .ds-bb[aria-pressed=\"true\"]{background:var(--accent);color:var(--on-accent)} .ds-bb:focus-visible{outline:2px solid var(--accent);outline-offset:2px;} .ds-gap{width:1px;height:18px;margin:0 8px;background:color-mix(in srgb,var(--ground) 35%,transparent)}"
+    },
+    {
+      "name": "App Field (Home)",
+      "kind": "card",
+      "refersTo": "app-field-prose",
+      "description": "Flat poster block of the app colour: square, no shadow, display-scale name, 1.5px on-colour buttons.",
+      "html": "<section class=\"ds-appfield\"><h2 class=\"ds-fname\">Prose</h2><p class=\"ds-role\">Documents. Opens and saves .docx, exports PDF.</p><div class=\"ds-actions\"><button class=\"ds-fbtn ds-fbtn--solid\">New document</button><button class=\"ds-fbtn\">Open</button></div></section>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#D63A22;--on-accent:#FFFFFF;--accent-text:#C2311A;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-appfield{width:460px;min-height:272px;display:flex;flex-direction:column;padding:26px 32px 28px;background:var(--prose);color:#FFFFFF;font-family:var(--font-sans)} .ds-fname{margin:0;font-size:92px;line-height:0.9;font-weight:800;letter-spacing:-0.04em} .ds-role{margin:auto 0 0;padding-top:24px;max-width:34ch;font-size:17px;line-height:1.45} .ds-actions{display:flex;gap:10px;margin-top:22px} .ds-fbtn{height:40px;display:inline-flex;align-items:center;padding:0 16px;border:1.5px solid #FFFFFF;background:none;color:#FFFFFF;font:inherit;font-size:14px;font-weight:600;cursor:pointer;transition:background-color var(--t-fast) var(--ease-out),color var(--t-fast) var(--ease-out)} .ds-fbtn:hover{background:rgb(0 0 0 / 0.16)} .ds-fbtn--solid{background:#FFFFFF;color:#A12A16} .ds-fbtn--solid:hover{background:#FFFFFF;color:#111111} .ds-fbtn:focus-visible{outline:2px solid #FFFFFF;outline-offset:2px}"
+    },
+    {
+      "name": "Crash Fallback",
+      "kind": "card",
+      "refersTo": "crash-panel",
+      "description": "Replaces only the crashed app's stage: a flat ground plane with an ink edge, 26px/750 heading, reassurance in Ink 2, then primary Reopen and outline Go to Home.",
+      "html": "<div class=\"ds-crash\" role=\"alert\"><h1 class=\"ds-ct\">Jotbook stopped working</h1><p class=\"ds-cx\">Everything already saved is safe on this computer. Reopening usually fixes it.</p><p class=\"ds-cd\">Cannot read properties of undefined</p><div class=\"ds-ca\"><button class=\"ds-b ds-b-primary\">Reopen Jotbook</button><button class=\"ds-b ds-b-outline\">Go to Home</button></div></div>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#0B7A6C;--on-accent:#FFFFFF;--accent-text:#0B7A6C;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-crash{max-width:520px;padding:32px;display:flex;flex-direction:column;gap:12px;border:1px solid var(--seam);background:var(--ground);font-family:var(--font-sans);font-size:14px;line-height:1.45;color:var(--ink)} .ds-ct{margin:0;font-size:26px;font-weight:750;letter-spacing:-0.02em} .ds-cx{margin:0;color:var(--ink-2)} .ds-cd{margin:0;font-size:12px;color:var(--muted)} .ds-ca{display:flex;gap:8px;padding-top:8px} .ds-b{height:32px;min-width:32px;padding:0 10px;display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid transparent;border-radius:0;background:none;color:var(--ink);font-family:var(--font-sans);font-size:13px;font-weight:500;white-space:nowrap;cursor:pointer;transition:background-color var(--t-fast) var(--ease-out),border-color var(--t-fast) var(--ease-out)} .ds-b:focus-visible{outline:2px solid var(--accent);outline-offset:2px;} .ds-b-primary{background:var(--ink);color:var(--ground);padding:0 14px;font-weight:600} .ds-b-primary:hover{background:var(--ink-2)} .ds-b-outline{border-color:var(--seam-soft)} .ds-b-outline:hover{background:var(--hover)}"
+    },
+    {
+      "name": "Continue Stage (Dashboard)",
+      "kind": "custom",
+      "refersTo": "stage-frame",
+      "description": "The last piece of work at a readable size: 42px/800 title, Muted meta with a field swatch, ink Continue button, a ruled Canvas frame with a 10px field band, and figures beneath.",
+      "html": "<section class=\"ds-stage\"><header class=\"ds-stage-head\"><div><h2 class=\"ds-stage-title\">Paperlight launch talk</h2><p class=\"ds-stage-meta\"><i class=\"ds-sw\"></i>Deck · 7 slides · edited just now</p></div><button class=\"ds-go\">Continue in Deck<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" width=\"16\" height=\"16\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></button></header><div class=\"ds-frame\"><div class=\"ds-preview\"><div class=\"ds-slide\"><i class=\"ds-bar\"></i><b>Paperlight</b></div><div class=\"ds-band\"><span style=\"flex-grow:45;background:var(--deck)\"></span><span style=\"flex-grow:90\"></span><span style=\"flex-grow:60\"></span><span style=\"flex-grow:90\"></span><span style=\"flex-grow:60\"></span></div></div></div><dl class=\"ds-figs\"><div><dt>Slides</dt><dd class=\"ds-fig\">07</dd></div><div><dt>Planned</dt><dd class=\"ds-fig\">5:30</dd></div><div><dt>Theme</dt><dd>Paper</dd></div></dl></section>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#D63A22;--on-accent:#FFFFFF;--accent-text:#C2311A;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-stage{width:640px;display:flex;flex-direction:column;gap:14px;font-family:var(--font-sans);color:var(--ink)} .ds-stage-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;padding-bottom:14px;border-bottom:1px solid var(--seam)} .ds-stage-title{margin:0;font-size:42px;line-height:0.96;font-weight:800;letter-spacing:-0.04em;text-wrap:balance} .ds-stage-meta{display:flex;align-items:center;gap:8px;margin:10px 0 0;font-size:12px;font-weight:500;color:var(--muted);font-variant-numeric:tabular-nums} .ds-sw{width:10px;height:10px;background:var(--deck)} .ds-go{height:32px;display:inline-flex;align-items:center;gap:6px;padding:0 14px;border:0;background:var(--ink);color:var(--ground);font:inherit;font-size:13px;font-weight:600;cursor:pointer;transition:background-color var(--t-fast) var(--ease-out)} .ds-go:hover{background:var(--ink-2)} .ds-go svg{transition:translate var(--t-fast) var(--ease-out)} .ds-go:hover svg{translate:3px 0} .ds-go:focus-visible{outline:2px solid var(--ink);outline-offset:2px} .ds-frame{position:relative;height:300px;overflow:hidden;border:1px solid var(--seam);background-color:var(--canvas);background-image:linear-gradient(to right,var(--grid-line) 1px,transparent 1px);background-size:72px 100%;background-position:10px 0} .ds-frame::before{content:'';position:absolute;inset:0 auto 0 0;width:10px;background:var(--deck);transition:background-color var(--t-med) var(--ease-out)} .ds-preview{position:absolute;inset:0 0 0 10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;animation:ds-in var(--t-med) var(--ease-out)} @keyframes ds-in{from{opacity:0}} .ds-slide{width:384px;height:216px;box-sizing:border-box;padding:56px 29px;background:var(--page);outline:1px solid var(--seam)} .ds-bar{display:block;width:19px;height:3px;margin-bottom:9px;background:var(--deck)} .ds-slide b{font-size:24px;font-weight:800;letter-spacing:-0.03em} .ds-band{display:flex;gap:2px;width:384px;height:10px} .ds-band span{flex-basis:0;min-width:6px;background:var(--numeral)} .ds-figs{display:flex;gap:28px;margin:0} .ds-figs div{display:flex;align-items:baseline;gap:8px} .ds-figs dt{font-size:12px;color:var(--muted)} .ds-figs dd{margin:0;font-size:13px;font-weight:600} .ds-figs dd.ds-fig{font-family:var(--font-mono);font-weight:500} @media (prefers-reduced-motion:reduce){.ds-preview{animation:none}.ds-frame::before,.ds-go svg{transition:none}}"
+    },
+    {
+      "name": "App Strip (Dashboard)",
+      "kind": "card",
+      "refersTo": "app-strip",
+      "description": "One of the three other apps beside the stage: a 112px field with a 22px/800 name, count and framed New, then up to three newest items; the staged item takes Hover and a 6px ink square.",
+      "html": "<section class=\"ds-strip\"><div class=\"ds-field\"><h2 class=\"ds-name\">Cells</h2><span class=\"ds-count\">2 workbooks</span><button class=\"ds-new\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" width=\"14\" height=\"14\"><path d=\"M12 5v14M5 12h14\"/></svg>New</button></div><ul class=\"ds-list\"><li><button class=\"ds-item\" aria-current=\"true\"><span class=\"ds-iname\">Channel budget 2026</span><span class=\"ds-idet\">16 rows · draft · 50 min ago</span></button></li><li><button class=\"ds-item\"><span class=\"ds-iname\">Invoice 0142</span><span class=\"ds-idet\">14 rows · draft · 4 d ago</span></button></li></ul></section>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#D63A22;--on-accent:#FFFFFF;--accent-text:#C2311A;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-strip{width:356px;display:grid;grid-template-columns:112px minmax(0,1fr);min-height:150px;background:var(--page);border:1px solid var(--seam-soft);font-family:var(--font-sans);color:var(--ink)} .ds-field{display:flex;flex-direction:column;gap:4px;padding:14px 12px 12px;background:var(--cells);color:#FFFFFF} .ds-name{margin:0;font-size:22px;line-height:1;font-weight:800;letter-spacing:-0.03em} .ds-count{font-size:12px;font-weight:500;font-variant-numeric:tabular-nums} .ds-new{margin-top:auto;align-self:flex-start;height:30px;display:inline-flex;align-items:center;gap:6px;padding:0 10px;border:1.5px solid currentColor;background:none;color:inherit;font:inherit;font-size:13px;font-weight:600;cursor:pointer;transition:background-color var(--t-fast) var(--ease-out)} .ds-new:hover{background:rgb(0 0 0 / 0.16)} .ds-new:focus-visible{outline:2px solid #FFFFFF;outline-offset:2px} .ds-list{list-style:none;margin:0;padding:4px 0;min-width:0} .ds-item{width:100%;display:flex;flex-direction:column;gap:2px;padding:7px 14px;border:0;background:none;color:inherit;font:inherit;text-align:left;cursor:pointer;transition:background-color var(--t-fast) var(--ease-out)} .ds-item:hover,.ds-item[aria-current=\"true\"]{background:var(--hover)} .ds-item:focus-visible{outline:2px solid var(--ink);outline-offset:2px} .ds-iname{font-size:14px;line-height:18px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap} .ds-item[aria-current=\"true\"] .ds-iname::after{content:'';display:inline-block;width:6px;height:6px;margin-left:8px;vertical-align:2px;background:var(--ink)} .ds-idet{font-size:12px;line-height:16px;color:var(--muted);font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "Also Recent Row (Dashboard)",
+      "kind": "custom",
+      "refersTo": "recent-row",
+      "description": "A row in the four-column Also recent list: 10px app swatch, name and detail, Soft Seam rule beneath; dwell puts it on the stage.",
+      "html": "<ul class=\"ds-more\"><li><button class=\"ds-row\"><i class=\"ds-sw\" style=\"background:var(--prose)\"></i><span class=\"ds-txt\"><span class=\"ds-iname\">Sponsor pitch</span><span class=\"ds-idet\">212 words · draft · 1 d ago</span></span></button></li><li><button class=\"ds-row\"><i class=\"ds-sw\" style=\"background:var(--jotbook)\"></i><span class=\"ds-txt\"><span class=\"ds-iname\">README notes</span><span class=\"ds-idet\">88 words · 2 d ago</span></span></button></li></ul>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#D63A22;--on-accent:#FFFFFF;--accent-text:#C2311A;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-more{list-style:none;margin:0;padding:4px 0 0;width:560px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px;font-family:var(--font-sans);color:var(--ink)} .ds-row{width:100%;display:flex;align-items:center;gap:12px;padding:10px 6px;border:0;border-bottom:1px solid var(--seam-soft);background:none;color:inherit;font:inherit;text-align:left;cursor:pointer;transition:background-color var(--t-fast) var(--ease-out)} .ds-row:hover{background:var(--hover)} .ds-row:focus-visible{outline:2px solid var(--ink);outline-offset:2px} .ds-sw{width:10px;height:10px;flex:none} .ds-txt{display:flex;flex-direction:column;gap:2px;min-width:0} .ds-iname{font-size:14px;line-height:18px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap} .ds-idet{font-size:12px;line-height:16px;color:var(--muted)}"
+    },
+    {
+      "name": "Dashboard Rail Switch",
+      "kind": "nav",
+      "refersTo": "rail-dashboard",
+      "description": "The switch under the suite mark on the Suite Ink rail, carrying an 8px swatch quartered into the four app fields.",
+      "html": "<nav class=\"ds-rail\"><div class=\"ds-mark\">P</div><button class=\"ds-rail-app\" aria-current=\"page\" aria-label=\"Dashboard\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" width=\"20\" height=\"20\"><rect x=\"3\" y=\"3\" width=\"7\" height=\"9\"/><rect x=\"14\" y=\"3\" width=\"7\" height=\"5\"/><rect x=\"14\" y=\"12\" width=\"7\" height=\"9\"/><rect x=\"3\" y=\"16\" width=\"7\" height=\"5\"/></svg><span class=\"ds-quad\"><i style=\"background:var(--prose)\"></i><i style=\"background:var(--jotbook)\"></i><i style=\"background:var(--cells)\"></i><i style=\"background:var(--deck)\"></i></span></button></nav>",
+      "css": ":host{--prose:#D63A22;--cells:#2448D8;--deck:#F2C230;--jotbook:#0B7A6C;--accent:#D63A22;--on-accent:#FFFFFF;--accent-text:#C2311A;--ground:#FFFFFF;--canvas:#FAFAF9;--page:#FFFFFF;--ink:#111111;--ink-2:#262626;--muted:#595959;--faint:#6E6E6E;--seam:#111111;--seam-soft:#E2E2E2;--grid-line:#EEEEEC;--numeral:#8F8F8C;--hover:#F2F2F0;--pressed:#E8E8E6;--danger:#B42318;--font-sans:\"Geist\",\"Segoe UI Variable\",system-ui,sans-serif;--font-mono:\"Geist Mono\",ui-monospace,\"Cascadia Mono\",monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--t-fast:160ms;--t-med:200ms} .ds-rail{width:64px;height:140px;display:flex;flex-direction:column;align-items:center;padding:10px 0 12px;background:#111111;color:#FFFFFF;border-right:1px solid var(--seam)} .ds-mark{width:36px;height:36px;display:grid;place-items:center;background:#FFFFFF;color:#111111;font-family:var(--font-sans);font-size:20px;font-weight:800;letter-spacing:-0.04em;margin-bottom:26px} .ds-rail-app{position:relative;width:44px;height:44px;display:grid;place-items:center;color:inherit;background:none;border:0;cursor:pointer;transition:background-color var(--t-fast) var(--ease-out)} .ds-rail-app:hover{background:rgb(255 255 255 / 0.1)} .ds-rail-app[aria-current=\"page\"]{background:rgb(255 255 255 / 0.18)} .ds-rail-app:focus-visible{outline:2px solid #FFFFFF;outline-offset:-3px} .ds-quad{position:absolute;right:5px;bottom:5px;display:grid;grid-template-columns:4px 4px;grid-template-rows:4px 4px;outline:1px solid rgb(255 255 255 / 0.85)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Gridded Broadsheet",
+    "overview": "Paperlight is International Typographic Style applied to an office suite. Every screen sits on a visible modular grid; structure is carried by scale (oversized numerals and grotesk headlines), by 1px ink hairlines, and by flat full-height colour fields that tell you which app you are in. There is no icon ribbon, no white page floating on a grey shadowed void, no rounded card. The page is a 794px A4 sheet with a 1px ink edge, set on a canvas ruled every 72px.\n\nThe density is that of a calm working tool: a 64px colour rail, a 56px command bar, a 264px outline column and a 32px status bar frame the document, and almost everything else hides in selection, \"/\" and Ctrl K. Colour is rare and loud: one app field per app, the accent repeated only where it means \"you are here\" or \"this needs you\". Everything else is white ground (or graphite in dark) and #111 ink. Screens must survive a compressed screen recording on a phone, which is why outline numerals, field colours and stamp text all clear legibility floors rather than sitting at whisper contrast.\n\nMotion is one axis, short and exponential: things drop 4px into place or rise 6px, never bounce, never scale.",
+    "keyCharacteristics": [
+      "Visible grid: 72px column rules on the editor canvas, 12 columns with 24px gutters on Home and the Dashboard, drawn on both edges of each column; in Cells the spreadsheet's own 30px cell rules are the grid.",
+      "Square everything (0px radius) and 1px ink hairlines in place of shadows.",
+      "One flat colour field per app (Prose vermilion, Cells cobalt, Deck sun, Jotbook viridian), full height in the rail.",
+      "Geist grotesk at extreme scale contrast: 96px/800 display against 13px/500 labels.",
+      "Ordered work is numbered: Prose sections, Jotbook pages, Cells sheets and Deck slides carry 42px/800 numerals with their length beside them (a 4px bar in the outline and strips, the block's own width in the Deck timeline), and the current one turns to the app's accent text.",
+      "Document state is stamped in mono, always visible, never a toast.",
+      "Light and graphite dark themes share the same fields; print and PDF are always light."
+    ],
+    "rules": [
+      {
+        "name": "The One Field Per App Rule",
+        "body": "Each app owns exactly one flat colour field and it fills the full-height rail. The current app's field is the accent; Home's and the Dashboard's accent is Suite Ink. Field colours are never gradients, tints or decoration.",
+        "section": "colors"
+      },
+      {
+        "name": "The Text-Weight Accent Rule",
+        "body": "A field colour used as text, or as a thin line that must read like text, switches to its app's text variant, the accent-text role: Vermilion Text (#C2311A light, #F26B54 dark) in Prose, Viridian Text (#0B7A6C light, #3FBFA9 dark) in Jotbook, Cobalt Text (#2448D8 light, #7D97FF dark) in Cells, Deck Text (#8C6A00 light, #F2C230 dark) in Deck. The current numeral in the Prose outline, the Jotbook page strip, the Cells sheet strip and the Deck timeline and sorter always takes the text variant, never the field colour, and so do the Cells selection frame, fill handle, editor frame and copy marquee and the Deck insertion marks and template hover edge. Sun shows itself only as a fill (the chip, the current-block tint, the band); its text variant carries everything thin. Any new field colour must clear 4.5:1 against its on-colour before it ships, and any new app defines its text variant alongside it; Deck takes #111 ink, the others white.",
+        "section": "colors"
+      },
+      {
+        "name": "The Slides Are Content Rule",
+        "body": "Slide themes are the deck's own palette, not chrome: they do not follow the light or graphite UI theme, and a slide looks the same on the canvas, in the sorter, when presenting and in .pptx and PDF. Inside a slide, type set in the accent resolves to the theme's accent text, and only the theme's colours or a fixed colour the user picked paint the slide.",
+        "section": "colors"
+      },
+      {
+        "name": "The Mono Is For Figures Rule",
+        "body": "Geist Mono sets numbers, keys, dates and the state stamp; in Cells the machine text a formula is made of: the cell address, the formula line, function names and signatures in suggestions, and chart range labels; in Deck the standalone times and counts: timeline and sorter times, the timeline total, the planned-time field, the figure in \"Use 0:12\", the text size value, the slide footer count and the presenting HUD figures. Times that sit inside a worded line (the Deck status bar, the notes footer, presenter-view labels) stay Geist with tabular figures, and numerals and the presenter clock are Geist 800. Cell text, the in-cell editor, function descriptions, header letters and every worded label, heading, message or button are Geist.",
+        "section": "typography"
+      },
+      {
+        "name": "The Numbered Work Rule",
+        "body": "Ordered work carries one numeral: two digits at 42px/800, 0.84 line height, -0.04em, tabular, in Numeral Grey. Prose sections in the outline, Jotbook pages and Cells sheets in the strip, and Deck slides in the timeline and sorter all use it, and the current one turns to the app's text variant (Vermilion Text, Viridian Text, Cobalt Text, Deck Text), never the field colour, changing at 200ms. Length sits beside the numeral and is measured, never decorative: a 4px bar in the outline and strips, the block's own width in the timeline.",
+        "section": "typography"
+      },
+      {
+        "name": "The Scale Carries Structure Rule",
+        "body": "Hierarchy comes from size and weight jumps (96 to 42 to 13), not from colour, boxes or icons. Uppercase tracked text is reserved for state (stamp, field status) and command-palette group headings; it never sits above a heading as a label.",
+        "section": "typography"
+      },
+      {
+        "name": "The Hairlines Instead Of Shadows Rule",
+        "body": "A floating layer is a flat ground plane with a 1px ink border. If it needs more separation, invert it to ink; never add a shadow or blur.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do draw the grid: 72px column rules on work canvases, 12 columns with 24px gutters on overview screens, lines on both column edges.",
+      "Do give every new app (Cells, Deck, Jotbook) its own field colour in the rail and reuse every other token unchanged.",
+      "Do check every field colour against its on-colour at 4.5:1 or better, and use the app's text variant for accent text: #C2311A / #F26B54 in Prose, #0B7A6C / #3FBFA9 in Jotbook, #2448D8 / #7D97FF in Cells, #8C6A00 / #F2C230 in Deck.",
+      "Do set the current numeral in the outline, the strips, the timeline and the sorter in accent text, and keep inactive numerals at Numeral Grey (#8F8F8C light, #6A6A6A dark) or darker so they read at 3:1 after compression.",
+      "Do keep exactly one filled ink control per command bar, and keep every command reachable from Ctrl K when the bar sheds controls.",
+      "Do stamp document state (Saved, Unsaved, Exported, with time) in the mono stamp, always visible; autosaving apps seed the time from the last edit.",
+      "Do route every delete that can't be undone (Jotbook pages, sections and notebooks; Cells sheets) through a confirm dialog: Cancel first and focused, a spacer, the danger text button last; deletes that Ctrl Z restores at once (Cells rows, columns, charts, cell contents) run straight away with no ellipsis.",
+      "Do move on one axis at 160 or 200ms with cubic-bezier(0.16, 1, 0.3, 1), and drop all motion under reduced motion (the grid glide, the copy marquee, chart grow-in, the object tools' rise, the timeline resize, the sorter fade, the presenting cross-fade and cursor, and the Dashboard's stage fade, band colour and arrow nudge included); the grid's selection frame and fill handle are the one faster step, gliding at 120ms on the same curve.",
+      "Do set every figure in the grid, the status bar, the strips, the timeline and on slides with tabular numerals.",
+      "Do render print and PDF in light tokens on A4 with 25.4mm margins, whatever the theme; Deck prints one slide per 1280 by 720 page in its slide theme.",
+      "Do size Deck's timeline blocks and presenting segments by planned seconds, so the shape of the talk is visible while it is built and while it is given.",
+      "Do dim every top-level block except the current one to 0.2 opacity in Focus mode.",
+      "Do keep the Dashboard's app strips on the latest work, not on the stage: pointing at an item changes only the stage, so nothing moves under the pointer."
+    ],
+    "donts": [
+      "Don't add drop shadows, blur or glows to any layer; use a 1px ink border or ink inversion.",
+      "Don't round corners on any element, chart bars and tooltips included.",
+      "Don't use field colours as gradients, tints behind text, or decoration outside rails, fields, selection, selected items, search marks and the 10px identity swatches and bands that say which app a piece of work belongs to; current numerals use the text variant, not the field. Deck's 18% Sun tint marks only the current timeline block.",
+      "Don't set worded labels in Geist Mono.",
+      "Don't place uppercase tracked labels above headings.",
+      "Don't put Delete or Discard next to a commit action without space between them.",
+      "Don't fill a destructive button or menu item with Danger; danger is text weight only.",
+      "Don't let the UI theme or chrome tokens repaint a slide; slides keep their deck theme everywhere, exports included."
+    ]
+  }
+}

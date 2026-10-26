@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Deck · Timeline</title>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;800&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1440px;height:900px;overflow:hidden}
+body{display:grid;grid-template-columns:64px 1fr;font-family:Geist,sans-serif;color:#111;background:#fff}
+.rail{background:#F2C230;display:flex;flex-direction:column;align-items:center;gap:8px;padding:10px 0}
+.mark{width:36px;height:36px;background:#111;color:#fff;font-weight:800;font-size:20px;display:grid;place-items:center;margin-bottom:18px}
+.sw{width:44px;height:44px;display:grid;place-items:center}.sw i{width:20px;height:20px;border:2px solid #111;display:block}
+.sw.on{background:rgba(0,0,0,.14)}
+.stage{display:grid;grid-template-rows:56px 1fr 176px 32px;min-width:0}
+.bar{display:flex;align-items:center;gap:6px;padding:0 164px 0 16px;border-bottom:1px solid #111}
+.crumb{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;margin-right:14px}
+.crumb b{color:#8C6A00}.crumb span{color:#6E6E6E;font-weight:400}
+.t{height:32px;min-width:32px;padding:0 8px;display:grid;place-items:center;font-size:13px;font-weight:500}
+.sep{width:1px;height:22px;background:#E2E2E2;margin:0 6px}
+.end{margin-left:auto;display:flex;gap:10px;align-items:center}
+.pill{height:34px;width:90px;border:1px solid #E2E2E2}
+.stamp{height:26px;padding:0 8px;border:1.5px solid #0B7A6C;color:#0B7A6C;font:500 11px 'Geist Mono',monospace;letter-spacing:.06em;display:grid;place-items:center}
+.ghost{height:32px;padding:0 12px;border:1px solid #E2E2E2;font-size:13px;font-weight:600;display:grid;place-items:center}
+.primary{height:32px;padding:0 14px;background:#111;color:#fff;font-size:13px;font-weight:600;display:grid;place-items:center}
+.work{display:grid;grid-template-columns:1fr 320px;min-height:0}
+.canvas{background:#FAFAF9;background-image:linear-gradient(to right,#EEEEEC 1px,transparent 1px);background-size:72px 100%;display:grid;place-items:center}
+.slide{width:832px;height:468px;background:#fff;border:1px solid #111;padding:56px 64px;display:flex;flex-direction:column;position:relative}
+.slide .k{width:56px;height:8px;background:#F2C230;margin-bottom:28px}
+.slide h1{font-size:54px;font-weight:800;letter-spacing:-.03em;line-height:1.02;max-width:620px}
+.slide p{margin-top:22px;font-size:22px;line-height:1.4;color:#262626;max-width:560px}
+.slide .foot{margin-top:auto;display:flex;justify-content:space-between;font:500 12px 'Geist Mono',monospace;color:#595959}
+.notes{border-left:1px solid #111;padding:22px 20px;display:flex;flex-direction:column;gap:12px}
+.notes h3{font-size:13px;font-weight:600;padding-bottom:12px;border-bottom:1px solid #111;display:flex;justify-content:space-between}
+.notes h3 small{font:500 12px 'Geist Mono',monospace;color:#595959}
+.notes p{font-size:15px;line-height:1.55;color:#262626}
+.time{border-top:1px solid #111;padding:16px 20px 18px;display:flex;flex-direction:column;gap:12px}
+.th{display:flex;justify-content:space-between;align-items:baseline;font-size:13px;font-weight:600}
+.th small{font:500 12px 'Geist Mono',monospace;color:#595959}
+.track{display:flex;gap:4px;height:104px}
+.blk{border:1px solid #E2E2E2;padding:8px 10px;display:flex;flex-direction:column;justify-content:space-between;min-width:0}
+.blk .n{font-size:42px;line-height:.84;font-weight:800;letter-spacing:-.04em;color:#8F8F8C}
+.blk b{font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.blk small{font:500 11px 'Geist Mono',monospace;color:#595959}
+.blk.on{border:2px solid #111;background:#FFF8DC}.blk.on .n{color:#8C6A00}
+.add{width:64px;border:1px dashed #BDBDBD;display:grid;place-items:center;font-size:22px;color:#595959}
+.status{border-top:1px solid #111;display:flex;gap:22px;align-items:center;padding:0 12px;font-size:12px;color:#595959}
+</style></head><body>
+<nav class="rail"><div class="mark">P</div><div class="sw"><i></i></div><div class="sw"><i></i></div><div class="sw on"><i></i></div><div class="sw"><i></i></div></nav>
+<div class="stage">
+<header class="bar">
+  <div class="crumb"><b>Deck</b><span>/</span>Paperlight launch talk</div>
+  <div class="t">Layout ▾</div><div class="t">Theme ▾</div><span class="sep"></span>
+  <div class="t">T Text</div><div class="t">□ Shape</div><div class="t">▣ Image</div><span class="sep"></span>
+  <div class="t">Sorter</div>
+  <div class="end"><div class="pill"></div><div class="stamp">SAVED 21:04</div><div class="ghost">Present</div><div class="primary">Save</div></div>
+</header>
+<div class="work">
+  <main class="canvas"><section class="slide">
+    <div class="k"></div>
+    <h1>Four apps, one quiet desk</h1>
+    <p>Prose, Cells, Deck and Jotbook, built from scratch and kept on this computer.</p>
+    <div class="foot"><span>Paperlight launch talk</span><span>03 / 07</span></div>
+  </section></main>
+  <aside class="notes">
+    <h3>Speaker notes <small>0:45 planned</small></h3>
+    <p>Name each app and the job it replaces. Point at the colour of each rail; that colour follows you into the app.</p>
+    <p>Then say the one rule: nothing leaves the computer.</p>
+  </aside>
+</div>
+<section class="time">
+  <div class="th">Talk timeline <small>7 slides · 5:30 planned</small></div>
+  <div class="track">
+    <div class="blk" style="flex:30"><span class="n">01</span><div><b>Title</b><small>0:30</small></div></div>
+    <div class="blk" style="flex:60"><span class="n">02</span><div><b>Why build an office suite</b><small>1:00</small></div></div>
+    <div class="blk on" style="flex:45"><span class="n">03</span><div><b>Four apps, one quiet desk</b><small>0:45</small></div></div>
+    <div class="blk" style="flex:60"><span class="n">04</span><div><b>The Swiss Grid design</b><small>1:00</small></div></div>
+    <div class="blk" style="flex:45"><span class="n">05</span><div><b>Files stay local</b><small>0:45</small></div></div>
+    <div class="blk" style="flex:60"><span class="n">06</span><div><b>Live demo</b><small>1:00</small></div></div>
+    <div class="blk" style="flex:30"><span class="n">07</span><div><b>Thanks</b><small>0:30</small></div></div>
+    <div class="add">+</div>
+  </div>
+</section>
+<footer class="status"><span>Slide 3 of 7</span><span>16:9</span><span>Theme: Paper</span></footer>
+</div>
+</body></html>

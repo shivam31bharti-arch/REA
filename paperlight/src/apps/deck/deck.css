@@ -1,0 +1,917 @@
+.pl-deck {
+  display: grid;
+  grid-template-rows: var(--bar-h) minmax(0, 1fr) var(--status-h);
+  height: 100%;
+  min-width: 0;
+}
+
+.pl-deck--loading {
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+}
+
+/* The bar swaps slide tools for the selected object's tools. */
+.pl-deck-tools {
+  animation: pl-tools-in var(--t-fast) var(--ease-out);
+}
+
+@keyframes pl-tools-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}
+
+@container cmdbar (max-width: 1240px) {
+  .pl-deck .pl-tool-btn:not(.pl-tool-btn--menu) .pl-btn-label {
+    display: none;
+  }
+
+  .pl-deck .pl-tool-btn:not(.pl-tool-btn--menu) {
+    width: 32px;
+    padding: 0;
+  }
+}
+
+/* The deck name keeps its room; the bar has space for it at 1100. */
+@container cmdbar (max-width: 1040px) {
+  .pl-deck .pl-picker {
+    max-width: 180px;
+  }
+}
+
+@container cmdbar (max-width: 1180px) {
+  .pl-deck .pl-export-btn .pl-btn-label {
+    display: none;
+  }
+
+  .pl-deck .pl-export-btn {
+    width: 32px;
+    padding: 0;
+  }
+}
+
+.pl-object-chip {
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 6px;
+  padding: 0 6px 0 9px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.pl-object-chip svg {
+  width: 14px;
+  height: 14px;
+}
+
+.pl-size-btn {
+  width: 68px;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+}
+
+.pl-theme-chip {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid;
+  background-image: linear-gradient(to top, currentColor 5px, transparent 5px);
+}
+
+/* Main area: slide and notes above, the timeline under them. */
+.pl-deck-main {
+  position: relative;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) 176px;
+  min-height: 0;
+}
+
+.pl-deck-work {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  min-height: 0;
+}
+
+.pl-deck-canvas {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  outline: none;
+  background-color: var(--canvas);
+  background-image: linear-gradient(to right, var(--grid-line) 1px, transparent 1px);
+  background-size: 72px 100%;
+}
+
+.pl-deck-stage {
+  position: relative;
+  outline: 1px solid var(--seam);
+}
+
+/* A slide: drawn at 1280 × 720 and scaled. */
+.pl-slide-frame {
+  position: relative;
+  overflow: hidden;
+}
+
+.pl-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1280px;
+  height: 720px;
+  overflow: hidden;
+  transform-origin: 0 0;
+  font-family: var(--font-sans);
+  font-variant-numeric: tabular-nums;
+}
+
+.pl-slide-deco,
+.pl-slide-shape,
+.pl-slide-picture,
+.pl-slide-text {
+  position: absolute;
+}
+
+.pl-slide-shape {
+  overflow: visible;
+}
+
+.pl-slide-picture {
+  display: block;
+}
+
+.pl-slide-picture.is-empty {
+  display: grid;
+  place-items: center;
+  border: 3px dashed;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.pl-slide-text {
+  overflow-wrap: break-word;
+}
+
+.pl-slide-text p {
+  margin: 0;
+}
+
+.pl-slide-text ul {
+  margin: 0;
+  padding-left: 1.1em;
+  list-style: square;
+}
+
+.pl-slide-text li::marker {
+  color: var(--marker);
+}
+
+.pl-slide-text li + li {
+  margin-top: 0.4em;
+}
+
+.pl-slide-text strong {
+  font-weight: 800;
+}
+
+.pl-slide-foot {
+  position: absolute;
+  left: 96px;
+  right: 96px;
+  bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.pl-slide-foot span:last-child {
+  font-family: var(--font-mono);
+}
+
+/* Editing layer: hit areas, handles and guides drawn over the slide at its scale.
+   Their colours come from the slide theme, not the UI theme, so they read on every slide. */
+.pl-deck-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1280px;
+  height: 720px;
+  transform-origin: 0 0;
+}
+
+.pl-deck-hit {
+  position: absolute;
+  cursor: move;
+}
+
+.pl-deck-hit:hover {
+  outline: calc(1px * var(--inv)) dashed var(--hover);
+}
+
+.pl-deck-hit[data-selected] {
+  outline: calc(2px * var(--inv)) solid var(--sel);
+  outline-offset: calc(3px * var(--inv));
+}
+
+.pl-deck-hit[data-editing] {
+  pointer-events: none;
+}
+
+.pl-deck-grip {
+  position: absolute;
+  pointer-events: auto;
+  cursor: move;
+}
+
+.pl-deck-grip--n,
+.pl-deck-grip--s {
+  left: 0;
+  right: 0;
+  height: calc(10px * var(--inv));
+}
+
+.pl-deck-grip--n {
+  top: calc(-10px * var(--inv));
+}
+
+.pl-deck-grip--s {
+  bottom: calc(-10px * var(--inv));
+}
+
+.pl-deck-grip--e,
+.pl-deck-grip--w {
+  top: 0;
+  bottom: 0;
+  width: calc(10px * var(--inv));
+}
+
+.pl-deck-grip--e {
+  right: calc(-10px * var(--inv));
+}
+
+.pl-deck-grip--w {
+  left: calc(-10px * var(--inv));
+}
+
+.pl-deck-handle {
+  position: absolute;
+  z-index: 3;
+  width: calc(11px * var(--inv));
+  height: calc(11px * var(--inv));
+  margin: calc(-5.5px * var(--inv)) 0 0 calc(-5.5px * var(--inv));
+  border: calc(1.5px * var(--inv)) solid var(--sel);
+  background: var(--handle-fill);
+}
+
+.pl-deck-handle--nw,
+.pl-deck-handle--se {
+  cursor: nwse-resize;
+}
+
+.pl-deck-handle--ne,
+.pl-deck-handle--sw {
+  cursor: nesw-resize;
+}
+
+.pl-deck-handle--n,
+.pl-deck-handle--s {
+  cursor: ns-resize;
+}
+
+.pl-deck-handle--e,
+.pl-deck-handle--w {
+  cursor: ew-resize;
+}
+
+.pl-deck-guide {
+  position: absolute;
+  z-index: 4;
+  background: var(--guide);
+  pointer-events: none;
+}
+
+.pl-deck-guide--x {
+  top: 0;
+  bottom: 0;
+  width: calc(1px * var(--inv));
+}
+
+.pl-deck-guide--y {
+  left: 0;
+  right: 0;
+  height: calc(1px * var(--inv));
+}
+
+.pl-deck-grid span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: calc(1px * var(--inv));
+  background: color-mix(in srgb, var(--guide) 40%, transparent);
+  pointer-events: none;
+}
+
+.pl-slide-text--editing {
+  z-index: 2;
+  cursor: text;
+}
+
+.pl-slide-editor {
+  outline: none;
+  min-height: inherit;
+}
+
+.pl-slide-editor p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  color: var(--placeholder);
+  pointer-events: none;
+}
+
+/* Speaker notes. */
+.pl-notes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0;
+  padding: 20px 20px 14px;
+  border-left: 1px solid var(--seam);
+  background: var(--ground);
+}
+
+.pl-notes-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--seam);
+}
+
+.pl-notes-head h2 {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pl-notes-time {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--seam-soft);
+}
+
+.pl-notes-time input {
+  width: 54px;
+  height: 30px;
+  border: 0;
+  background: none;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.pl-notes-time input:focus {
+  outline: 2px solid var(--accent-text);
+  outline-offset: -2px;
+}
+
+.pl-notes-time input[aria-invalid='true'] {
+  outline: 2px solid var(--danger);
+  outline-offset: -2px;
+}
+
+.pl-notes-time .pl-btn {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+}
+
+.pl-notes-text {
+  flex: 1;
+  min-height: 0;
+  resize: none;
+  border: 0;
+  background: none;
+  color: var(--ink-2);
+  font-size: 15px;
+  line-height: 1.6;
+  caret-color: var(--accent-text);
+}
+
+.pl-notes-text::placeholder {
+  color: var(--faint);
+}
+
+.pl-notes-text:focus {
+  outline: none;
+}
+
+.pl-notes-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  min-height: 28px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.pl-notes-use {
+  height: 26px;
+  font-size: 12px;
+}
+
+.pl-notes-use .pl-fig,
+.pl-present-hud .pl-fig {
+  font-family: var(--font-mono);
+}
+
+.pl-notes-plan {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* The talk timeline. */
+.pl-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+  padding: 14px 20px 16px;
+  border-top: 1px solid var(--seam);
+  background: var(--ground);
+}
+
+.pl-tl-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.pl-tl-head h2 {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pl-tl-total {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.pl-tl-track {
+  display: flex;
+  gap: 4px;
+  height: 104px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.pl-tl-slot {
+  position: relative;
+  display: flex;
+  flex-basis: 0;
+  min-width: 72px;
+  transition: flex-grow var(--t-med) var(--ease-out);
+}
+
+.pl-tl-slot[data-insert]::before,
+.pl-tl-slot[data-insert-end]::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 3px;
+  background: var(--accent-text);
+}
+
+.pl-tl-slot[data-insert]::before {
+  left: -4px;
+}
+
+.pl-tl-slot[data-insert-end]::after {
+  right: -4px;
+}
+
+.pl-tl-block {
+  container-type: inline-size;
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 9px 10px 8px;
+  border: 1px solid var(--seam-soft);
+  background: var(--page);
+  color: var(--ink);
+  text-align: left;
+  cursor: grab;
+  touch-action: none;
+  transition: border-color var(--t-fast) var(--ease-out), background-color var(--t-fast) var(--ease-out);
+}
+
+.pl-tl-block:hover {
+  border-color: var(--ink);
+}
+
+.pl-tl-block[aria-current='step'] {
+  border: 2px solid var(--ink);
+  padding: 8px 9px 7px;
+  background: color-mix(in srgb, var(--deck) 18%, var(--page));
+}
+
+.pl-tl-block[data-dragging] {
+  opacity: 0.4;
+  cursor: grabbing;
+}
+
+.pl-tl-num {
+  font-size: 42px;
+  line-height: 0.84;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
+  color: var(--numeral);
+  transition: color var(--t-med) var(--ease-out);
+}
+
+.pl-tl-block[aria-current='step'] .pl-tl-num {
+  color: var(--accent-text);
+}
+
+.pl-tl-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.pl-tl-title {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pl-tl-time {
+  flex: none;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* On short slides the time moves under the numeral rather than beside it. */
+@container (max-width: 108px) {
+  .pl-tl-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
+
+.pl-tl-add-slot {
+  display: flex;
+}
+
+.pl-tl-add {
+  width: 64px;
+  display: grid;
+  place-items: center;
+  border: 1px dashed var(--faint);
+  color: var(--muted);
+}
+
+.pl-tl-add:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.pl-tl-add svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Slide sorter. */
+.pl-sorter {
+  position: absolute;
+  inset: 0;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  overflow: auto;
+  padding: 22px 32px 32px;
+  background-color: var(--canvas);
+  background-image: linear-gradient(to right, var(--grid-line) 1px, transparent 1px);
+  background-size: 72px 100%;
+  animation: pl-fade var(--t-fast) var(--ease-out);
+}
+
+.pl-sorter-head {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--seam);
+}
+
+.pl-sorter-head h2 {
+  font-size: 19px;
+  font-weight: 650;
+}
+
+.pl-sorter-hint {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.pl-sorter-head .pl-btn {
+  margin-left: auto;
+  align-self: center;
+}
+
+.pl-sorter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 232px);
+  gap: 28px 26px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pl-sorter-grid li {
+  position: relative;
+}
+
+.pl-sorter-grid li[data-insert]::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -15px;
+  width: 3px;
+  height: 131px;
+  background: var(--accent-text);
+}
+
+.pl-sorter-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  color: var(--ink);
+  cursor: grab;
+  touch-action: none;
+}
+
+.pl-sorter-card .pl-slide-frame {
+  outline: 1px solid var(--seam-soft);
+  transition: outline-color var(--t-fast) var(--ease-out);
+}
+
+.pl-sorter-card:hover .pl-slide-frame {
+  outline-color: var(--ink);
+}
+
+.pl-sorter-card[aria-current='true'] .pl-slide-frame {
+  outline: 3px solid var(--accent-text);
+  outline-offset: 3px;
+}
+
+.pl-sorter-card[data-dragging] {
+  opacity: 0.4;
+}
+
+.pl-sorter-meta {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 10px;
+}
+
+.pl-sorter-num {
+  font-size: 42px;
+  line-height: 0.84;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
+  color: var(--numeral);
+}
+
+.pl-sorter-card[aria-current='true'] .pl-sorter-num {
+  color: var(--accent-text);
+}
+
+.pl-sorter-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pl-sorter-time {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* Presenting. */
+.pl-present {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  background: #000000;
+  color: #EDEDED;
+  outline: none;
+  cursor: none;
+}
+
+.pl-present[data-awake] {
+  cursor: default;
+}
+
+.pl-present-stage {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  min-height: 0;
+}
+
+.pl-present[data-view='presenter'] .pl-present-stage {
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 40px 40px 56px;
+}
+
+.pl-present-slide {
+  animation: pl-present-in var(--t-med) var(--ease-out);
+}
+
+@keyframes pl-present-in {
+  from {
+    opacity: 0;
+  }
+}
+
+.pl-present-side {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.pl-present-clock {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #3A3A3A;
+  font-size: 14px;
+  color: #A6A6A6;
+}
+
+.pl-present-big {
+  font-size: 64px;
+  line-height: 0.9;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
+  color: #FFFFFF;
+}
+
+.pl-present-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #A6A6A6;
+}
+
+.pl-present-notes {
+  font-size: 22px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  color: #FFFFFF;
+}
+
+.pl-present-band {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 10px;
+  display: flex;
+  gap: 2px;
+}
+
+.pl-present-band span {
+  flex-basis: 0;
+  background: #333333;
+}
+
+.pl-present-band span[data-state='past'] {
+  background: #8F8F8C;
+}
+
+.pl-present-band span[data-state='now'] {
+  background: var(--deck);
+}
+
+.pl-present-band i {
+  position: absolute;
+  top: -4px;
+  bottom: 0;
+  width: 4px;
+  margin-left: -2px;
+  border-left: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+  background: #111111;
+  transition: left 500ms linear;
+}
+
+.pl-present-hud {
+  position: absolute;
+  right: 22px;
+  bottom: 18px;
+  display: flex;
+  gap: 20px;
+  padding: 6px 10px;
+  background: #111111;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: #EDEDED;
+  opacity: 0;
+  transition: opacity var(--t-med) var(--ease-out);
+}
+
+.pl-present[data-awake] .pl-present-hud {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pl-present-slide,
+  .pl-deck-tools,
+  .pl-sorter {
+    animation: none;
+  }
+
+  .pl-tl-slot,
+  .pl-present-band i {
+    transition: none;
+  }
+}
+
+/* PDF export: one slide per 16:9 page, nothing else. The page size is set while exporting. */
+.pl-deck-print {
+  display: none;
+}
+
+@media print {
+  :root.pl-printing-deck #root,
+  :root.pl-printing-deck .pl-toasts {
+    display: none !important;
+  }
+
+  :root.pl-printing-deck .pl-deck-print {
+    display: block;
+  }
+
+  .pl-deck-print-page {
+    width: 1280px;
+    height: 720px;
+    overflow: hidden;
+    break-after: page;
+  }
+
+  .pl-deck-print-page:last-child {
+    break-after: auto;
+  }
+}

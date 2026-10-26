@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:">
+  <title>Untitled — OpenPage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="toolbar" role="toolbar" aria-label="Document tools">
+    <span class="brand">OpenPage</span>
+    <div class="group">
+      <button id="btn-new" type="button" title="New (Ctrl+N)">New</button>
+      <button id="btn-open" type="button" title="Open (Ctrl+O)">Open</button>
+      <button id="btn-save" type="button" title="Save (Ctrl+S)">Save</button>
+    </div>
+    <div class="group" aria-label="Formatting">
+      <button class="fmt" data-command="bold" type="button" title="Bold (Ctrl+B)"><b>B</b></button>
+      <button class="fmt" data-command="italic" type="button" title="Italic (Ctrl+I)"><i>I</i></button>
+      <button class="fmt" data-command="underline" type="button" title="Underline (Ctrl+U)"><u>U</u></button>
+    </div>
+    <div class="group">
+      <button id="btn-find" type="button" title="Find &amp; Replace (Ctrl+F)">Find</button>
+    </div>
+  </header>
+
+  <section id="find-panel" class="find-panel" role="search" aria-label="Find and replace" hidden>
+    <div class="find-row">
+      <input id="find-input" type="text" placeholder="Find" aria-label="Find" spellcheck="false">
+      <span id="find-status" class="find-status" aria-live="polite"></span>
+      <button id="find-prev" type="button" title="Previous match (Shift+Enter)" aria-label="Previous match">&#8593;</button>
+      <button id="find-next" type="button" title="Next match (Enter)" aria-label="Next match">&#8595;</button>
+      <button id="find-close" type="button" title="Close (Esc)" aria-label="Close">&#10005;</button>
+    </div>
+    <div class="find-row">
+      <input id="replace-input" type="text" placeholder="Replace with" aria-label="Replace with" spellcheck="false">
+      <button id="replace-one" type="button">Replace</button>
+      <button id="replace-all" type="button">Replace all</button>
+    </div>
+    <label class="find-option"><input id="find-match-case" type="checkbox"> Match case</label>
+  </section>
+
+  <main class="canvas">
+    <article id="editor" class="page" contenteditable="true" spellcheck="true"
+             aria-label="Document" aria-multiline="true"></article>
+  </main>
+
+  <footer class="statusbar">
+    <span id="word-count">0 words</span>
+    <span id="char-count">0 characters</span>
+    <span id="file-status" class="file-status">Untitled</span>
+  </footer>
+
+  <script src="app.js"></script>
+  <script src="find-replace.js"></script>
+</body>
+</html>

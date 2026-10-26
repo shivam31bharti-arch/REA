@@ -1,0 +1,286 @@
+.pl-btn {
+  height: 32px;
+  min-width: 32px;
+  padding: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 1px solid transparent;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background-color var(--t-fast) var(--ease-out), border-color var(--t-fast) var(--ease-out);
+}
+
+.pl-btn:hover {
+  background: var(--hover);
+}
+
+.pl-btn:active {
+  background: var(--pressed);
+}
+
+.pl-btn[aria-pressed='true'],
+.pl-btn[aria-expanded='true'] {
+  border-color: var(--ink);
+}
+
+.pl-btn:disabled {
+  color: var(--faint);
+  background: none;
+}
+
+.pl-btn--icon {
+  padding: 0;
+  width: 32px;
+}
+
+.pl-btn--primary {
+  background: var(--ink);
+  color: var(--ground);
+  padding: 0 14px;
+  font-weight: 600;
+}
+
+.pl-btn--primary:hover {
+  background: var(--ink-2);
+}
+
+.pl-btn--primary[aria-expanded='true'] {
+  border-color: var(--ink);
+  background: var(--ink-2);
+}
+
+.pl-btn--outline {
+  border-color: var(--seam-soft);
+}
+
+.pl-btn--danger {
+  color: var(--danger);
+}
+
+.pl-btn--danger:hover {
+  background: color-mix(in srgb, var(--danger) 10%, transparent);
+}
+
+.pl-btn svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 2;
+  flex: none;
+}
+
+.pl-sep {
+  width: 1px;
+  height: 22px;
+  background: var(--seam-soft);
+  margin: 0 6px;
+  flex: none;
+}
+
+/* Document state stamp: always visible, never a toast. */
+.pl-stamp {
+  height: 26px;
+  padding: 0 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1.5px solid currentColor;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--muted);
+}
+
+.pl-stamp[data-kind='unsaved'] {
+  color: var(--accent-text);
+}
+
+.pl-stamp[data-kind='saved'] {
+  color: var(--saved);
+}
+
+.pl-stamp[data-kind='exported'] {
+  color: var(--ink);
+}
+
+.pl-stamp[data-kind='error'] {
+  color: var(--danger);
+}
+
+.pl-menu {
+  position: relative;
+  display: inline-flex;
+}
+
+.pl-menu-list {
+  position: absolute;
+  top: calc(100% + 6px);
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+  background: var(--ground);
+  border: 1px solid var(--seam);
+  animation: pl-drop var(--t-fast) var(--ease-out);
+}
+
+.pl-menu-list--start {
+  left: 0;
+}
+
+.pl-menu-list--end {
+  right: 0;
+}
+
+@keyframes pl-drop {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}
+
+.pl-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 36px;
+  padding: 6px 10px;
+  text-align: left;
+  color: var(--ink);
+}
+
+.pl-menu-item:hover,
+.pl-menu-item:focus-visible {
+  background: var(--hover);
+  outline: none;
+}
+
+.pl-menu-item[data-active='true'] .pl-menu-label {
+  color: var(--accent-text);
+}
+
+.pl-menu-item.is-danger,
+.pl-menu-item.is-danger .pl-menu-icon {
+  color: var(--danger);
+}
+
+/* Labelled input rows, shared by popovers and dialogs. */
+.pl-field-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.pl-field-row input {
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid var(--seam-soft);
+  background: var(--ground);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--ink);
+}
+
+.pl-field-row input:focus {
+  border-color: var(--ink);
+}
+
+.pl-field-row input[aria-invalid='true'] {
+  border-color: var(--danger);
+}
+
+.pl-field-problem {
+  margin-top: -6px;
+  font-size: 12px;
+  color: var(--danger);
+}
+
+/* Dialogs: a flat ground plane with an ink edge over a scrim. */
+.pl-dialog-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 110;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 18vh;
+  background: rgb(0 0 0 / 0.28);
+  animation: pl-fade var(--t-fast) var(--ease-out);
+}
+
+.pl-dialog {
+  width: min(420px, calc(100vw - 64px));
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: var(--ground);
+  border: 1px solid var(--seam);
+  animation: pl-drop var(--t-med) var(--ease-out);
+}
+
+.pl-dialog-title {
+  font-size: 19px;
+  font-weight: 650;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.pl-dialog-message {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+
+.pl-dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding-top: 4px;
+}
+
+.pl-dialog-spacer {
+  flex: 1;
+}
+
+.pl-menu-icon {
+  display: inline-flex;
+  color: var(--muted);
+}
+
+.pl-menu-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.pl-menu-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.pl-menu-label {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.pl-menu-description {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.pl-menu-separator {
+  height: 1px;
+  margin: 6px 4px;
+  background: var(--seam-soft);
+}

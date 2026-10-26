@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Deck · Continuous sheet</title>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;800&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1440px;height:900px;overflow:hidden}
+body{display:grid;grid-template-columns:64px 1fr;font-family:Geist,sans-serif;color:#111;background:#fff}
+.rail{background:#F2C230;display:flex;flex-direction:column;align-items:center;gap:8px;padding:10px 0}
+.mark{width:36px;height:36px;background:#111;color:#fff;font-weight:800;font-size:20px;display:grid;place-items:center;margin-bottom:18px}
+.sw{width:44px;height:44px;display:grid;place-items:center}.sw i{width:20px;height:20px;border:2px solid #111;display:block}
+.sw.on{background:rgba(0,0,0,.14)}
+.stage{display:grid;grid-template-rows:56px 1fr 32px;min-width:0}
+.bar{display:flex;align-items:center;gap:6px;padding:0 164px 0 16px;border-bottom:1px solid #111}
+.crumb{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;margin-right:14px}
+.crumb b{color:#8C6A00}.crumb span{color:#6E6E6E;font-weight:400}
+.t{height:32px;min-width:32px;padding:0 8px;display:grid;place-items:center;font-size:13px;font-weight:500}
+.sep{width:1px;height:22px;background:#E2E2E2;margin:0 6px}
+.end{margin-left:auto;display:flex;gap:10px;align-items:center}
+.pill{height:34px;width:90px;border:1px solid #E2E2E2}
+.stamp{height:26px;padding:0 8px;border:1.5px solid #0B7A6C;color:#0B7A6C;font:500 11px 'Geist Mono',monospace;letter-spacing:.06em;display:grid;place-items:center}
+.ghost{height:32px;padding:0 12px;border:1px solid #E2E2E2;font-size:13px;font-weight:600;display:grid;place-items:center}
+.primary{height:32px;padding:0 14px;background:#111;color:#fff;font-size:13px;font-weight:600;display:grid;place-items:center}
+.canvas{background:#FAFAF9;background-image:linear-gradient(to right,#EEEEEC 1px,transparent 1px);background-size:72px 100%;overflow:hidden;padding:32px 0 0 72px;display:flex;flex-direction:column;gap:28px}
+.row{display:grid;grid-template-columns:72px 704px 1fr;column-gap:28px;align-items:start}
+.n{font-size:42px;line-height:.84;font-weight:800;letter-spacing:-.04em;color:#8F8F8C;text-align:right;padding-top:2px}
+.row.on .n{color:#8C6A00}
+.slide{width:704px;height:396px;background:#fff;border:1px solid #E2E2E2;padding:46px 54px;display:flex;flex-direction:column}
+.row.on .slide{border:2px solid #111}
+.slide .k{width:48px;height:7px;background:#F2C230;margin-bottom:22px}
+.slide h1{font-size:46px;font-weight:800;letter-spacing:-.03em;line-height:1.03;max-width:560px}
+.slide p{margin-top:18px;font-size:20px;line-height:1.4;color:#262626;max-width:520px}
+.slide .foot{margin-top:auto;display:flex;justify-content:space-between;font:500 11px 'Geist Mono',monospace;color:#595959}
+.note{max-width:380px;padding-top:4px;border-top:1px solid #111}
+.note h3{font-size:12px;font-weight:600;color:#595959;margin:10px 0 6px}
+.note p{font-size:15px;line-height:1.55;color:#262626}
+.row.on .note{border-top-color:#F2C230;border-top-width:3px}
+.status{border-top:1px solid #111;display:flex;gap:22px;align-items:center;padding:0 12px;font-size:12px;color:#595959}
+</style></head><body>
+<nav class="rail"><div class="mark">P</div><div class="sw"><i></i></div><div class="sw"><i></i></div><div class="sw on"><i></i></div><div class="sw"><i></i></div></nav>
+<div class="stage">
+<header class="bar">
+  <div class="crumb"><b>Deck</b><span>/</span>Paperlight launch talk</div>
+  <div class="t">Layout ▾</div><div class="t">Theme ▾</div><span class="sep"></span>
+  <div class="t">T Text</div><div class="t">□ Shape</div><div class="t">▣ Image</div><span class="sep"></span>
+  <div class="t">Sorter</div>
+  <div class="end"><div class="pill"></div><div class="stamp">SAVED 21:04</div><div class="ghost">Present</div><div class="primary">Save</div></div>
+</header>
+<main class="canvas">
+  <div class="row"><span class="n">02</span><section class="slide" style="height:160px;overflow:hidden;padding-top:30px"><div class="k"></div><h1>Why build an office suite</h1></section><div class="note"><h3>Notes</h3><p>Start with the subscription receipt on screen.</p></div></div>
+  <div class="row on"><span class="n">03</span><section class="slide">
+    <div class="k"></div>
+    <h1>Four apps, one quiet desk</h1>
+    <p>Prose, Cells, Deck and Jotbook, built from scratch and kept on this computer.</p>
+    <div class="foot"><span>Paperlight launch talk</span><span>03 / 07</span></div>
+  </section><div class="note"><h3>Notes</h3><p>Name each app and the job it replaces. Point at the colour of each rail; that colour follows you into the app.</p><p style="margin-top:10px">Then say the one rule: nothing leaves the computer.</p></div></div>
+  <div class="row"><span class="n">04</span><section class="slide" style="height:200px"><div class="k"></div><h1>The Swiss Grid design</h1></section><div class="note"><h3>Notes</h3><p>Show the 72px columns behind every screen.</p></div></div>
+</main>
+<footer class="status"><span>Slide 3 of 7</span><span>16:9</span><span>Theme: Paper</span></footer>
+</div>
+</body></html>

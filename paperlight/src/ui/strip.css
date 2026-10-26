@@ -1,0 +1,149 @@
+/* The numbered strip shared by Jotbook pages and Cells sheets. */
+.pl-strip {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding: 24px 0 0;
+  border-right: 1px solid var(--seam);
+  background: var(--ground);
+}
+
+.pl-strip-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin: 0 18px 12px 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--seam);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pl-strip-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pl-strip-count {
+  flex: none;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.pl-strip-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 10px 32px 12px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pl-strip-entry {
+  position: relative;
+}
+
+.pl-strip-link {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr);
+  column-gap: 10px;
+  align-items: end;
+  padding: 8px 34px 8px 8px;
+  text-align: left;
+  color: var(--ink);
+  transition: background-color var(--t-fast) var(--ease-out);
+}
+
+.pl-strip-link:hover {
+  background: var(--hover);
+}
+
+.pl-strip-link[aria-current='page'] {
+  background: var(--hover);
+}
+
+.pl-strip-num {
+  grid-row: 1 / 3;
+  align-self: start;
+  font-size: 42px;
+  line-height: 0.84;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
+  color: var(--numeral);
+  transition: color var(--t-med) var(--ease-out);
+}
+
+/* The text variant keeps "you are here" brighter than Numeral Grey in both themes. */
+.pl-strip-link[aria-current='page'] .pl-strip-num {
+  color: var(--accent-text);
+}
+
+.pl-strip-name {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* The suite's length bar: an entry's size (words, rows) against the longest entry. 60px stays free for the label. */
+.pl-strip-meter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 7px;
+}
+
+.pl-strip-bar {
+  flex: none;
+  max-width: calc(100% - 60px);
+  height: 4px;
+  background: var(--seam-soft);
+  transition: width var(--t-med) var(--ease-out), background-color var(--t-med) var(--ease-out);
+}
+
+.pl-strip-link[aria-current='page'] .pl-strip-bar {
+  background: var(--ink);
+}
+
+.pl-strip-date {
+  flex: none;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.pl-strip-entry .pl-menu {
+  position: absolute;
+  top: 6px;
+  right: 2px;
+}
+
+.pl-strip-more {
+  opacity: 0;
+  transition: opacity var(--t-fast) var(--ease-out);
+}
+
+.pl-strip-entry:hover .pl-strip-more,
+.pl-strip-entry:focus-within .pl-strip-more,
+.pl-strip-more[aria-expanded='true'] {
+  opacity: 1;
+}
+
+.pl-strip-empty {
+  margin: 8px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 13px;
+}

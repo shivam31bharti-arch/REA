@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Dashboard · Week grid</title>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1440px;height:900px;overflow:hidden}
+body{display:grid;grid-template-columns:64px 1fr;font-family:Geist,sans-serif;color:#111;background:#FAFAF9}
+.rail{background:#111;display:flex;flex-direction:column;align-items:center;gap:8px;padding:10px 0}
+.mark{width:36px;height:36px;background:#fff;color:#111;font-weight:800;font-size:20px;display:grid;place-items:center;margin-bottom:18px}
+.sw{width:44px;height:44px;display:grid;place-items:center;position:relative}.sw i{width:20px;height:20px;border:2px solid #fff;display:block}
+.sw.on{background:rgba(255,255,255,.18)}.sw b{position:absolute;right:6px;bottom:6px;width:7px;height:7px}
+.stage{display:grid;grid-template-rows:56px 1fr;min-width:0}
+.bar{display:flex;align-items:center;gap:12px;padding:0 164px 0 24px;border-bottom:1px solid #111;background:#fff}
+.bar h1{font-size:14px;font-weight:700}.bar span{font-size:12px;color:#595959}
+.pill{margin-left:auto;height:34px;width:210px;border:1px solid #E2E2E2;display:flex;align-items:center;padding:0 10px;font-size:13px;color:#595959;gap:8px}
+.pill kbd{margin-left:auto;font:500 11px 'Geist Mono';border:1px solid #E2E2E2;padding:1px 5px}
+.main{padding:28px 48px 0;display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;row-gap:24px;align-content:start;background-image:linear-gradient(to right,#EEEEEC 1px,transparent 1px);background-size:calc((100% - 96px - 264px)/12 + 24px) 100%;background-position:48px 0}
+.key{grid-column:span 3;height:150px;padding:16px 18px;display:flex;flex-direction:column;color:#fff}
+.key.p{background:#D63A22}.key.j{background:#0B7A6C}.key.c{background:#2448D8}.key.d{background:#F2C230;color:#111}
+.key h2{font-size:30px;font-weight:800;letter-spacing:-.03em;line-height:.9}
+.key .fig{margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between}
+.key .n{font-size:42px;font-weight:800;letter-spacing:-.04em;line-height:.84}
+.key .u{font-size:12px;font-weight:500;opacity:.9;margin-left:8px;display:inline-block}
+.key .new{height:32px;padding:0 12px;border:1.5px solid currentColor;font-size:13px;font-weight:600;display:grid;place-items:center}
+.week{grid-column:1/-1;display:grid;grid-template-columns:repeat(7,1fr);gap:0;border-top:1px solid #111;background:#fff}
+.day{border-right:1px solid #E2E2E2;padding:14px 12px 0;min-height:560px;display:flex;flex-direction:column;gap:8px}
+.day:last-child{border-right:0}
+.dh{display:flex;align-items:flex-end;gap:8px;padding-bottom:10px;border-bottom:1px solid #E2E2E2;margin-bottom:4px}
+.dh .n{font-size:42px;font-weight:800;letter-spacing:-.04em;line-height:.84;color:#8F8F8C}
+.dh span{font-size:12px;font-weight:600;color:#595959;padding-bottom:2px}
+.today{background:#fff;box-shadow:inset 0 3px 0 #111}.today .dh .n{color:#111}.today .dh span{color:#111}
+.it{border:1px solid #E2E2E2;border-left:4px solid;padding:8px 10px;display:flex;flex-direction:column;gap:3px;background:#fff}
+.it b{font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.it small{font:500 11px 'Geist Mono';color:#595959}
+.it.p{border-left-color:#D63A22}.it.j{border-left-color:#0B7A6C}.it.c{border-left-color:#2448D8}.it.d{border-left-color:#F2C230}
+.empty{font-size:12px;color:#6E6E6E}
+.bars{margin-top:auto;padding:10px 0 12px;display:flex;flex-direction:column;gap:3px}
+.bars i{height:4px;display:block;background:#E2E2E2}
+</style></head><body>
+<nav class="rail"><div class="mark">P</div><div class="sw on"><i></i></div><div class="sw"><i></i><b style="background:#D63A22"></b></div><div class="sw"><i></i><b style="background:#2448D8"></b></div><div class="sw"><i></i><b style="background:#F2C230"></b></div><div class="sw"><i></i><b style="background:#0B7A6C"></b></div></nav>
+<div class="stage">
+<header class="bar"><h1>Dashboard</h1><span>Week of 19 October · everything stays on this computer</span><div class="pill">Search commands<kbd>Ctrl K</kbd></div></header>
+<main class="main">
+<section class="key p"><h2>Prose</h2><div class="fig"><div><span class="n">06</span><span class="u">documents · 9,412 words</span></div><span class="new">+ New</span></div></section>
+<section class="key j"><h2>Jotbook</h2><div class="fig"><div><span class="n">14</span><span class="u">pages in 3 notebooks</span></div><span class="new">+ New page</span></div></section>
+<section class="key c"><h2>Cells</h2><div class="fig"><div><span class="n">03</span><span class="u">workbooks · 7 sheets</span></div><span class="new">+ New</span></div></section>
+<section class="key d"><h2>Deck</h2><div class="fig"><div><span class="n">02</span><span class="u">decks · 11:30 of talk</span></div><span class="new">+ New</span></div></section>
+<div class="week">
+<div class="day"><div class="dh"><span class="n">19</span><span>Mon</span></div><div class="it j"><b>Shot list, episode 14</b><small>Jotbook · 412 words</small></div><div class="it p"><b>Sponsor reply draft</b><small>Prose · 280 words</small></div><div class="bars"><i style="width:42%"></i></div></div>
+<div class="day"><div class="dh"><span class="n">20</span><span>Tue</span></div><div class="it c"><b>Channel budget 2026</b><small>Cells · 3 sheets · 64 rows</small></div><div class="bars"><i style="width:30%"></i></div></div>
+<div class="day"><div class="dh"><span class="n">21</span><span>Wed</span></div><div class="it p"><b>Episode 14 script</b><small>Prose · 2,140 words</small></div><div class="it j"><b>Build log, day 3</b><small>Jotbook · 655 words</small></div><div class="it d"><b>Paperlight launch talk</b><small>Deck · 7 slides · 5:30</small></div><div class="bars"><i style="width:88%"></i></div></div>
+<div class="day today"><div class="dh"><span class="n">22</span><span>Thu · today</span></div><div class="it d"><b>Paperlight launch talk</b><small>Deck · edited 10:59</small></div><div class="it c"><b>Video views, October</b><small>Cells · 212 rows</small></div><div class="it p"><b>README notes</b><small>Prose · 520 words</small></div><div class="it j"><b>Ideas inbox</b><small>Jotbook · 3 pages</small></div><div class="bars"><i style="width:100%;background:#111"></i></div></div>
+<div class="day"><div class="dh"><span class="n">23</span><span>Fri</span></div><p class="empty">Nothing yet</p></div>
+<div class="day"><div class="dh"><span class="n">24</span><span>Sat</span></div><p class="empty"></p></div>
+<div class="day"><div class="dh"><span class="n">25</span><span>Sun</span></div><p class="empty"></p></div>
+</div>
+</main></div></body></html>

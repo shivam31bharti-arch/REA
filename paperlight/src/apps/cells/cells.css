@@ -1,0 +1,798 @@
+.pl-cells {
+  display: grid;
+  grid-template-rows: var(--bar-h) minmax(0, 1fr) var(--status-h);
+  height: 100%;
+  min-width: 0;
+}
+
+/* Cells sheds its tool labels before the shared steps; every tool stays reachable by icon. */
+@container cmdbar (max-width: 1240px) {
+  .pl-cells .pl-tool-btn .pl-btn-label {
+    display: none;
+  }
+
+  .pl-cells .pl-tool-btn {
+    width: 32px;
+    padding: 0;
+  }
+}
+
+@container cmdbar (max-width: 940px) {
+  .pl-cells-align {
+    display: none;
+  }
+}
+
+@container cmdbar (max-width: 1080px) {
+  .pl-cells .pl-insert-btn .pl-btn-label {
+    display: none;
+  }
+
+  .pl-cells .pl-insert-btn {
+    width: 32px;
+    padding: 0;
+  }
+}
+
+@container cmdbar (max-width: 900px) {
+  .pl-cells .pl-title-input {
+    max-width: 124px;
+  }
+}
+
+.pl-format-btn {
+  width: 116px;
+}
+
+.pl-color-btn {
+  position: relative;
+}
+
+.pl-color-bar {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 4px;
+  height: 3px;
+}
+
+.pl-swatch {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--seam-soft);
+}
+
+.pl-swatch-text {
+  display: block;
+  width: 16px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 16px;
+}
+
+/* Body: the numbered sheet strip beside the formula line and grid. */
+.pl-cells-body {
+  display: grid;
+  grid-template-columns: 248px minmax(0, 1fr);
+  min-height: 0;
+}
+
+.pl-sheet-strip .pl-strip-list {
+  flex: 0 1 auto;
+}
+
+.pl-strip-add {
+  margin: 6px 12px 20px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  transition: background-color var(--t-fast) var(--ease-out), color var(--t-fast) var(--ease-out);
+}
+
+.pl-strip-add:hover {
+  background: var(--hover);
+  color: var(--ink);
+}
+
+.pl-strip-add svg {
+  width: 16px;
+  height: 16px;
+}
+
+.pl-cells-work {
+  display: grid;
+  grid-template-rows: 44px minmax(0, 1fr);
+  min-width: 0;
+  min-height: 0;
+}
+
+/* Formula line: address, then the active cell's contents in full. */
+.pl-formula-line {
+  display: flex;
+  align-items: stretch;
+  min-width: 0;
+  border-bottom: 1px solid var(--seam);
+  background: var(--ground);
+}
+
+.pl-address {
+  flex: none;
+  width: 112px;
+  padding: 0 12px;
+  border: 0;
+  border-right: 1px solid var(--seam-soft);
+  background: none;
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.pl-address:focus {
+  outline: 2px solid var(--accent-text);
+  outline-offset: -2px;
+}
+
+.pl-address[aria-invalid='true'] {
+  outline: 2px solid var(--danger);
+  outline-offset: -2px;
+}
+
+.pl-fx {
+  flex: none;
+  width: 40px;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  border-right: 1px solid var(--seam-soft);
+}
+
+.pl-fx svg {
+  width: 17px;
+  height: 17px;
+}
+
+.pl-formula-field {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  display: flex;
+}
+
+.pl-formula-field:focus-within {
+  outline: 2px solid var(--accent-text);
+  outline-offset: -2px;
+}
+
+.pl-formula-text,
+.pl-formula-input {
+  flex: 1;
+  min-width: 0;
+  padding: 0 14px;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pl-formula-text {
+  cursor: text;
+}
+
+.pl-formula-input {
+  caret-color: var(--accent);
+}
+
+/* The grid. */
+.pl-grid {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  background: var(--page);
+  outline: none;
+  font-variant-numeric: tabular-nums;
+}
+
+.pl-grid-scroll {
+  position: absolute;
+  inset: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+
+.pl-grid-content {
+  position: relative;
+  display: grid;
+}
+
+.pl-grid-corner {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  grid-area: 1 / 1;
+  background: var(--ground);
+  border-right: 1px solid var(--seam);
+  border-bottom: 1px solid var(--seam);
+  cursor: pointer;
+}
+
+.pl-grid-corner::after {
+  content: '';
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  border-style: solid;
+  border-width: 0 0 9px 9px;
+  border-color: transparent transparent var(--seam-soft) transparent;
+}
+
+.pl-grid-cols {
+  position: sticky;
+  top: 0;
+  z-index: 11;
+  grid-area: 1 / 2;
+  height: var(--head-h);
+  background: var(--ground);
+  border-bottom: 1px solid var(--seam);
+  cursor: pointer;
+}
+
+.pl-colhead {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  border-right: 1px solid var(--seam-soft);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted);
+  user-select: none;
+}
+
+.pl-colhead[data-on],
+.pl-rowhead[data-on] {
+  background: var(--accent-soft);
+  color: var(--accent-text);
+  font-weight: 700;
+}
+
+.pl-colhead[data-full],
+.pl-rowhead[data-full] {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.pl-col-resize {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  z-index: 1;
+  width: 8px;
+  height: 100%;
+  cursor: col-resize;
+}
+
+.pl-col-resize::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 3px;
+  width: 2px;
+  background: transparent;
+  transition: background-color var(--t-fast) var(--ease-out);
+}
+
+.pl-col-resize:hover::after,
+.pl-col-resize:active::after {
+  background: var(--accent-text);
+}
+
+.pl-grid-rows {
+  position: sticky;
+  left: 0;
+  z-index: 10;
+  grid-area: 2 / 1;
+  width: var(--head-w);
+  background: var(--ground);
+  border-right: 1px solid var(--seam);
+  cursor: pointer;
+}
+
+.pl-rowhead {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  border-bottom: 1px solid var(--seam-soft);
+  font-size: 12px;
+  color: var(--muted);
+  user-select: none;
+}
+
+.pl-grid-body {
+  position: relative;
+  grid-area: 2 / 2;
+  background-image: linear-gradient(to bottom, transparent 29px, var(--cell-line) 29px);
+  background-size: 100% 30px;
+  cursor: cell;
+  user-select: none;
+}
+
+.pl-gridlines {
+  position: absolute;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+.pl-gridlines span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--cell-line);
+}
+
+.pl-cell {
+  position: absolute;
+  height: 29px;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--ink);
+  pointer-events: none;
+}
+
+.pl-cell[data-align='right'] {
+  justify-content: flex-end;
+}
+
+.pl-cell[data-align='center'] {
+  justify-content: center;
+}
+
+.pl-cell.is-spill {
+  z-index: 1;
+  background: var(--page);
+  border-right: 1px solid var(--cell-line);
+}
+
+.pl-cell.has-fill {
+  height: 30px;
+  border-right: 1px solid color-mix(in srgb, #111111 8%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, #111111 8%, transparent);
+}
+
+.pl-filter-btn {
+  pointer-events: auto;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 21px;
+  height: 21px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--seam-soft);
+  background: var(--ground);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.pl-filter-btn:hover {
+  border-color: var(--ink);
+}
+
+.pl-filter-btn[data-active] {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.pl-filter-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Selection: a cobalt frame, the range tinted, the active cell left clear. */
+.pl-sel-fill {
+  position: absolute;
+  z-index: 2;
+  background: var(--accent-soft);
+  pointer-events: none;
+}
+
+.pl-sel-box {
+  position: absolute;
+  z-index: 3;
+  border: 2px solid var(--accent-text);
+  pointer-events: none;
+  transition:
+    left 120ms var(--ease-out),
+    top 120ms var(--ease-out),
+    width 120ms var(--ease-out),
+    height 120ms var(--ease-out);
+}
+
+.pl-fill-handle {
+  position: absolute;
+  z-index: 4;
+  width: 9px;
+  height: 9px;
+  border: 1.5px solid var(--page);
+  background: var(--accent-text);
+  cursor: crosshair;
+  transition:
+    left 120ms var(--ease-out),
+    top 120ms var(--ease-out);
+}
+
+.pl-fill-preview {
+  position: absolute;
+  z-index: 3;
+  border: 1.5px dashed var(--accent-text);
+  pointer-events: none;
+}
+
+.pl-ref-box {
+  position: absolute;
+  z-index: 2;
+  border: 1.5px solid var(--ref);
+  background: color-mix(in srgb, var(--ref) 9%, transparent);
+  pointer-events: none;
+}
+
+.pl-clip-marquee {
+  position: absolute;
+  z-index: 3;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.pl-clip-marquee rect {
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  fill: none;
+  stroke: var(--accent-text);
+  stroke-width: 1.5;
+  stroke-dasharray: 5 4;
+  animation: pl-march 700ms linear infinite;
+}
+
+@keyframes pl-march {
+  to {
+    stroke-dashoffset: -9;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pl-clip-marquee rect {
+    animation: none;
+  }
+
+  .pl-sel-box,
+  .pl-fill-handle {
+    transition: none;
+  }
+}
+
+/* In-cell editor. */
+.pl-cell-editor,
+.pl-cell-mirror {
+  position: absolute;
+  z-index: 20;
+  height: 30px;
+}
+
+.pl-cell-input,
+.pl-cell-mirror {
+  width: 100%;
+  height: 100%;
+  padding: 0 6px;
+  border: 2px solid var(--accent-text);
+  background: var(--page);
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.pl-cell-input {
+  caret-color: var(--accent);
+}
+
+.pl-cell-mirror {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* Function suggestions while typing a formula. */
+.pl-suggest {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 40;
+  min-width: 340px;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+  border: 1px solid var(--seam);
+  background: var(--ground);
+  animation: pl-drop var(--t-fast) var(--ease-out);
+  cursor: default;
+  user-select: none;
+}
+
+.pl-suggest-item {
+  display: grid;
+  grid-template-columns: 118px minmax(0, 1fr);
+  gap: 10px;
+  align-items: baseline;
+  padding: 7px 8px;
+  text-align: left;
+}
+
+.pl-suggest-item:hover,
+.pl-suggest-item[aria-selected='true'] {
+  background: var(--hover);
+}
+
+.pl-suggest-item[aria-selected='true'] .pl-suggest-name {
+  color: var(--accent-text);
+}
+
+.pl-suggest-name,
+.pl-suggest-sig {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.pl-suggest-desc {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.pl-suggest-foot {
+  margin-top: 4px;
+  padding: 6px 8px 2px;
+  border-top: 1px solid var(--seam-soft);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.pl-suggest--hint {
+  gap: 4px;
+  padding: 10px 12px;
+}
+
+/* Charts float on the grid and snap to its cells. */
+.pl-chart {
+  position: absolute;
+  z-index: 8;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--seam);
+  background: var(--page);
+  cursor: default;
+  user-select: none;
+}
+
+.pl-chart[data-selected] {
+  outline: 2px solid var(--accent-text);
+  outline-offset: 2px;
+}
+
+.pl-chart[data-dragging] {
+  z-index: 9;
+}
+
+.pl-chart-head {
+  flex: none;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 4px 0 14px;
+  border-bottom: 1px solid var(--seam-soft);
+  cursor: grab;
+}
+
+.pl-chart[data-dragging] .pl-chart-head {
+  cursor: grabbing;
+}
+
+.pl-chart-title {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.pl-chart-source {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.pl-chart-plot {
+  position: relative;
+}
+
+.pl-chart-plot canvas {
+  display: block;
+}
+
+.pl-chart-empty {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.pl-chart-resize {
+  position: absolute;
+  right: -6px;
+  bottom: -6px;
+  width: 12px;
+  height: 12px;
+  border: 1.5px solid var(--accent-text);
+  background: var(--page);
+  cursor: nwse-resize;
+  opacity: 0;
+  transition: opacity var(--t-fast) var(--ease-out);
+}
+
+.pl-chart:hover .pl-chart-resize,
+.pl-chart[data-selected] .pl-chart-resize {
+  opacity: 1;
+}
+
+/* Filter popover. */
+.pl-filter-menu {
+  position: fixed;
+  z-index: 60;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid var(--seam);
+  background: var(--ground);
+  animation: pl-drop var(--t-fast) var(--ease-out);
+}
+
+.pl-filter-title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.pl-filter-sort {
+  display: flex;
+  flex-direction: column;
+}
+
+.pl-filter-sort .pl-btn {
+  justify-content: flex-start;
+}
+
+.pl-filter-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid var(--seam-soft);
+}
+
+.pl-filter-search:focus-within {
+  border-color: var(--ink);
+}
+
+.pl-filter-search svg {
+  width: 15px;
+  height: 15px;
+  color: var(--muted);
+}
+
+.pl-filter-search input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: none;
+  font-size: 13px;
+}
+
+.pl-filter-list {
+  max-height: 220px;
+  overflow-y: auto;
+  padding: 4px 0;
+  border: 1px solid var(--seam-soft);
+}
+
+.pl-filter-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.pl-filter-row:hover {
+  background: var(--hover);
+}
+
+.pl-filter-row input {
+  accent-color: var(--accent);
+  width: 15px;
+  height: 15px;
+}
+
+.pl-filter-row--all {
+  font-weight: 600;
+  border-bottom: 1px solid var(--seam-soft);
+}
+
+.pl-filter-none {
+  padding: 8px 10px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.pl-filter-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.pl-context-menu {
+  z-index: 80;
+}
+
+/* Status bar figures for the selection. */
+.pl-status-figures {
+  display: inline-flex;
+  gap: 18px;
+}
+
+.pl-status-fig b {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.pl-status-filter {
+  color: var(--accent-text);
+}

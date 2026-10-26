@@ -1,0 +1,46 @@
+{
+  "title": "Choose Jotbook's layout",
+  "question": "Same Swiss Grid world, three ways to organise notebooks. The roll dealt the focus sheet. Keep it, take another, or re-roll.",
+  "options": [
+    {
+      "id": "jot-focus-sheet",
+      "kind": "assigned",
+      "kicker": "THE ROLL",
+      "label": "Focus sheet",
+      "lineage": "The Prose outline, applied to pages",
+      "thesis": "Notebook and section switch from the bar; a numbered page strip runs beside one wide note.",
+      "palette": ["#0B7A6C", "#FFFFFF", "#111111", "#8F8F8C", "#FAF9F9"],
+      "materials": ["viridian rail", "42px page numerals", "72px column grid"],
+      "viewport": "Viridian rail, a bar reading Channel / Video ideas, a 220px strip of numbered pages, and the note across the rest of the grid.",
+      "risk": "Other notebooks are one click away instead of always on screen.",
+      "html": ".impeccable/mocks/decision/jot-focus-sheet.html"
+    },
+    {
+      "id": "jot-three-pane",
+      "kind": "dealt",
+      "label": "Three panes",
+      "lineage": "The familiar notebook layout",
+      "thesis": "Notebooks with their sections, the section's pages, then the note: everything visible at once.",
+      "palette": ["#0B7A6C", "#FFFFFF", "#111111", "#595959", "#FAF9F9"],
+      "materials": ["viridian rail", "hairline columns", "mono dates"],
+      "viewport": "A notebook-and-section column, a page list with first lines and dates, and the note on the grid.",
+      "risk": "Three columns leave the note narrower, and it is the least distinctive.",
+      "html": ".impeccable/mocks/decision/jot-three-pane.html"
+    },
+    {
+      "id": "jot-timeline",
+      "kind": "dealt",
+      "label": "Journal timeline",
+      "lineage": "A dated index on a ruled line",
+      "thesis": "Pages hang off a vertical ink line under oversized day numerals, so you find notes by when you wrote them.",
+      "palette": ["#0B7A6C", "#FFFFFF", "#111111", "#8F8F8C", "#FAF9F9"],
+      "materials": ["viridian rail", "day numerals", "1px timeline rule"],
+      "viewport": "Compact notebooks and sections, a timeline of days with big date numerals and their pages, and the note.",
+      "risk": "Dates matter less than topics for some notes, such as reference pages.",
+      "html": ".impeccable/mocks/decision/jot-timeline.html"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code", "toggle": false },
+  "steer": true
+}

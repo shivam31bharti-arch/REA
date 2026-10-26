@@ -1,0 +1,46 @@
+{
+  "title": "Choose Cells' layout",
+  "question": "Same Swiss Grid world in cobalt, three ways to lay out a spreadsheet. The roll dealt the sheet strip. Keep it, take another, or re-roll.",
+  "options": [
+    {
+      "id": "cells-sheet-strip",
+      "kind": "assigned",
+      "kicker": "THE ROLL",
+      "label": "Sheet strip",
+      "lineage": "The Jotbook page strip, applied to sheets",
+      "thesis": "The workbook's sheets are numbered down a strip beside the grid, each with a row-count bar, the way Jotbook numbers its pages.",
+      "palette": ["#2448D8", "#FFFFFF", "#111111", "#8F8F8C", "#EEF1FD"],
+      "materials": ["cobalt rail", "42px sheet numerals", "length bars"],
+      "viewport": "Cobalt rail, a bar reading Cells / Channel numbers 2026, a formula line, a 240px strip of numbered sheets, and the grid across the rest.",
+      "risk": "The strip takes 240px from the grid, so fewer columns fit on screen.",
+      "html": ".impeccable/mocks/decision/cells-sheet-strip.html"
+    },
+    {
+      "id": "cells-readout-bar",
+      "kind": "dealt",
+      "label": "Readout bar",
+      "lineage": "The suite's numerals, applied to the active cell",
+      "thesis": "The grid runs full width under a readout that shows the active cell's address as a 42px numeral, its formula and its value; sheets are numbered tabs along the bottom.",
+      "palette": ["#2448D8", "#FFFFFF", "#111111", "#8F8F8C", "#EEF1FD"],
+      "materials": ["cobalt rail", "42px address readout", "numbered sheet tabs"],
+      "viewport": "Cobalt rail, the command bar, a 72px readout (C7, =SUM(C2:C6), 523,587), the full-width grid, and sheet tabs with Sum, Average and Count.",
+      "risk": "The closest to a familiar spreadsheet; the readout is its one new idea.",
+      "html": ".impeccable/mocks/decision/cells-readout-bar.html"
+    },
+    {
+      "id": "cells-figures-column",
+      "kind": "dealt",
+      "label": "Figures column",
+      "lineage": "A live summary of whatever you select",
+      "thesis": "Select any range and a column beside the grid shows its sum as a large numeral, the other figures, and a ready chart you can insert.",
+      "palette": ["#2448D8", "#FFFFFF", "#111111", "#595959", "#EEF1FD"],
+      "materials": ["cobalt rail", "42px sum numeral", "selection bar chart"],
+      "viewport": "Cobalt rail, the command bar, a formula line, the grid with C2:C6 selected, a 296px figures column, and numbered sheet tabs.",
+      "risk": "The column is always open and takes width even when nothing worth summing is selected.",
+      "html": ".impeccable/mocks/decision/cells-figures-column.html"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code", "toggle": false },
+  "steer": true
+}

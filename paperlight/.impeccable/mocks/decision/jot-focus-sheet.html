@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Jotbook · Focus sheet</title>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;800&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1440px;height:900px;overflow:hidden}
+body{display:grid;grid-template-columns:64px 1fr;font-family:Geist,sans-serif;color:#111;background:#fff}
+.rail{background:#0B7A6C;display:flex;flex-direction:column;align-items:center;gap:8px;padding:10px 0}
+.mark{width:36px;height:36px;background:#111;color:#fff;font-weight:800;font-size:20px;display:grid;place-items:center;margin-bottom:18px}
+.sw{width:44px;height:44px;display:grid;place-items:center}.sw i{width:20px;height:20px;border:2px solid #fff;display:block}
+.sw.on{background:rgba(0,0,0,.24)}
+.stage{display:grid;grid-template-rows:56px 1fr 32px}
+.bar{display:flex;align-items:center;gap:6px;padding:0 164px 0 16px;border-bottom:1px solid #111}
+.crumb{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;margin-right:18px}
+.crumb b{color:#0A6C60}.crumb span{color:#6E6E6E;font-weight:400}
+.pick{height:32px;padding:0 10px;display:flex;align-items:center;gap:6px;font-size:14px;font-weight:600}
+.t{height:32px;min-width:32px;display:grid;place-items:center;font-size:14px}
+.sep{width:1px;height:22px;background:#E2E2E2;margin:0 6px}
+.end{margin-left:auto;display:flex;gap:10px;align-items:center}
+.pill{height:34px;width:90px;border:1px solid #E2E2E2}
+.stamp{height:26px;padding:0 8px;border:1.5px solid #0B7A6C;color:#0B7A6C;font:500 11px 'Geist Mono',monospace;letter-spacing:.06em;display:grid;place-items:center}
+.primary{height:32px;padding:0 14px;background:#111;color:#fff;font-size:13px;font-weight:600;display:grid;place-items:center}
+.body{display:grid;grid-template-columns:240px 1fr;min-height:0}
+.strip{border-right:1px solid #111;padding:22px 18px;display:flex;flex-direction:column;gap:4px}
+.head{display:flex;justify-content:space-between;font-size:13px;font-weight:600;padding-bottom:12px;border-bottom:1px solid #111;margin-bottom:14px}
+.head small{font-size:12px;color:#595959;font-weight:500}
+.pg{display:grid;grid-template-columns:56px 1fr;column-gap:10px;align-items:end;padding:6px 4px}
+.pg .n{font-size:42px;line-height:.84;font-weight:800;letter-spacing:-.04em;color:#8F8F8C}
+.pg.on .n{color:#0B7A6C}.pg b{font-size:14px;font-weight:600;display:block}
+.pg small{font:500 11px 'Geist Mono',monospace;color:#595959}
+.canvas{background:#FAFAF9;background-image:linear-gradient(to right,#EEEEEC 1px,transparent 1px);background-size:72px 100%;padding:40px 72px;overflow:hidden}
+.sheet{width:880px;min-height:900px;background:#fff;border:1px solid #111;padding:64px 80px}
+h1{font-size:40px;font-weight:800;letter-spacing:-.03em;line-height:1.06}
+.meta{margin:10px 0 26px;font:500 12px Geist,sans-serif;color:#595959}
+h2{font-size:22px;font-weight:750;margin:26px 0 10px}
+p{font-size:16.5px;line-height:1.65;color:#262626;max-width:640px}
+.task{display:flex;gap:10px;align-items:center;font-size:16.5px;margin:8px 0}
+.task i{width:16px;height:16px;border:1.5px solid #111;display:block}.task i.x{background:#0B7A6C;border-color:#0B7A6C}
+.task.done span{color:#6E6E6E;text-decoration:line-through}
+.status{grid-column:2;border-top:1px solid #111;display:flex;gap:22px;align-items:center;padding:0 12px;font-size:12px;color:#595959}
+</style></head><body>
+<nav class="rail"><div class="mark">P</div><div class="sw"><i></i></div><div class="sw"><i></i></div><div class="sw"><i></i></div><div class="sw on"><i></i></div></nav>
+<div class="stage">
+<header class="bar">
+  <div class="crumb"><b>Jotbook</b><span>/</span></div>
+  <div class="pick">Channel ▾</div><span class="sep"></span><div class="pick">Video ideas ▾</div><span class="sep"></span>
+  <div class="t"><b>B</b></div><div class="t"><i>I</i></div><div class="t"><u>U</u></div><div class="t">☐</div><div class="t">+</div>
+  <div class="end"><div class="pill"></div><div class="stamp">SAVED 22:31</div><div class="primary">New page</div></div>
+</header>
+<div class="body">
+  <aside class="strip">
+    <div class="head">Video ideas <small>6 pages</small></div>
+    <div class="pg on"><div class="n">01</div><div><b>Office suite from scratch</b><small>21 Oct</small></div></div>
+    <div class="pg"><div class="n">02</div><div><b>Thumbnail tests</b><small>19 Oct</small></div></div>
+    <div class="pg"><div class="n">03</div><div><b>Viewer questions</b><small>14 Oct</small></div></div>
+    <div class="pg"><div class="n">04</div><div><b>Studio setup tour</b><small>9 Oct</small></div></div>
+    <div class="pg"><div class="n">05</div><div><b>Q&amp;A episode</b><small>2 Oct</small></div></div>
+    <div class="pg"><div class="n">06</div><div><b>Collab list</b><small>28 Sep</small></div></div>
+  </aside>
+  <main class="canvas"><article class="sheet">
+    <h1>Office suite from scratch</h1>
+    <div class="meta">Wednesday 21 October 2026 · Channel / Video ideas</div>
+    <p>Build four apps live: Prose, Cells, Deck and Jotbook. Show the design choice on camera before writing any code.</p>
+    <h2>Shot list</h2>
+    <div class="task done"><i class="x"></i><span>Record the Prose design proof</span></div>
+    <div class="task"><i></i><span>Show Jotbook syncing nothing to the cloud</span></div>
+    <div class="task"><i></i><span>End on the Home screen</span></div>
+  </article></main>
+</div>
+<footer class="status"><span>48 words</span><span>Edited 22:31</span></footer>
+</div>
+</body></html>

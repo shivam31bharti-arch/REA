@@ -1,0 +1,67 @@
+[console warning] Electron Security Warning (Insecure Content-Security-Policy) This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/t
+[console warning] Electron Security Warning (Insecure Content-Security-Policy) This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/t
+captured cells-home.png 1282x673
+xlsx round trip: [{"template":"blank","bytes":6071,"checked":0,"problems":[]},{"template":"channel","bytes":9057,"checked":77,"problems":[]},{"template":"budget","bytes":8061,"checked":41,"problems":[]},{"template":"invoice","bytes":7094,"checked":31,"problems":[]}]
+channel template: {"app":"cells","title":"Channel numbers 2026 — Cells","address":"A1","formula":"Video","editor":null,"strip":"01 Q3 videos (7 rows) | 02 Sponsors (8 rows) | 03 Upload plan (4 rows)","current":"Q3 videos","stamp":"Not saved","status":"Q3 videos · sheet 1 of 3Not saved to a file yet","suggest":null,"refs":0,"filterButtons":0,"charts":null,"dialog":null,"menu":null,"toasts":null,"cmdbar":{"toolsClipped":0,"endRight":1122,"gapBeforeEnd":32,"width":1282}}
+captured cells-desktop.png 1282x673
+views selected: {"app":"cells","title":"Channel numbers 2026 — Cells","address":"C2:C6","formula":"184210","editor":null,"strip":"01 Q3 videos (7 rows) | 02 Sponsors (8 rows) | 03 Upload plan (4 rows)","current":"Q3 videos","stamp":"Not saved","status":"Q3 videos · sheet 1 of 3Sum 523,587Average 104,717Count 5Not saved to a file yet","suggest":null,"refs":0,"filterButtons":0,"charts":null,"dialog":null,"menu":null,"toasts":null,"cmdbar":{"toolsClipped":0,"endRight":1122,"gapBeforeEnd":32,"width":1282}}
+captured cells-selection.png 1282x673
+typing a function: {"app":"cells","title":"• Channel numbers 2026 — Cells","address":"C8","formula":"=AV","editor":"=AV","strip":"01 Q3 videos (8 rows) | 02 Sponsors (8 rows) | 03 Upload plan (4 rows)","current":"Q3 videos","stamp":"Unsaved","status":"Q3 videos · sheet 1 of 3Draft kept on this computer","suggest":"AVERAGE, AVERAGEIF, AVERAGEIFS","refs":0,"filterButtons":0,"charts":null,"dialog":null,"menu":null,"toasts":null,"cmdbar":{"toolsClipped":0,"endRight":1122,"gapBeforeEnd":47,"width":1282}}
+captured cells-suggest.png 1282x673
+pointing at a range: {"app":"cells","title":"• Channel numbers 2026 — Cells","address":"C8","formula":"=AVERAGE(C2:C6","editor":"=AVERAGE(C2:C6","strip":"01 Q3 videos (8 rows) | 02 Sponsors (8 rows) | 03 Upload plan (4 rows)","current":"Q3 videos","stamp":"Unsaved","status":"Q3 videos · sheet 1 of 3Draft kept on this computer","suggest":"AVERAGE(number1, [number2], …)","refs":1,"filterButtons":0,"charts":null,"dialog":null,"menu":null,"toasts":null,"cmdbar":{"toolsClipped":0,"endRight":1122,"gapBeforeEnd":47,"width":1282}}
+captured cells-point.png 1282x673
+C8 after AVERAGE: 104,717
+average entered: {"app":"cells","title":"• Channel numbers 2026 — Cells","address":"C8","formula":"=AVERAGE(C2:C6)","editor":null,"strip":"01 Q3 videos (8 rows) | 02 Sponsors (8 rows) | 03 Upload plan (4 rows)","current":"Q3 videos","stamp":"Unsaved","status":"Q3 videos · sheet 1 of 3Draft kept on this computer","suggest":null,"refs":0,"filterButtons":0,"charts":null,"dialog":null,"menu":null,"toasts":null,"cmdbar":{"toolsClipped":0,"endRight":1122,"gapBeforeEnd":47,"width":1282}}
+auto sum editing: {"app":"cells","title":"• Channel numbers 2026 — Cells","address":"F15","formula":"=SUM(F12:F14)","editor":"=SUM(F12:F14)","strip":"01 Q3 videos (14 rows) | 02 Sponsors (8 rows) | 03 Upload plan (4 rows)","current":"Q3 videos","stamp":"Unsaved","status":"Q3 videos · sheet 1 of 3Draft kept on this computer","suggest":null,"refs":1,"filterButtons":0,"charts":null,"dialog":null,"menu":null,"toasts":null,"cmdbar":{"toolsClipped":0,"endRight":1122,"gapBeforeEnd":47,"width":1282}}
+F15 auto sum: 60
+bad formula: {"app":"cells","title":"• Channel numbers 2026 — Cells","address":"E12","formula":"=10*/2","editor":"=10*/2","strip":"01 Q3 videos (15 rows) | 02 Sponsors (8 rows) | 03 Upload plan (4 rows)","current":"Q3 videos","stamp":"Unsaved","status":"Q3 videos · sheet 1 of 3Draft kept on this computer","suggest":null,"refs":0,"filterButtons":0,"charts":null,"dialog":null,"menu":null,"toasts":"There's a problem with this formula: Unexpected “/”.","cmdbar":{"toolsClipped":0,"endRight":1122,"gapBeforeEnd":47,"width":1282}}
+captured cells-bad-formula.png 1282x673
+F12 after undo: ""
+format menu: {"app":"cells","title":"• Channel numbers 2026 — Cells","address":"C8","formula":"=AVERAGE(C2:C6)","editor":null,"strip":"01 Q3 videos (8 rows) | 02 Sponsors (8 rows) | 03 Upload plan (4 rows)","current":"Q3 videos","stamp":"Unsaved","status":"Q3 videos · sheet 1 of 3Draft kept on this computer","suggest":null,"refs":0,"filterButtons":0,"charts":null,"dialog":null,"menu":"Automatic, Number, Whole number, Currency, Percent, Percent, one decimal, Date, Date, ISO, Time, Plain text","toasts":"There's a problem with this formula: Unexpected “/”.","cmdbar":{"toolsClipped":0,"endRight":1122,"gapBeforeEnd":47,"width":1282}}
+captured cells-format-menu.png 1282x673
+C8 as currency: $104,717.40
+after sort: ["Office suite from scratch","Desk build","Thumbnail tests","Studio setup tour","Viewer Q&A","Total"]
+sorted: {"app":"cells","title":"• Channel numbers 2026 — Cells","address":"C3","formula":"112640","editor":null,"strip":"01 Q3 videos (8 rows) | 02 Sponsors (8 rows) | 03 Upload plan (4 rows)","current":"Q3 videos","stamp":"Unsaved","status":"Q3 videos · sheet 1 of 3Draft kept on this computer","suggest":null,"refs":0,"filterButtons":0,"charts":null,"dialog":null,"menu":null,"toasts":"There's a problem with this formula: Unexpected “/”. | Sorted by Views, Z to A","cmdbar":{"toolsClipped":0,"endRight":1122,"gapBeforeEnd":47,"width":1282}}
+filter on: {"app":"cells","title":"• Channel numbers 2026 — Cells","address":"C3","formula":"112640","editor":null,"strip":"01 Q3 videos (8 rows) | 02 Sponsors (8 rows) | 03 Upload plan (4 rows)","current":"Q3 videos","stamp":"Unsaved","status":"Q3 videos · sheet 1 of 3Draft kept on this computer","suggest":null,"refs":0,"filterButtons":6,"charts":null,"dialog":null,"menu":null,"toasts":"There's a problem with this formula: Unexpected “/”. | Sorted by Views, Z to A","cmdbar":{"toolsClipped":0,"endRight":1122,"gapBeforeEnd":47,"width":1282}}
+captured cells-filter-menu.png 1282x673
+filtered: {"app":"cells","title":"• Channel numbers 2026 — Cells","address":"C2","formula":"184210","editor":null,"strip":"01 Q3 videos (8 rows) | 02 Sponsors (8 rows) | 03 Upload plan (4 rows)","current":"Q3 videos","stamp":"Unsaved","status":"Q3 videos · sheet 1 of 3Showing 6 of 7 rowsDraft kept on this computer","suggest":null,"refs":0,"filterButtons":6,"charts":null,"dialog":null,"menu":null,"toasts":"There's a problem with this formula: Unexpected “/”. | Sorted by Views, Z to A","cmdbar":{"toolsClipped":0,"endRight":1122,"gapBeforeEnd":47,"width":1282}}
+captured cells-filtered.png 1282x673
+bar chart added: {"app":"cells","title":"• Channel numbers 2026 — Cells","address":"A1:C6","formula":"Video","editor":null,"strip":"01 Q3 videos (8 rows) | 02 Sponsors (8 rows) | 03 Upload plan (4 rows)","current":"Q3 videos","stamp":"Unsaved","status":"Q3 videos · sheet 1 of 3Sum 754,752Average 75,475Count 18Draft kept on this computer","suggest":null,"refs":0,"filterButtons":0,"charts":"Views","dialog":null,"menu":null,"toasts":null,"cmdbar":{"toolsClipped":0,"endRight":1122,"gapBeforeEnd":47,"width":1282}}
+captured cells-chart.png 1282x673
+context menu: {"app":"cells","title":"• Channel numbers 2026 — Cells","address":"B4","formula":"2026-07-16","editor":null,"strip":"01 Q3 videos (8 rows) | 02 Sponsors (8 rows) | 03 Upload plan (4 rows)","current":"Q3 videos","stamp":"Unsaved","status":"Q3 videos · sheet 1 of 3Draft kept on this computer","suggest":null,"refs":0,"filterButtons":0,"charts":"Views","dialog":null,"menu":"Cut, Copy, Paste, Insert row above, Insert row below, Delete rows, Insert column left, Insert column right, Delete columns, Clear contents","toasts":null,"cmdbar":{"toolsClipped":0,"endRight":1122,"gapBeforeEnd":47,"width":1282}}
+captured cells-context.png 1282x673
+row inserted, total moved: {"app":"cells","title":"• Channel numbers 2026 — Cells","address":"C8","formula":"=SUM(C2:C7)","editor":null,"strip":"01 Q3 videos (9 rows) | 02 Sponsors (8 rows) | 03 Upload plan (4 rows)","current":"Q3 videos","stamp":"Unsaved","status":"Q3 videos · sheet 1 of 3Draft kept on this computer","suggest":null,"refs":0,"filterButtons":0,"charts":"Views","dialog":null,"menu":null,"toasts":null,"cmdbar":{"toolsClipped":0,"endRight":1122,"gapBeforeEnd":47,"width":1282}}
+after undo: {"app":"cells","title":"• Channel numbers 2026 — Cells","address":"C8","formula":"=AVERAGE(C2:C6)","editor":null,"strip":"01 Q3 videos (8 rows) | 02 Sponsors (8 rows) | 03 Upload plan (4 rows)","current":"Q3 videos","stamp":"Unsaved","status":"Q3 videos · sheet 1 of 3Draft kept on this computer","suggest":null,"refs":0,"filterButtons":0,"charts":"Views","dialog":null,"menu":null,"toasts":null,"cmdbar":{"toolsClipped":0,"endRight":1122,"gapBeforeEnd":47,"width":1282}}
+new sheet: {"app":"cells","title":"• Channel numbers 2026 — Cells","address":"A1","formula":"","editor":null,"strip":"01 Q3 videos (8 rows) | 02 Sponsors (8 rows) | 03 Upload plan (4 rows) | 04 Sheet 4 (0 rows)","current":"Sheet 4","stamp":"Unsaved","status":"Sheet 4 · sheet 4 of 4Draft kept on this computer","suggest":null,"refs":0,"filterButtons":0,"charts":null,"dialog":null,"menu":null,"toasts":null,"cmdbar":{"toolsClipped":0,"endRight":1122,"gapBeforeEnd":47,"width":1282}}
+captured cells-rename.png 1282x673
+delete sheet confirm: {"app":"cells","title":"• Channel numbers 2026 — Cells","address":"A1","formula":"","editor":null,"strip":"01 Q3 videos (8 rows) | 02 Sponsors (8 rows) | 03 Upload plan (4 rows) | 04 plan (0 rows)","current":"plan","stamp":"Unsaved","status":"plan · sheet 4 of 4Draft kept on this computer","suggest":null,"refs":0,"filterButtons":0,"charts":null,"dialog":"Delete “plan”?","menu":null,"toasts":null,"cmdbar":{"toolsClipped":0,"endRight":1122,"gapBeforeEnd":47,"width":1282}}
+captured cells-delete.png 1282x673
+sponsors sheet: {"app":"cells","title":"• Channel numbers 2026 — Cells","address":"A1","formula":"Sponsor","editor":null,"strip":"01 Q3 videos (8 rows) | 02 Sponsors (8 rows) | 03 Upload plan (4 rows) | 04 plan (0 rows)","current":"Sponsors","stamp":"Unsaved","status":"Sponsors · sheet 2 of 4Draft kept on this computer","suggest":null,"refs":0,"filterButtons":0,"charts":null,"dialog":null,"menu":null,"toasts":null,"cmdbar":{"toolsClipped":0,"endRight":1122,"gapBeforeEnd":47,"width":1282}}
+captured cells-sponsors.png 1282x673
+[console warning] Electron Security Warning (Insecure Content-Security-Policy) This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/t
+budget dark: {"app":"cells","title":"Monthly budget — Cells","address":"A1","formula":"Income","editor":null,"strip":"01 November (16 rows)","current":"November","stamp":"Not saved","status":"November · sheet 1 of 1Not saved to a file yet","suggest":null,"refs":0,"filterButtons":0,"charts":"Where the money goes","dialog":null,"menu":null,"toasts":null,"cmdbar":{"toolsClipped":0,"endRight":1122,"gapBeforeEnd":36,"width":1282}}
+captured cells-dark.png 1282x673
+[console warning] Electron Security Warning (Insecure Content-Security-Policy) This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/t
+narrow invoice: {"app":"cells","title":"Invoice — Cells","address":"A1","formula":"Invoice","editor":null,"strip":"01 Invoice (14 rows)","current":"Invoice","stamp":"Not saved","status":"Invoice · sheet 1 of 1Not saved to a file yet","suggest":null,"refs":0,"filterButtons":0,"charts":null,"dialog":null,"menu":null,"toasts":null,"cmdbar":{"toolsClipped":0,"endRight":942,"gapBeforeEnd":11,"width":1102}}
+captured cells-1100.png 1102x761
+home shelf: Channel numbers 2026 | Paperlight launch talk

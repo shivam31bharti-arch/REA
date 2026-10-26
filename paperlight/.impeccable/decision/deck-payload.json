@@ -1,0 +1,46 @@
+{
+  "title": "Choose Deck's layout",
+  "question": "Same Swiss Grid world in sun yellow, three ways to lay out a slide editor. The roll dealt the talk timeline. Keep it, take another, or re-roll.",
+  "options": [
+    {
+      "id": "deck-timeline",
+      "kind": "assigned",
+      "kicker": "THE ROLL",
+      "label": "Talk timeline",
+      "lineage": "The suite's numbered strip, laid along time",
+      "thesis": "The slides run as numbered blocks along a timeline under the canvas, each as wide as the time you plan to spend on it, with the notes beside the slide.",
+      "palette": ["#F2C230", "#FFFFFF", "#111111", "#8F8F8C", "#FFF8DC"],
+      "materials": ["sun rail", "42px slide numerals", "time-sized blocks"],
+      "viewport": "Sun rail, a bar reading Deck / Paperlight launch talk with Present and Save, the slide on the 72px canvas, speaker notes on the right, and a 7-slide timeline totalling 5:30.",
+      "risk": "Planned times are a new idea to learn, and many short slides make narrow blocks.",
+      "html": ".impeccable/mocks/decision/deck-timeline.html"
+    },
+    {
+      "id": "deck-outline",
+      "kind": "dealt",
+      "label": "Outline and slide",
+      "lineage": "Write the talk, the slides follow",
+      "thesis": "A numbered outline of every slide's title and points sits on the left and edits like a document; the slide it describes is drawn live on the right.",
+      "palette": ["#F2C230", "#FFFFFF", "#111111", "#8F8F8C", "#FFF8DC"],
+      "materials": ["sun rail", "42px slide numerals", "outline column"],
+      "viewport": "Sun rail, the command bar, a 440px numbered outline with the caret in slide 03, the slide on the canvas and speaker notes under it.",
+      "risk": "There are no thumbnails, so you see slide layouts only one at a time.",
+      "html": ".impeccable/mocks/decision/deck-outline.html"
+    },
+    {
+      "id": "deck-continuous",
+      "kind": "dealt",
+      "label": "Continuous sheet",
+      "lineage": "The deck as one long page",
+      "thesis": "Slides stack down one scrolling sheet at working size, numbered in the margin, each with its notes beside it, so you edit the whole talk in place.",
+      "palette": ["#F2C230", "#FFFFFF", "#111111", "#8F8F8C", "#FAF9F9"],
+      "materials": ["sun rail", "42px margin numerals", "notes column"],
+      "viewport": "Sun rail, the command bar, then slides 02 to 04 down the ruled canvas with 03 outlined in ink and its notes on the right.",
+      "risk": "Only one slide and a half show at a time, and reordering needs the sorter.",
+      "html": ".impeccable/mocks/decision/deck-continuous.html"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code", "toggle": false },
+  "steer": true
+}

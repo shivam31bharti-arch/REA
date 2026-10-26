@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Dashboard · One stream</title>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1440px;height:900px;overflow:hidden}
+body{display:grid;grid-template-columns:64px 1fr;font-family:Geist,sans-serif;color:#111;background:#FAFAF9}
+.rail{background:#111;display:flex;flex-direction:column;align-items:center;gap:8px;padding:10px 0}
+.mark{width:36px;height:36px;background:#fff;color:#111;font-weight:800;font-size:20px;display:grid;place-items:center;margin-bottom:18px}
+.sw{width:44px;height:44px;display:grid;place-items:center;position:relative}.sw i{width:20px;height:20px;border:2px solid #fff;display:block}
+.sw.on{background:rgba(255,255,255,.18)}.sw b{position:absolute;right:6px;bottom:6px;width:7px;height:7px}
+.stage{display:grid;grid-template-rows:56px 1fr;min-width:0}
+.bar{display:flex;align-items:center;gap:12px;padding:0 164px 0 24px;border-bottom:1px solid #111;background:#fff}
+.bar h1{font-size:14px;font-weight:700}
+.pill{margin-left:auto;height:34px;width:210px;border:1px solid #E2E2E2;display:flex;align-items:center;padding:0 10px;font-size:13px;color:#595959}
+.main{display:grid;grid-template-columns:1fr 320px;min-height:0}
+.list{padding:24px 40px;background:#fff;border-right:1px solid #111}
+.tabs{display:flex;gap:4px;border-bottom:1px solid #111}
+.tab{height:36px;padding:0 14px;display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:#595959}
+.tab small{font:500 11px 'Geist Mono'}
+.tab.on{color:#111;box-shadow:inset 0 -3px 0 #111}
+.tab i{width:10px;height:10px;display:block}
+.row{display:grid;grid-template-columns:64px 14px 1fr 220px 90px;align-items:center;gap:14px;height:62px;border-bottom:1px solid #E2E2E2}
+.row .n{font-size:42px;font-weight:800;letter-spacing:-.04em;line-height:.84;color:#8F8F8C}
+.row.cur{background:#F2F2F0}.row.cur .n{color:#111}
+.row .s{width:10px;height:10px}
+.row b{font-size:14px;font-weight:600;display:block}
+.row small{font-size:12px;color:#595959}
+.m{display:flex;align-items:center;gap:8px}.m i{height:4px;background:#E2E2E2;display:block}.m span{font:500 11px 'Geist Mono';color:#595959;white-space:nowrap}
+.t{font:500 11px 'Geist Mono';color:#595959;text-align:right}
+.side{padding:24px 20px;display:flex;flex-direction:column;gap:10px;background:#fff}
+.side h2{font-size:13px;font-weight:600;padding-bottom:10px;border-bottom:1px solid #111}
+.new{height:64px;padding:0 14px;display:flex;align-items:center;justify-content:space-between;color:#fff;font-weight:800;font-size:20px;letter-spacing:-.02em}
+.new span{font-size:12px;font-weight:600;border:1.5px solid currentColor;padding:5px 8px;letter-spacing:0}
+.tot{margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:14px 10px}
+.tot div{border-top:1px solid #E2E2E2;padding-top:8px}
+.tot b{font-size:42px;font-weight:800;letter-spacing:-.04em;line-height:.9;display:block}
+.tot small{font-size:12px;color:#595959}
+</style></head><body>
+<nav class="rail"><div class="mark">P</div><div class="sw on"><i></i></div><div class="sw"><i></i><b style="background:#D63A22"></b></div><div class="sw"><i></i><b style="background:#2448D8"></b></div><div class="sw"><i></i><b style="background:#F2C230"></b></div><div class="sw"><i></i><b style="background:#0B7A6C"></b></div></nav>
+<div class="stage">
+<header class="bar"><h1>Dashboard</h1><div class="pill">Search commands</div></header>
+<main class="main">
+<section class="list">
+<div class="tabs"><span class="tab on">All <small>25</small></span><span class="tab"><i style="background:#D63A22"></i>Prose <small>6</small></span><span class="tab"><i style="background:#0B7A6C"></i>Jotbook <small>14</small></span><span class="tab"><i style="background:#2448D8"></i>Cells <small>3</small></span><span class="tab"><i style="background:#F2C230"></i>Deck <small>2</small></span></div>
+<div class="row cur"><span class="n">01</span><span class="s" style="background:#F2C230"></span><div><b>Paperlight launch talk</b><small>Deck · 7 slides · stored on this computer</small></div><div class="m"><i style="width:120px"></i><span>5:30 talk</span></div><span class="t">10:59</span></div>
+<div class="row"><span class="n">02</span><span class="s" style="background:#2448D8"></span><div><b>Video views, October</b><small>Cells · Draft · kept on this computer</small></div><div class="m"><i style="width:140px"></i><span>212 rows</span></div><span class="t">10:12</span></div>
+<div class="row"><span class="n">03</span><span class="s" style="background:#D63A22"></span><div><b>README notes</b><small>Prose · Documents\Paperlight</small></div><div class="m"><i style="width:34px"></i><span>520 words</span></div><span class="t">09:40</span></div>
+<div class="row"><span class="n">04</span><span class="s" style="background:#0B7A6C"></span><div><b>Ideas inbox</b><small>Jotbook · Channel / Ideas</small></div><div class="m"><i style="width:22px"></i><span>310 words</span></div><span class="t">08:05</span></div>
+<div class="row"><span class="n">05</span><span class="s" style="background:#D63A22"></span><div><b>Episode 14 script</b><small>Prose · Documents\Scripts</small></div><div class="m"><i style="width:140px"></i><span>2,140 words</span></div><span class="t">Wed</span></div>
+<div class="row"><span class="n">06</span><span class="s" style="background:#0B7A6C"></span><div><b>Build log, day 3</b><small>Jotbook · Paperlight / Log</small></div><div class="m"><i style="width:44px"></i><span>655 words</span></div><span class="t">Wed</span></div>
+<div class="row"><span class="n">07</span><span class="s" style="background:#2448D8"></span><div><b>Channel budget 2026</b><small>Cells · Documents\Money</small></div><div class="m"><i style="width:42px"></i><span>64 rows</span></div><span class="t">Tue</span></div>
+<div class="row"><span class="n">08</span><span class="s" style="background:#0B7A6C"></span><div><b>Shot list, episode 14</b><small>Jotbook · Channel / Episodes</small></div><div class="m"><i style="width:28px"></i><span>412 words</span></div><span class="t">Mon</span></div>
+<div class="row"><span class="n">09</span><span class="s" style="background:#D63A22"></span><div><b>Sponsor reply draft</b><small>Prose · Draft · kept on this computer</small></div><div class="m"><i style="width:19px"></i><span>280 words</span></div><span class="t">Mon</span></div>
+<div class="row"><span class="n">10</span><span class="s" style="background:#F2C230"></span><div><b>Pitch deck</b><small>Deck · 6 slides</small></div><div class="m"><i style="width:130px"></i><span>6:00 talk</span></div><span class="t">12 Oct</span></div>
+</section>
+<aside class="side"><h2>Start something</h2>
+<div class="new" style="background:#D63A22">Prose<span>+ New document</span></div>
+<div class="new" style="background:#0B7A6C">Jotbook<span>+ New page</span></div>
+<div class="new" style="background:#2448D8">Cells<span>+ New workbook</span></div>
+<div class="new" style="background:#F2C230;color:#111">Deck<span>+ New deck</span></div>
+<div class="tot"><div><b>9,412</b><small>words in Prose</small></div><div><b>14</b><small>Jotbook pages</small></div><div><b>276</b><small>rows in Cells</small></div><div><b>11:30</b><small>of talk in Deck</small></div></div>
+</aside>
+</main></div></body></html>

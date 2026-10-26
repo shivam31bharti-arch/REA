@@ -1,0 +1,173 @@
+:root {
+  --accent: #0f766e;
+  --accent-soft: #ccfbf1;
+  --ink: #1f2933;
+  --muted: #5f6b7a;
+  --canvas: #e9ecef;
+  --chrome: #f8f9fa;
+  --line: #d5dae0;
+  --page: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: var(--canvas);
+  color: var(--ink);
+  font: 14px/1.4 "Segoe UI Variable", system-ui, sans-serif;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 16px;
+  background: var(--chrome);
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+}
+
+.group {
+  display: flex;
+  gap: 4px;
+  padding-left: 16px;
+  border-left: 1px solid var(--line);
+}
+
+button {
+  min-width: 32px;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: var(--line);
+  background: #fff;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+button.active {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.canvas {
+  flex: 1;
+  overflow: auto;
+  padding: 32px 16px;
+}
+
+.page {
+  max-width: 816px;
+  min-height: 1056px;
+  margin: 0 auto;
+  padding: 72px 80px;
+  background: var(--page);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  box-shadow: 0 2px 12px rgb(15 23 42 / 8%);
+  font: 16px/1.6 Georgia, "Times New Roman", serif;
+  outline: none;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.page:empty::before {
+  content: "Start writing…";
+  color: #9aa5b1;
+}
+
+.statusbar {
+  display: flex;
+  gap: 24px;
+  padding: 4px 16px;
+  background: var(--chrome);
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.file-status {
+  margin-left: auto;
+}
+
+.find-panel {
+  position: fixed;
+  top: 56px;
+  right: 24px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 380px;
+  padding: 10px;
+  background: var(--chrome);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 6px 24px rgb(15 23 42 / 14%);
+}
+
+.find-panel[hidden] {
+  display: none;
+}
+
+.find-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.find-row input[type="text"] {
+  flex: 1;
+  min-width: 0;
+  padding: 5px 8px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+}
+
+.find-row input[type="text"]:focus {
+  border-color: var(--accent);
+  outline: 1px solid var(--accent);
+}
+
+.find-status {
+  min-width: 72px;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: right;
+}
+
+.find-option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 12px;
+}

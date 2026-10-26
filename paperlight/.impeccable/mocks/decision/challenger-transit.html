@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Transit Map · Prose</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1440px; height: 900px; overflow: hidden; }
+  body { display: grid; grid-template-columns: 288px 1fr; grid-template-rows: 60px 1fr 36px; background: #0E1A3A; color: #F4F6F8;
+    font-family: 'Atkinson Hyperlegible', system-ui, sans-serif; }
+  .top { grid-column: 1 / 3; display: flex; align-items: center; gap: 22px; padding: 0 24px; border-bottom: 1px solid #22305A; }
+  .lines { display: flex; gap: 6px; align-items: center; }
+  .line { height: 8px; width: 34px; border-radius: 4px; opacity: .45; }
+  .line.on { width: 64px; opacity: 1; }
+  .brand { font-weight: 700; font-size: 18px; }
+  .brand small { font-weight: 400; font-size: 13px; color: #9AA6C6; margin-left: 8px; }
+  .tools { display: flex; gap: 4px; margin-left: 24px; }
+  .tool { height: 34px; min-width: 34px; padding: 0 12px; border-radius: 6px; display: grid; place-items: center; font-size: 14px; color: #D9DEEA; }
+  .tool.sel { background: #22305A; color: #fff; font-weight: 700; }
+  .k { margin-left: auto; height: 34px; width: 300px; border-radius: 6px; background: #172449; display: flex; align-items: center; justify-content: space-between; padding: 0 12px; font-size: 13px; color: #9AA6C6; }
+  .k em { font-style: normal; font-size: 11px; color: #fff; border: 1px solid #3A4A78; border-radius: 4px; padding: 1px 5px; }
+  .save { font-size: 13px; color: #7FD3A0; }
+  .map { padding: 30px 28px; position: relative; }
+  .map h3 { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #9AA6C6; margin-bottom: 26px; }
+  .route { position: relative; padding-left: 40px; }
+  .route::before { content: ''; position: absolute; left: 12px; top: 8px; bottom: 8px; width: 8px; border-radius: 4px; background: #E2352B; }
+  .stn { position: relative; height: 72px; font-size: 16px; font-weight: 700; }
+  .stn::before { content: ''; position: absolute; left: -24px; top: 4px; width: 12px; height: 4px; background: #F4F6F8; }
+  .stn small { display: block; font-weight: 400; font-size: 13px; color: #9AA6C6; margin-top: 4px; }
+  .stn.here::before { left: -36px; top: -4px; width: 24px; height: 24px; border-radius: 50%; background: #fff; border: 5px solid #E2352B; }
+  .stn.here { color: #fff; }
+  .xfer { margin-top: 30px; font-size: 13px; color: #9AA6C6; display: flex; flex-direction: column; gap: 12px; }
+  .xfer div { display: flex; align-items: center; gap: 10px; }
+  .xfer i { width: 22px; height: 6px; border-radius: 3px; display: block; }
+  .stage { background: #16234A; overflow: hidden; padding: 36px 0 0 110px; }
+  .page { width: 780px; height: 1000px; background: #FFFFFF; color: #10172E; border-radius: 4px; padding: 72px 84px; }
+  .over { font-size: 13px; font-weight: 700; color: #E2352B; letter-spacing: .12em; text-transform: uppercase; }
+  h1 { font-size: 44px; line-height: 1.06; margin: 14px 0 28px; }
+  h2 { font-size: 22px; margin: 28px 0 10px; }
+  p { font-size: 17px; line-height: 1.62; color: #2B3352; max-width: 600px; }
+  .cursor { display: inline-block; width: 2px; height: 20px; background: #E2352B; vertical-align: -3px; }
+  .status { grid-column: 1 / 3; display: flex; align-items: center; gap: 26px; padding: 0 24px; font-size: 12px; color: #9AA6C6; border-top: 1px solid #22305A; }
+  .status .r { margin-left: auto; display: flex; gap: 20px; }
+</style>
+</head>
+<body>
+  <header class="top">
+    <div class="lines"><i class="line on" style="background:#E2352B"></i><i class="line" style="background:#1F5BD8"></i><i class="line" style="background:#F2A81D"></i><i class="line" style="background:#1E9E5A"></i></div>
+    <div class="brand">Prose<small>Building an office suite</small></div>
+    <div class="tools"><div class="tool sel">Heading 2 ▾</div><div class="tool"><b>B</b></div><div class="tool"><i>I</i></div><div class="tool"><u>U</u></div><div class="tool">Insert ▾</div></div>
+    <div class="k">Search commands <em>Ctrl K</em></div>
+    <div class="save">● Saved 14:02</div>
+  </header>
+  <aside class="map">
+    <h3>Prose line · 4 stops</h3>
+    <div class="route">
+      <div class="stn">Cold open<small>180 words</small></div>
+      <div class="stn here">Why build it<small>You are here · 412 words</small></div>
+      <div class="stn">The four apps<small>560 words</small></div>
+      <div class="stn">Outro<small>132 words</small></div>
+    </div>
+    <div class="xfer">
+      <div><i style="background:#1F5BD8"></i>Change for Cells: budget.xlsx</div>
+      <div><i style="background:#F2A81D"></i>Change for Deck: episode-12.pptx</div>
+    </div>
+  </aside>
+  <main class="stage"><article class="page">
+    <div class="over">Script · Draft 3</div>
+    <h1>Building an office suite from scratch</h1>
+    <h2>Cold open</h2>
+    <p>Every month, millions of people pay for software they open twice. Today we build our own, from the first line of code.</p>
+    <h2>Why build it</h2>
+    <p>Four apps, one design, nothing in the cloud. Prose for writing, Cells for numbers, Deck for talks, Jotbook for everything else<span class="cursor"></span></p>
+  </article></main>
+  <footer class="status"><span>1,284 words</span><span>Page 1 of 4</span><div class="r"><span>Focus</span><span>Dark</span><span>100%</span></div></footer>
+</body>
+</html>
